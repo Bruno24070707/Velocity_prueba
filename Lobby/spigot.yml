@@ -161,6 +161,8 @@ world-settings:
     max-tick-time:
       tile: 50
       entity: 50
+  worldeditregentempworld:
+    verbose: false
 players:
   disable-saving: false
 config-version: 12

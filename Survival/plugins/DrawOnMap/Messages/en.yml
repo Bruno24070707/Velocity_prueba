@@ -1,0 +1,868 @@
+# ╔════════════════════════════════════════╗
+# ║                                        ║
+# ║       DRAW ON MAP MESSAGES (EN)        ║
+# ║                                        ║
+# ╚════════════════════════════════════════╝
+
+# ╔════════════════════════════════════════╗
+# ║            COMMON MESSAGES             ║
+# ╚════════════════════════════════════════╝
+
+You dont have the permission: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou dont have the permission!'
+Player is not online: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cThe player does not exist or is not online!'
+You are not the player: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou are not the player!'
+Command for the player: '&l#(00d8ff)[DRAW]#(ff00c5)&r  &cThis command can only be executed by the player!'
+Plugin reloaded: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fPlugin reloaded!'
+Item in your hand is null: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cTake the item in main hand!'
+Number limitation: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cMaximal possible value is %number%'
+Date format: 'dd.MM.yyyy'
+Time format: 'HH:mm'
+Painting does not exist: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cThis picture does not exist!'
+Inventory is full: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cInventory is full!'
+Wrong format: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cWrong format!'
+Wrong player position: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou need more free space around and a block below you to start drawing!'
+Internal error: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cInternal error...'
+Havent enough money: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou dont have enough money!'
+Installing the painting on the wall is successful: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou installed a painting on the wall!'
+Installing the painting on the wall is unsuccessful: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fSomething is preventing the installation of the painting. Check surface dimensions!'
+Painting has been removed: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe picture has been removed!'
+Font loading started: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fLoading fonts from files has begun! &cDONT RELOAD THE SERVER!'
+Font loaded with the name: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fFont &d%font% &fwas successfully loaded!'
+Font loading finished: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fLoading fonts from files is finished!'
+Font deleted: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fFont &d%font% &fhas been removed!'
+Fonts are loading: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cFonts are loading, you cant do it now!'
+Wait message: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou need to wait before doing this!'
+
+
+# ╔════════════════════════════════════════╗
+# ║        PLAYER SETTINGS MESSAGES        ║
+# ╚════════════════════════════════════════╝
+
+You saved the color as color: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou can use color %color%&r &fas %color name%'
+You have removed a color from your palette: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have removed a color %color name%&r &ffrom your palette!'
+There is no color with this name in your palette: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cThere is no color with this name in your palette!'
+You have cleared your palette: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have cleared your palette!'
+You have set the initial cursor color: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have set the initial cursor color to %color%'
+You have set the initial cursor size: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have set the initial cursor size to &d%size%px'
+You have set the initial background color: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have set the initial background color to %color%'
+
+
+# ╔════════════════════════════════════════╗
+# ║             ANVIL MESSAGES             ║
+# ╚════════════════════════════════════════╝
+
+Length limitation: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cInvalid length or number!'
+Value not assigned: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cValue not assigned!'
+Value assigned: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fValue assigned!'
+
+
+# ╔════════════════════════════════════════╗
+# ║            DRAFTS MESSAGES             ║
+# ╚════════════════════════════════════════╝
+
+Limit on number of drafts: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou can only have 5 drafts at a time!'
+Draft saved: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe draft has been saved!'
+Draft not saved: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe draft was not saved!'
+Draft deleted: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe draft has been deleted!'
+All drafts deleted: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fAll drafts have been deleted!'
+Preview draft: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou are reviewing your draft!'
+
+
+# ╔════════════════════════════════════════╗
+# ║            IMPORT MESSAGES             ║
+# ╚════════════════════════════════════════╝
+
+Map import wrong format: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou can only upload a standard open map!'
+Map import completed successfully: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have successfully uploaded the map!'
+Invalid map size: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cThe map is too big! Try a smaller format!'
+You cant import another painting: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou cant import another painting!'
+
+
+# ╔════════════════════════════════════════╗
+# ║     EDITING THE PAINTING MESSAGES      ║
+# ╚════════════════════════════════════════╝
+
+The maximum number of players is already drawing: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cOnly 3 players can draw at the same time! Try it next time!'
+You have started editing:
+  - ' '
+  - '&l#(00d8ff)[HOW TO START DRAWING]#(ff36d1)'
+  - '&fYou are motionless while editing! Dont be scared ☻'
+  - '&fPress #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD&r to move the cursor!'
+  - '&fHold #ff2a00&lRIGHT CLICK&r &for #aa80ff&lSHIFT&r &fto paint on the canvas!'
+  - '&fPress #ff8095&lQ&r &fto rollback the last action!'
+  - '&fTo further you can use the &b/draw &fmenu or commands.'
+  -  ' '
+
+
+# ╔════════════════════════════════════════╗
+# ║          COLLECTION MESSAGES           ║
+# ╚════════════════════════════════════════╝
+
+Limit on number of collection painting: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou can only have 3 paintings at a time!'
+Collection item editable placeholder (false): '&c[FALSE]'
+Collection item editable placeholder (true): '&a[TRUE]'
+Collection item stock placeholder (zero): '&cnot for sale'
+Collection item stock placeholder (number): '&e%number%'
+Collection item stock placeholder (infinite): '&a∞'
+Collection item price placeholder: '&e%price% &6⛃'
+Collection item is not editable: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cCollection item is not editable!'
+Collection item is not editable after purchase: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou cannot edit the painting because someone else has purchased it!'
+Collection item sent for editing: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe picture has been sent for editing!'
+Collection item deleted: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe collection item has been deleted!'
+Collection item like: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou liked this picture!'
+Collection item dislike: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou disliked this picture!'
+Collection item purchase: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou purchased this painting!'
+Collection item purchase (for owner): '&l#(00d8ff)[DRAW]#(ff00c5)&r &fPlayer &a%player%&r bought the painting %name%!'
+Collection item download: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have downloaded this picture!'
+Preview collection item: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou are reviewing the collection painting!'
+
+
+# ╔════════════════════════════════════════╗
+# ║            CATALOG MESSAGES            ║
+# ╚════════════════════════════════════════╝
+
+Preview catalog item: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou are reviewing the catalog painting!'
+
+
+# ╔════════════════════════════════════════╗
+# ║          MODERATION MESSAGES           ║
+# ╚════════════════════════════════════════╝
+
+Moderation accept message: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYour picture has &asuccessfully &fpassed moderation!'
+Moderation reject message: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYour picture &chas not passed &fmoderation!'
+Painting is already active: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThis picture is already activated!'
+Moderation stop preview: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fTo stop viewing - click on the map or press Q!'
+Too many pictures are under moderation: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cToo many pictures are under moderation!'
+
+
+# ╔════════════════════════════════════════╗
+# ║            PUBLISH MESSAGES            ║
+# ╚════════════════════════════════════════╝
+
+Not all fields are filled in the publishing gui: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cNot all fields are specified!'
+Draft sent for moderation: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe draft has been sent for moderation!'
+
+
+# ╔════════════════════════════════════════╗
+# ║           DOWNLOAD MESSAGES            ║
+# ╚════════════════════════════════════════╝
+
+You cant download the painting: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou cant download the painting!'
+Download archive is full: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYour download archive is full! Free up slots!'
+Download the painting message: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou downloaded the painting!'
+Downloaded painting name: '#(00d8ff)%name%#(ff36d1)'
+Downloaded painting description:
+  - '&d● &7Collection: &d%collection%'
+  - '&d● &7Painter: &b%painter%'
+
+
+# ╔════════════════════════════════════════╗
+# ║            DRAWING MESSAGES            ║
+# ╚════════════════════════════════════════╝
+
+Cursor size changed: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the cursor size to &d%size%'
+Cursor color changed: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the cursor color to %color%'
+Font changed: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the font to &d%font%'
+Background color changed: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the background color to %color%'
+You have started creating a painting: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have started creating a new painting!'
+You have started editing the painting: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou have started editing the painting!'
+Cursor size limit message: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cMaximum cursor size is %size%!'
+You rolled back the action: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou rolled back the action!'
+Nothing to roll back: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fNothing to roll back! Or you have already done this many times!'
+You changed the tool to pencil: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to #24A6FB&l[PENCIL]'
+You changed the tool to line: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to #B85DFF&l[LINE]'
+You changed the tool to eraser: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to &7&l[ERASER]'
+You changed the tool to fill: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to #C583FF&l[FILL]'
+You changed the tool to selection: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to #00a35c&l[SELECTION]'
+You changed the tool to shape square: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to #6760FF&l[SQUARE]'
+You changed the tool to shape filled square: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to #AD60FF&l[FILLED SQUARE]'
+You changed the tool to shape circle: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to #58D52C&l[CIRCLE]'
+You changed the tool to shape filled circle: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to #2CD5A9&l[FILLED CIRCLE]'
+You changed the tool to text: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fYou changed the tool to &7&l[TEXT]'
+You cant change color and size now: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou cant change color and size now!'
+
+
+# ╔════════════════════════════════════════╗
+# ║             EASEL MESSAGES             ║
+# ╚════════════════════════════════════════╝
+
+Easel item name: '#0a99ff&lA PIECE OF CANVAS'
+Easel item description:
+  - '&7Press it on the wall and create a rectangular shape for the canvas.'
+  - '&7After all, enter &5/draw &7or &5/draw easel draw'
+Easel starting message:
+  - ' '
+  - '&l#(00d8ff)[HOW TO START DRAWING]#(ff36d1)'
+  - '&fYou have been given a piece of canvas!'
+  - '&fArrange it in a square or rectangular shape to create a canvas.'
+  - '&fThen enter #0a99ff/draw easel draw'
+  - ' '
+Easel you cant place it here: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou cant place the easel there!'
+Easel wrong figure: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cYou have not built the canvas correctly! It should be rectangular!'
+Easel start drawing message:
+  - ''
+  - '&l#(00d8ff)[HOW TO START DRAWING]#(ff36d1)'
+  - '&fNow you can paint on canvas!'
+  - '&fPress the right mouse button and drag over it.'
+  - '&fTo further you can use the &b/draw &fmenu or commands.'
+  - ''
+Easel is saved: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe painting is saved!'
+Easel is canceled: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fThe painting is canceled!'
+Easel size restrictions: '&l#(00d8ff)[DRAW]#(ff00c5)&r &cThe size of the canvas should not exceed %height% blocks in height and %width% blocks in width!'
+
+
+# ╔════════════════════════════════════════╗
+# ║   DISCORD SRV AND SYNTHESIS MESSAGES   ║
+# ╚════════════════════════════════════════╝
+
+Head over to the discord message: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fHead over to the discord to see the painting!'
+DiscordSRV send picture message:
+  - '**[DRAW]** Player %player% sent a painting called %name%!'
+DiscordSRV player started editing the painting:
+  - '**[DRAW]** %player% started editing the painting! Total draws %players%/%players max% players!'
+DiscordSRV player stopped editing the painting:
+  - '**[DRAW]** %player% stopped editing the painting! Total draws %players%/%players max% players!'
+DiscordSRV you need to wait before sending an image: '&l#(00d8ff)[DRAW]#(ff00c5)&r &fWait a little and try again!'
+
+
+# ╔════════════════════════════════════════╗
+# ║                MAIN GUI                ║
+# ╚════════════════════════════════════════╝
+
+Main GUI title: '       &5&l回 &5&lDRAW ON MAP&r &5&l回'
+Main GUI collection title: '&l#(fffcb5)█ COLLECTION █#(ffd500)'
+Main GUI collection description:
+  - '&b🌊 &7Here you can see the works of other'
+  - '&7players and rate them.'
+  - '&b🌊 &7You can put your work up for sale or buy'
+  - '&7another players exclusive work. And also set'
+  - '&7many parameters to customize the final version.'
+  - ' '
+  - '&b🌊 &7Works can be:'
+  - '&c&lUNSALEABLE&7, &e&lEXCLUSIVE &7or &a&lMASS-PRODUCED'
+Main GUI catalog title: '&l#(9d38f5)█ CATALOG █#(cd2ded)'
+Main GUI catalog description:
+  - '&b🌊 &7Here we sell paintings that can be used as decoration!'
+  - '&b🌊 &7When you click on the wall with such a picture,'
+  - '&7it will be automatically placed in an invisible frame!'
+  - '&b🌊 &7Divided into many categories!'
+Main GUI import title: '&l#(79ffc4)✚ IMPORT PAINTING ✚#(1fc158)'
+Main GUI import description:
+  - '&b🌊 &7You can click with the desired map in hand'
+  - '&7on this cell to load it into your drafts.'
+  - '&7This is necessary if you already have a template'
+  - '&7that you want to use to draw on top of it.'
+  - '&b🌊 &7If you dont have enough space in your drafts,'
+  - '&7you wont be able to upload.'
+Main GUI draft title: '&l#(a7bfef)☽ DRAFTS ☽#(8c89d1)'
+Main GUI draft description:
+  - '&b🌊 &7This is where all your unfinished'
+  - '&7work is stored. You can delete them or publish them.'
+  - '&b🌊 &7The maximum number of works in drafts is 5!'
+  - '&7Otherwise, delete unnecessary ones.'
+Main GUI rating title: '&l#(00ff2e)✯ RATING ✯#(fffb00)'
+Main GUI rating description:
+  - '&fYour rating - &a%score% ☻'
+  - '&fYou take &6★ &l%place% PLACE &famong all players.'
+Main GUI manuals title: '&l#(f5f4c2)☱ MANUALS ☱#(d4d3b8)'
+Main GUI manuals description:
+  - '&b🌊 &7You can read here brief instructions'
+  - '&7on how to use various drawing functions.'
+Main GUI new painting title: '&l#(f27500)✚ CREATE A PAINTING ✚#(cb31bb)'
+Main GUI new painting description:
+  - '&b🌊 &7Creates a new canvas and instantly gives'
+  - '&7it to you for editing.'
+  - '&b🌊 &7If you dont have enough space in your drafts,'
+  - '&7you wont be able to create!'
+Main GUI revenue title: '&l#(ffc900)❂ REVENUE ❂#(fff700)'
+Main GUI revenue description:
+  - '&fYour total income - &e%money% &6⛃'
+  - '&fYou take &6★ &l%place% PLACE &famong all players.'
+Main GUI downloads title: '&l#(ffc900)❂ DOWNLOADS ❂#(fff700)'
+Main GUI downloads description:
+  - '&b🌊 &7This is where your purchased paintings are stored.'
+  - '&7You can download them from here!'
+Main GUI moderation title: '&l#(ff00a2)✖ MODERATION ✖#(da1010)'
+Main GUI moderation description:
+  - '&b🌊 &7There are paintings here awaiting inspection.'
+  - '&7You can accept them to publish, send for revision,'
+  - '&7or delete them altogether.'
+Main GUI easel title: '&l#(54bbff)回 EASEL 回#(0062ff)'
+Main GUI easel description:
+  - '&b🌊 &7If you want to draw for yourself, create paintings'
+  - '&7of the desired size.'
+  - '&b🌊 &7The painting will remain on the wall after editing.'
+
+
+# ╔════════════════════════════════════════╗
+# ║              MANUALS GUI               ║
+# ╚════════════════════════════════════════╝
+
+Manuals GUI title: '           &5&l[ MANUALS ]'
+Manuals GUI manuals:
+  12:
+    Title: '&l#(bdfffa)☱ MENUS#(faffbd)'
+    Description: []
+    Book text:
+      - [ 'The plugin has 2 main menus.', '→ Sections menu and drawing menu.',  '→ All of them are called with the &5/draw &0cmd.', '→ If you enter a command when logging into the server, a menu of sections will open, where you can go through the tabs and start drawing.' ]
+      - [ '→ Once you start drawing, entering the command again, the drawing menu will open, where you can select the color, cursor size and other tools.' ]
+  13:
+    Title: '&l#(36ddff)☱ SECTIONS MENU#(0049ff)'
+    Description: []
+    Book text:
+      - [ 'The principle of operation is as follows:',  '→ You create a new painting or import one. Draw on the canvas and save.',  '→ The draft goes to the drafts menu and from there you can edit it further or publish it.', '→ When publishing, you can set the price,' ]
+      - [ 'the name of the painting, the name of the collection, the edition and editability.', '→ After that, it goes to moderation. The admin checks it and publishes it.', '→ After that, any player can view it, buy it, download it, like it or dislike it.' ]
+      - [ 'Or you can use the easel function to paint a picture just for yourself.' ]
+  14:
+    Title: '&l#(0049ff)☱ DRAWING MENU#(aa00ff)'
+    Description: []
+    Book text:
+      - [ 'This menu is available while drawing.', '→ Here you can save or cancel the picture without commands.', '→ Or change the color and size of the cursor, the background color.', '→ Or change the drawing tool, for example, from a pencil to a line.' ]
+  20:
+    Title: '&l#(ff0083)/ DRAWING COMMANDS#(ff0027)'
+    Description: []
+    Book text:
+      - [ 'You can use this commands to save your time:', '→ Open Main GUI or Drawing GUI:', '&5/draw', '&0→ Save the painting:', '&5/draw save', '&0→ Cancel the painting:', '&5/draw cancel', '&0→ Change cursor size:', '&5/draw cursor <1-15>' ]
+      - [ '&0→ Change cursor color:', '&5/draw color #HEX_COLOR', '&0→ Change background color:', '&5/draw background #HEX_COLOR', '&0→ Change tool to:', '&5/draw pencil', '&5/draw eraser', '&5/draw fill', '&5/draw eraser', '&5/draw line' ]
+      - [ '&5/draw square', '&5/draw filled_square', '&5/draw circle', '&5/draw filled_circle', '&5/draw selection', '&5/draw text' ]
+  21:
+    Title: '&l#(bcc686)✎ HOW TO DRAW#(b2d300)'
+    Description: []
+    Book text:
+      - ['→ The drawing process occurs when you have a map in your hands.', '→ You become motionless.', '→ When you press &d&lW&2&lA&6&lS&c&lD&r&0, you move the cursor along the canvas.', '→ When you hold #ff2a00&lRIGHT CLICK&r, you leave a pattern on the canvas.']
+      - ['→ If you want to return the action back, you need to press &5&lQ&r&0.', '→ Hold &5&lSHIFT&r&0 to move cursor a greater distance.', '→ If you try to click on the map or do other actions that contradict the process, the session will be canceled and you will return to your previous state.']
+  22:
+    Title: '&l#(54bbff)回 EASEL#(0062ff)'
+    Description: []
+    Book text:
+      - [ 'Easel is the process of placing pictures on the wall and then drawing on them with a cursor.', 'You are given a map that you need to create a rectangular shape of, then type &5/draw &0and confirm the dimensions.', 'Now you can draw! Just hold the cursor on the canvas!']
+      - [ 'You can use various tools by typing &5/draw &0or using shortcut commands.', 'Once you save the painting, it remains on the wall and you can disassemble it.' ]
+  23:
+    Title: '&l#(b2ff7c)⊂ ROLLBACK#(65da12)'
+    Description: []
+    Book text:
+      - ['You can undo your actions.', '→ To do this, press &5&lQ&r&0 or go to the drawing menu &5/draw &0and click the button there.', '→ There is a limit to the number of returns, after which you will not be able to undo the action.']
+  24:
+    Title: '#c5d33b&lPURCHASES&f&l/#d3723b&lDOWNLOADS'
+    Description: []
+    Book text:
+      - ['→ When you buy a painting, it goes into the &5&l[DOWNLOADS]&r&0 tab as an item, from where you can pick it up as a regular card with an image.', '→ This is done in case the author deletes the painting and you have already bought it.', '→ To download a painting in another']
+      - ['way, go to the collection menu for this painting and click on download.', '→ 1 purchase = 1 download.']
+  29:
+    Title: '#3bcad3&l% PLACEHOLDERS'
+    Description: []
+    Book text:
+      - ['You can use this placeholders:', '→ Shows the player revenue:', '&5%drawonmap_revenue%', '&0→ Shows the player rating:', '&5%drawonmap_rating%', '&0→ Shows the players revenue by place:', '&5%drawonmap_revenue_top_score_<1-100>%', ]
+      - ['&0→ Shows the players name(revenue) by place:', '&5%drawonmap_revenue_top_name_<1-100>%', '&0→ Shows the players rating by place:', '&5%drawonmap_rating_top_score_<1-100>%', '&0→ Shows the players name(rating) by place:', '&5%drawonmap_rating_top_name_<1-100>%']
+      - ['&0→ Shows the players who are editing now by place:', '&5%drawonmap_who_is_editing_<1-100>%']
+  30:
+    Title: '&l#(ffec00)█ COLORS#(ff9300)'
+    Description: []
+    Book text:
+      - ['→ You can only use only 200 &5HEX Colors&0.', '→ Just type in Google and it will give you a palette with all the colors.', '→ The drawing menu &5/draw&0 provides all possible shades of colors.', '→ You will need to enter the command &5/draw color #YOUR_HEX_COLOR']
+  31:
+    Title: '&l#(00e4ff)✔ PUBLISH A DRAFT#(1770be)'
+    Description: []
+    Book text:
+      - ['→ In order for the entire server to see your work, you need to publish a draft.', '→ Any draft, if you do not have access rights, goes through moderation.', '→ But still, before this, you need to specify 5 parameters:', '&5●&0 Name of the painting']
+      - ['&5●&0 Collection (if you are creating a series of works)', '&5●&0 Price', '&5●&0 Stock',  '&5●&0 Whether the author will be able to edit it.']
+  32:
+    Title: '&l#(a6b089)▒ CANVAS SIZES#(a29651)'
+    Description: []
+    Book text:
+      - ['→ The size of the picture is limited by the size of the Minecraft map.', '→ This value is 128 by 128 pixels.', '→ If you draw on an easel, the dimensions are limited by the config settings.']
+  33:
+    Title: '&l#(d519c7)回 PICTURE PLACEMENT#(d51958)'
+    Description: []
+    Book text:
+      - ['&0→ We can post the picture in your hand on the wall, also by UUID and link!', '&0→ You can see the commands by entering &5/draw help', '&0→ Paintings larger than 128 by 128 will occupy several blocks!']
+  39:
+    Title: '&c&l! RESTRICTIONS !'
+    Description: []
+    Book text:
+      - ['&c→&0 You cant copy a purchased painting!', '&c→&0 You cant import a purchased painting!', '&c→&0 You cant draw obscene/Nazi/racist paintings!', '&c→&0 You cant draw if a certain number of players are already drawing, so as not to overload the server!', '&c→&0 You cant have more than 5 drafts!']
+      - ['&c→&0 You cant have many works in your collection and purchased works!', '&c→&0 The easel size is limited by its height and width.', '&2→&0 Respect the server you play on!']
+  40:
+    Title: '&l#(dee638)⊙ PLAYER SETTINGS#(c1ca00)'
+    Description: []
+    Book text:
+      - ['&0→ You can make the process of finding colors easier and set the starting parameters!', '&0→ You can give a HEX name to the color to make it easier to enter the color:', '&5/draw colors set #HEX_COLOR <name>',]
+      - ['&0→ Remove a color from the palette:', '&5/draw colors remove <name>', '&0→ Clear your palette:', '&5/draw colors clear', '&0→ Set the color of the cursor with which you will start drawing:', '&5/draw default color #HEX_COLOR']
+      - ['&0→ Set the cursor size with which you will start drawing:', '&5/draw default cursor <size>', '&0→ Set the background color with which you will start drawing:', '&5/draw default background #HEX_COLOR']
+  41:
+    Title: '&l#(1935d5)▼ DOWNLOAD IMAGE [DISCORD]#(5819d5)'
+    Description: []
+    Book text:
+      - ['&0→ You can download a painting from the game and get it as an image via Discord!', '&0→ You need to have a map in hand, or know its UUID!', '&0→ Download a map in hand:', '&5/draw discord', '&0→ Download map by UUID:', '&5/draw discord <UUID>']
+
+
+# ╔════════════════════════════════════════╗
+# ║                DRAFT GUI               ║
+# ╚════════════════════════════════════════╝
+
+Draft GUI title: '            &5&l[ DRAFTS ]'
+Draft GUI delete all drafts title: '&c&l✖ DELETE ALL ✖'
+Draft GUI delete all drafts description: []
+Draft GUI default name: '&l#(a7bfef)◆ DRAFT ◆ %number%#(8c89d1)'
+Draft GUI default lore:
+  - '&8Last edit: &7%edit date% &b[%edit time%]'
+  - '&8Creation date: &7%creation date% &b[%creation time%]'
+
+
+# ╔════════════════════════════════════════╗
+# ║             EDIT DRAFT GUI             ║
+# ╚════════════════════════════════════════╝
+
+Edit draft GUI title: '          &5&l[ EDIT DRAFT ]'
+Edit draft GUI painting title: '&l#(a7bfef)◆ DRAFT ◆ %number%#(8c89d1)'
+Edit draft GUI painting description:
+  - '&8Last edit: &7%edit date% &b[%edit time%]'
+  - '&8Creation date: &7%creation date% &b[%creation time%]'
+Edit draft GUI edit the draft title: '&l#(9cc8e9)✥ EDIT THE DRAFT ✥#(3ea3ee)'
+Edit draft GUI edit the draft description:
+  - '&b🌊 &7Click to start editing this map.'
+  - '&7Dont forget to save after changes.'
+Edit draft GUI publish the draft title: '&l#(ec85ff)▲ PUBLISH THE DRAFT ▲#(ff85d6)'
+Edit draft GUI publish the draft description:
+  - '&b🌊 &7Click to publish the paintitng to the collection.'
+  - '&7If you have exceeded the limit of pictures,'
+  - '&7you will not be able to upload and you will need'
+  - '&7to delete the old ones.'
+  - '&b🌊 &7All pictures are moderated before publication,'
+  - '&7if you do not have right permission.'
+Edit draft GUI delete title: '&c&l✖ DELETE ✖'
+Edit draft GUI delete description:
+  - '&b🌊 &7Click to delete this draft. You will be'
+  - '&7taken to the menu of all drafts.'
+Edit draft GUI start over title: '&l#(96f49c)◯ START OVER ◯#(0fcc7c)'
+Edit draft GUI start over description:
+  - '&b🌊 &7Click to clear the painting and begin editing it immediately.'
+
+
+# ╔════════════════════════════════════════╗
+# ║            PUBLISH DRAFT GUI           ║
+# ╚════════════════════════════════════════╝
+
+Publish draft GUI title: '       &5&l[ PUBLISH DRAFT ]'
+Publish draft GUI how many will be in stock title: '&l#(b09a46)■ STOCK ■#(cba516)'
+Publish draft GUI how many will be in stock description:
+  - '&b🌊 &7You can indicate how many paintings will be on sale.'
+  - '&7You will not be able to change it in the future!'
+  - '&a• 0 &7 - Will not be available for purchase.'
+  - '&e• 99 &7 - There will be 99 pieces on sale.'
+  - '&c• -1 &7 - There will be an endless supply for sale.'
+Publish draft GUI price title: '&6⛃ &e&lPRICE&r &6⛃'
+Publish draft GUI price description:
+  - '&b🌊 &7Indicate the price for which anyone can buy'
+  - '&7the painting and then receive it in their hands.'
+Publish draft GUI name title: '&b☻ &l#(77f0e5)DISPLAY NAME#(49c5ff)&r &b☻'
+Publish draft GUI name description:
+  - '&b🌊 &7Indicate the name that will be given to this painting.'
+  - '&7It will appear in the collections menu.'
+Publish draft GUI collection title: '&l#(ff49b7)≡ COLLECTION ≡#(dc01ff)'
+Publish draft GUI collection description:
+  - '&b🌊 &7You can specify a collection if, for example, you are'
+  - '&7creating a line of paintings that are similar in style!'
+Publish draft GUI editable title: '&a✔ &l#(aeff89)EDITABLE#(efff89)&r &c✖'
+Publish draft GUI editable description:
+  - '&b🌊 &atrue&7/&cfalse'
+  - '&b🌊 &7Will it be possible to edit the painting after release.'
+Publish draft GUI for catalog title: '&l#(ebac38)▣ CATALOG ▣#(ad7000)'
+Publish draft GUI for catalog description:
+  - '&b🌊 &7Select a category if you want to add an item to the catalog!'
+  - '&b🌊 &7Otherwise, the item will be added to the collection!'
+Publish draft GUI publish title: '&a✔ &l#(aeff89)PUBLISH#(efff89)&r &c✖'
+Publish draft GUI publish description:
+  - '&b🌊 &7Your picture will be sent for moderation. At this time,'
+  - '&7it will not be visible to anyone.'
+  - '&b🌊 &7It can be rejected or accepted.'
+
+
+# ╔════════════════════════════════════════╗
+# ║             COLLECTION GUI             ║
+# ╚════════════════════════════════════════╝
+
+Collection GUI title: '         &5&l[ COLLECTION ]'
+Collection GUI default slot name: '#(00d8ff)%name%#(ff36d1)'
+Collection GUI default slot description:
+  - '&d● &7Collection: &d%collection%'
+  - '&d● &7Painter: &b%painter%'
+  - '&d● &7Editable: &d%editable%'
+  - '&d● &7Stock: &d%stock%'
+  - '&d● &7Price: &d%price%'
+  - ' '
+  - '&8Created: &7%date% &f%time%'
+Collection GUI previous page title: '&c⏪ &lPREVIOUS'
+Collection GUI previous page description: []
+Collection GUI next page title: '&a&lNEXT&r &a⏩'
+Collection GUI next page description: []
+Collection GUI page names:
+  1: "&5&l1 PAGE"
+  2: "&5&l2 PAGE"
+  3: "&5&l3 PAGE"
+  4: "&5&l4 PAGE"
+  5: "&5&l5 PAGE"
+  6: "&5&l6 PAGE"
+  7: "&5&l7 PAGE"
+  8: "&5&l8 PAGE"
+  9: "&5&l9 PAGE"
+  10: "&5&l10 PAGE"
+  11: "&5&l11 PAGE"
+  12: "&5&l12 PAGE"
+  13: "&5&l13 PAGE"
+  14: "&5&l14 PAGE"
+  15: "&5&l15 PAGE"
+  16: "&5&l16 PAGE"
+  17: "&5&l17 PAGE"
+  18: "&5&l18 PAGE"
+  19: "&5&l19 PAGE"
+Collection GUI sort by rating title: '&a✪ &l#(89ffd9)SORT BY RATING#(3ce331)'
+Collection GUI sort by rating description: []
+Collection GUI shuffle title: '&e🌊 &lSHUFFLE'
+Collection GUI shuffle description: []
+Collection GUI sort by date title: '&b⏳ &l#(77e5f0)SORT BY DATE#(19b4c3)'
+Collection GUI sort by date description: []
+
+
+# ╔════════════════════════════════════════╗
+# ║           COLLECTION ITEM GUI          ║
+# ╚════════════════════════════════════════╝
+
+Collection item GUI title: '  &5&l[ COLLECTION PAINTING ]'
+Collection item GUI painting title: '#(00d8ff)%name%#(ff36d1)'
+Collection item GUI painting description:
+  - '&d● &7Collection: &d%collection%'
+  - '&d● &7Painter: &b%painter%'
+  - '&d● &7Editable: &d%editable%'
+  - '&d● &7Stock: &d%stock%'
+  - '&d● &7Price: &d%price%'
+  - ' '
+  - '&8Created: &7%date% &f%time%'
+Collection item GUI move to draft title: '&l#(ffa600)▲ MOVE TO DRAFT ▲#(ff7400)'
+Collection item GUI move to draft description:
+  - '&b🌊 &7Send the picture for revision. It will go into'
+  - '&7your drafts and from there you can draw in it.'
+  - '&7If you dont have space in your drafts, you wont be able to edit it.'
+Collection item GUI download title: '&l#(15f987)▼ DOWNLOAD ▼#(07c063)'
+Collection item GUI download description:
+  - '&b🌊 &7You will be able to receive the painting in your hands.'
+  - '&7After this it will disappear from your download list.'
+Collection item GUI delete title: '&c&l✖ DELETE ✖'
+Collection item GUI delete description:
+  - '&b🌊 &7After deleting an item you will be redirected to the main menu.'
+  - '&7Users who bought a painting will be able to take it from the list'
+  - '&7of purchased ones.'
+Collection item GUI how many in stock title: '&l#(b09a46)■ STOCK ■#(cba516)'
+Collection item GUI how many in stock description:
+  - '&7Stock: &e%stock%'
+Collection item GUI like title: '&a☻ &lLIKE'
+Collection item GUI like description: []
+Collection item GUI dislike title: '&c☹ &lDISLIKE'
+Collection item GUI dislike description: []
+Collection item GUI buy title: '&6⛨ &lBUY&r &f- &e%price%'
+Collection item GUI buy description: []
+
+
+# ╔════════════════════════════════════════╗
+# ║               CATALOG GUI              ║
+# ╚════════════════════════════════════════╝
+
+Catalog GUI title: '           &5&l[ CATALOG ]'
+Catalog GUI previous page title: '&c⏪ &lPREVIOUS'
+Catalog GUI previous page description: []
+Catalog GUI next page title: '&a&lNEXT&r &a⏩'
+Catalog GUI next page description: []
+Catalog GUI page names:
+  1: "&5&l1 PAGE"
+  2: "&5&l2 PAGE"
+
+
+# ╔════════════════════════════════════════╗
+# ║            CATALOG ITEM GUI            ║
+# ╚════════════════════════════════════════╝
+
+Catalog item GUI title: '             &5&l[ ITEMS ]'
+Catalog item GUI painting title: '#(00d8ff)%name%#(ff36d1)'
+Catalog item GUI painting description:
+  - '&d● &7Price: &d%price%'
+  - '&7Right click to preview...'
+Catalog item GUI previous page title: '&c⏪ &lPREVIOUS'
+Catalog item GUI previous page description: []
+Catalog item GUI next page title: '&a&lNEXT&r &a⏩'
+Catalog item GUI next page description: []
+Catalog item GUI page names:
+  1: "&5&l1 PAGE"
+  2: "&5&l2 PAGE"
+  3: "&5&l3 PAGE"
+  4: "&5&l4 PAGE"
+  5: "&5&l5 PAGE"
+  6: "&5&l6 PAGE"
+  7: "&5&l7 PAGE"
+  8: "&5&l8 PAGE"
+  9: "&5&l9 PAGE"
+  10: "&5&l10 PAGE"
+  11: "&5&l11 PAGE"
+  12: "&5&l12 PAGE"
+  13: "&5&l13 PAGE"
+  14: "&5&l14 PAGE"
+  15: "&5&l15 PAGE"
+  16: "&5&l16 PAGE"
+  17: "&5&l17 PAGE"
+  18: "&5&l18 PAGE"
+  19: "&5&l19 PAGE"
+
+
+# ╔════════════════════════════════════════╗
+# ║             MODERATION GUI             ║
+# ╚════════════════════════════════════════╝
+
+Moderation GUI title: '         &5&l[ MODERATION ]'
+Moderation GUI default slot name: '#(00d8ff)%name%#(ff36d1)'
+Moderation GUI default slot description:
+  - '&d● &7Collection: &d%collection%'
+  - '&d● &7Painter: &b%painter%'
+  - '&d● &7Editable: &d%editable%'
+  - '&d● &7Stock: &d%stock%'
+  - '&d● &7Price: &d%price%'
+  - '&d● &7Catalog: &d%category%'
+  - '&8⌚ Created: &7%date% &f%time%'
+  - ' '
+  - '&e☞ &lLEFT CLICK&r &f- to view the painting.'
+  - '&a☞ &lRIGHT CLICK&r &f- to accept the painting.'
+  - '&c☞ &lSHIFT + CLICK&r &f- to reject the painting.'
+Moderation GUI previous page title: '&c⏪ &lPREVIOUS'
+Moderation GUI previous page description: []
+Moderation GUI next page title: '&a&lNEXT&r &a⏩'
+Moderation GUI next page description: []
+Moderation GUI page names:
+  1: "&5&l1 PAGE"
+  2: "&5&l2 PAGE"
+
+
+# ╔════════════════════════════════════════╗
+# ║              DOWNLOADS GUI             ║
+# ╚════════════════════════════════════════╝
+
+Downloads GUI title: '          &5&l[ DOWNLOADS ]'
+Downloads GUI previous page title: '&c⏪ &lPREVIOUS'
+Downloads GUI previous page description: []
+Downloads GUI next page title: '&a&lNEXT&r &a⏩'
+Downloads GUI next page description: []
+Downloads GUI page names:
+  1: "&5&l1 PAGE"
+  2: "&5&l2 PAGE"
+
+
+# ╔════════════════════════════════════════╗
+# ║            DRAWING MAIN GUI            ║
+# ╚════════════════════════════════════════╝
+
+Drawing main GUI title: '       &5&l回  &5&lDRAW ON MAP&r  &5&l回'
+Drawing main GUI save title: '&a&l✚ SAVE'
+Drawing main GUI save description:
+  - '&b🌊 &7If you are done editing the painting,'
+  - '&7you can save it and it will go into your drafts!'
+Drawing main GUI cancel title: '&c&l✖ CANCEL'
+Drawing main GUI cancel description:
+  - '&b🌊 &7If you want not to save changes and cancel further editing.'
+Drawing main GUI cursor size title: '#29b4ff♂ &lCURSOR SIZE'
+Drawing main GUI cursor size description:
+  - '&b🌊 &7You can change the cursor size.'
+  - '&7This affects the size of the pencil, line and etc!'
+Drawing main GUI cursor color title: '#29b4ff♂ &lCURSOR COLOR'
+Drawing main GUI cursor color description:
+  - '&b🌊 &7You can change the cursor color.'
+  - '&7This affects the size of the pencil, line and etc!'
+Drawing main GUI background color title: '#29b4ff&l■ BACKGROUND COLOR'
+Drawing main GUI background color description:
+  - '&b🌊 &7You can change the background color.'
+Drawing main GUI roll back title: '#29b4ff&l◀◀ ROLL BACK'
+Drawing main GUI roll back description:
+  - '&b🌊 &7You can rollback previous actions.'
+  - '&7Valid for a limited number of times!'
+Drawing main GUI pencil title: '&l#(00d8ff)[TOOL]#(ff36d1) #db5f39&lPENCIL'
+Drawing main GUI pencil description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI line title: '&l#(00d8ff)[TOOL]#(ff36d1) &b&lLINE'
+Drawing main GUI line description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI eraser title: '&l#(00d8ff)[TOOL]#(ff36d1) &f&lERASER'
+Drawing main GUI eraser description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI fill title: '&l#(00d8ff)[TOOL]#(ff36d1) #d994eb&lFILL'
+Drawing main GUI fill description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI selection title: '&l#(00d8ff)[TOOL]#(ff36d1) #1b9e3c&lSELECTION'
+Drawing main GUI selection description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI shape square title: '&l#(00d8ff)[TOOL]#(ff36d1) #4c57cf&lSQUARE'
+Drawing main GUI shape square description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI shape filled square title: '&l#(00d8ff)[TOOL]#(ff36d1) #4c57cf&lFILLED SQUARE'
+Drawing main GUI shape filled square description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI shape circle title: '&l#(00d8ff)[TOOL]#(ff36d1) #4ccf6b&lCIRCLE'
+Drawing main GUI shape circle description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI shape filled circle title: '&l#(00d8ff)[TOOL]#(ff36d1) #0c945b&lFILLED CIRCLE'
+Drawing main GUI shape filled circle description:
+  - '&b🌊 &7Hold #aa80ff&lRIGHT CLICK&r &7and press #bf80ff&lW #80ffbf&lA #ff80c3&lS #fff280&lD'
+Drawing main GUI text title: '&l#(00d8ff)[TOOL]#(ff36d1) #ff9f30&lTEXT'
+Drawing main GUI text description:
+  - '&b🌊 &7Enter text in chat and press #aa80ff&lENTER'
+
+
+# ╔════════════════════════════════════════╗
+# ║        DRAWING CURSOR SIZES GUI        ║
+# ╚════════════════════════════════════════╝
+
+Drawing cursor sizes GUI title: '        &5&l♂ CURSOR SIZE ♂'
+
+
+# ╔════════════════════════════════════════╗
+# ║          DRAWING COLORS GUI            ║
+# ╚════════════════════════════════════════╝
+
+Drawing colors GUI title: '    &5&l☽ DRAWING COLORS ☽'
+Drawing colors GUI previous page title: '&c⏪ &lPREVIOUS'
+Drawing colors GUI previous page description: []
+Drawing colors GUI next page title: '&a&lNEXT&r &a⏩'
+Drawing colors GUI next page description: []
+Drawing colors GUI page names:
+  1: "&5&l1 PAGE"
+  2: "&5&l2 PAGE"
+  3: "&5&l3 PAGE"
+  4: "&5&l4 PAGE"
+  5: "&5&l5 PAGE"
+  6: "&5&l6 PAGE"
+  7: "&5&l7 PAGE"
+  8: "&5&l8 PAGE"
+  9: "&5&l9 PAGE"
+  10: "&5&l10 PAGE"
+
+
+# ╔════════════════════════════════════════╗
+# ║               ANVIL GUI                ║
+# ╚════════════════════════════════════════╝
+
+Anvil GUI title: ' '
+Anvil GUI accept button title: 'Enter the value!'
+Anvil GUI accept button description: []
+
+
+# ╔════════════════════════════════════════╗
+# ║                EASEL GUI               ║
+# ╚════════════════════════════════════════╝
+
+Easel GUI title: '             &5&l[ EASEL ]'
+Easel GUI start drawing title: '&a&l✔ START DRAWING'
+Easel GUI start drawing description:
+  - '&b🌊 &7Click to finish arranging and start drawing!'
+Easel GUI cancel drawing title: '&c&l✖ CANCEL'
+Easel GUI cancel drawing description:
+  - '&b🌊 &7If you want to cancel drawing.'
+
+
+# ╔════════════════════════════════════════╗
+# ║             HELP MESSAGES              ║
+# ╚════════════════════════════════════════╝
+
+Wrong command: '&l#(00d8ff)[DRAW]#(ff00c5)&r &f&lPLUGIN COMMANDS: &r#00D8FF/draw help'
+Help title: '&l#(00d8ff)[DRAW]#(ff00c5)&r &f&lDRAW ON MAP PLUGIN - #00D8FF&l%version%'
+Help lines 1:
+  - '&d➩ &fOpen main menu/drawing menu:'
+  - '#00D8FF/draw'
+  - '&d➩ &fStart editing new painting:'
+  - '#00D8FF/draw start'
+  - '&d➩ &fEdit painting/map in main hand:'
+  - '#00D8FF/draw edit image'
+  - '&d➩ &fEdit image by url:'
+  - '#00D8FF/draw edit url <url>'
+  - '&d➩ &fSave the edited picture:'
+  - '#00D8FF/draw save'
+  - '&d➩ &fSave the edited picture to your hands:'
+  - '#00D8FF/draw save inv'
+  - '&d➩ &fDecline the edited picture:'
+  - '#00D8FF/draw cancel'
+  - '&d➩ &fSet cursor size:'
+  - '#00D8FF/draw cursor <1-10>'
+  - '&d➩ &fSet cursor color:'
+  - '#00D8FF/draw color #HEX_COLOR'
+  - '&d➩ &fSet background color:'
+  - '#00D8FF/draw background #HEX_COLOR'
+  - '&d➩ &fChange font:'
+  - '#00D8FF/draw font <font name>'
+  - '&fPage: #00d8ff1&f/#ff00c56'
+Help lines 2:
+  - '&d➩ &fChange tool to pencil:'
+  - '#00D8FF/draw pencil'
+  - '&d➩ &fChange tool to line:'
+  - '#00D8FF/draw line'
+  - '&d➩ &fChange tool to fill:'
+  - '#00D8FF/draw fill'
+  - '&d➩ &fChange tool to selection:'
+  - '#00D8FF/draw selection'
+  - '&d➩ &fChange tool to eraser:'
+  - '#00D8FF/draw eraser'
+  - '&d➩ &fChange tool to square:'
+  - '#00D8FF/draw square'
+  - '&d➩ &fChange tool to filled square:'
+  - '#00D8FF/draw filled_square'
+  - '&d➩ &fChange tool to circle:'
+  - '#00D8FF/draw circle'
+  - '&d➩ &fChange tool to filled circle:'
+  - '#00D8FF/draw filled_circle'
+  - '&d➩ &fChange tool to text:'
+  - '#00D8FF/draw text'
+  - '&fPage: #00d8ff2&f/#ff00c56'
+Help lines 3:
+  - '&d➩ &fStart drawing on the wall:'
+  - '#00D8FF/draw easel start'
+  - '&d➩ &fStart drawing:'
+  - '#00D8FF/draw easel draw'
+  - '&d➩ &fSave the painting:'
+  - '#00D8FF/draw easel save'
+  - '&d➩ &fSave the painting to your hands:'
+  - '#00D8FF/draw easel save inv'
+  - '&d➩ &fCancel the painting:'
+  - '#00D8FF/draw easel cancel'
+  - '&fPage: #00d8ff3&f/#ff00c56'
+Help lines 4:
+  - '&d➩ &fSet a color name for easy searching:'
+  - '#00D8FF/draw colors set #HEX_COLOR <name>'
+  - '&d➩ &fRemove color from your palette:'
+  - '#00D8FF/draw colors remove <name>'
+  - '&d➩ &fRemove all colors from your palette:'
+  - '#00D8FF/draw colors clear'
+  - '&d➩ &fSet initial color to the cursor:'
+  - '#00D8FF/draw default color #HEX_COLOR'
+  - '&d➩ &fSet initial size to the cursor:'
+  - '#00D8FF/draw default cursor <1-15>'
+  - '&d➩ &fSet initial color to the background:'
+  - '#00D8FF/draw default background #HEX_COLOR'
+  - '&fPage: #00d8ff4&f/#ff00c56'
+Help lines 5:
+  - '&d➩ &fUpload the map in your hands to discord:'
+  - '#00D8FF/draw discord'
+  - '&d➩ &fUpload the map to discord by painting UUID:'
+  - '#00D8FF/draw discord <painting UUID>'
+  - '&d➩ &fPlace painting on a wall from your hand:'
+  - '#00D8FF/draw place image'
+  - '&d➩ &fPlace painting on a wall by UUID:'
+  - '#00D8FF/draw place image <uuid>'
+  - '&d➩ &fPlace image on a wall by URL:'
+  - '#00D8FF/draw place url <url>'
+  - '&d➩ &fDelete image from a wall by UUID:'
+  - '#00D8FF/draw place delete <uuid>'
+  - '&d➩ &fReload the plugin:'
+  - '#00D8FF/draw reload'
+  - '&d➩ &fAll plugin information:'
+  - '#00D8FF/draw help <1-4>'
+  - '&fPage: #00d8ff5&f/#ff00c56'
+Help lines 6:
+  - '&d➩ &fLoad all .ttf files:'
+  - '#00D8FF/draw fonts load'
+  - '&d➩ &fDelete font by name:'
+  - '#00D8FF/draw fonts delete <font name>'
+  - '&fPage: #00d8ff6&f/#ff00c56'
+#oVa3kkbpN3aR12cIJ0N5IzMBRFZ4NWVOhEcW50Uwx2V3RGVTNWWOVlSZZEc1ckWzJVMx5GO

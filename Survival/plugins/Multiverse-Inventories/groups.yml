@@ -8,5 +8,7 @@ groups:
     - world
     - world_the_end
     - world_nether
+    - pvp
+    - mina
     shares:
     - all

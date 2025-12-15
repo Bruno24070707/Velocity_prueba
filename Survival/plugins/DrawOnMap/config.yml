@@ -1,0 +1,1078 @@
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                                                                                    ║
+# ║                    ██████╗░██████╗░░█████╗░░██╗░░░░░░░██╗                          ║
+# ║                    ██╔══██╗██╔══██╗██╔══██╗░██║░░██╗░░██║                          ║
+# ║                    ██║░░██║██████╔╝███████║░╚██╗████╗██╔╝                          ║
+# ║                    ██║░░██║██╔══██╗██╔══██║░░████╔═████║░                          ║
+# ║                    ██████╔╝██║░░██║██║░░██║░░╚██╔╝░╚██╔╝░                          ║
+# ║                    ╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░                          ║
+# ║                                                                                    ║
+# ║                                                                                    ║
+# ║               ░█████╗░███╗░░██╗    ███╗░░░███╗░█████╗░██████╗░                     ║
+# ║               ██╔══██╗████╗░██║    ████╗░████║██╔══██╗██╔══██╗                     ║
+# ║               ██║░░██║██╔██╗██║    ██╔████╔██║███████║██████╔╝                     ║
+# ║               ██║░░██║██║╚████║    ██║╚██╔╝██║██╔══██║██╔═══╝░                     ║
+# ║               ╚█████╔╝██║░╚███║    ██║░╚═╝░██║██║░░██║██║░░░░░                     ║
+# ║               ░╚════╝░╚═╝░░╚══╝    ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░░░░                     ║
+# ║                                                                                    ║
+# ║  HELLO, THIS IS A PREMIUM PLUGIN FOR MINECRAFT!                                    ║
+# ║  Author - MyShimado. For all questions in the discord.                             ║
+# ║                                                                                    ║
+# ║  You can find it here:                                                             ║
+# ║  Spigot (find on my profile): https://www.spigotmc.org/members/myshimado.1240004/  ║
+# ║  Polymart: https://polymart.org/resource/drawonmap-draw-directly-on-map.6525       ║
+# ║  BuildByBit: https://builtbybit.com/resources/drawonmap-paint-on-the-map.51809/    ║
+# ║                                                                                    ║
+# ║             !!! TITLE SHOULD BE UNIQUE TO EACH GUI, AND NOT ' ' !!!                ║
+# ║       All numbers, except slots and model data should be with dot -> 10.0          ║
+# ║                                                                                    ║
+# ║                   DISCORD: https://discord.com/invite/ahDTQRX6Fb                   ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+# ╔═════════════════════════════════════════╗
+# ║  DO NOT CHANGE! THIS IS UPDATE CONTROL  ║
+# ╚═════════════════════════════════════════╝
+Version: Picasso v2.6
+
+
+# ╔═════════════════════════════════════════╗
+# ║         BASIC GENERAL SETTINGS          ║
+# ║  Languages: en, ru, de                  ║
+# ╚═════════════════════════════════════════╝
+
+Language: 'en'
+PAPI enable: true
+
+# ➥ From 1307500 to 1,307,500
+Numbers format enable: true
+
+# ➥ After activation and restart, this config file will be REINSTALLED!!!
+#   The options will be default, but there will be textures if you have my resource pack installed!
+Developer resource pack enable: false
+
+# ➥ If you need a drawing mechanism without drafts, a catalog of all paintings, import, etc., you can disable this.
+#   In disabled, the paintings will fall into your hands after editing.
+GUI collections and drafts enable: true
+
+
+# ╔═════════════════════════════════════════╗
+# ║              WORLD OPTIONS              ║
+# ╚═════════════════════════════════════════╝
+
+# ➥ Worlds in which you can edit pictures.
+Active worlds: []
+
+
+# ╔═════════════════════════════════════════╗
+# ║             ECONOMY OPTIONS             ║
+# ║       ONLY 1 OPTION CAN BE ENABLED      ║
+# ╚═════════════════════════════════════════╝
+
+Vault enable: true
+PlayerPoints enable: false
+VotingPlugin enable: false
+
+
+# ╔═════════════════════════════════════════╗
+# ║             DRAWING OPTIONS             ║
+# ╚═════════════════════════════════════════╝
+
+# ➥ An action that can be rolled back to the Q button. For example, you drew a line and want to cancel it.
+How many actions does the map remember: 15
+
+# ➥ Delay in cursor movement. 2 - Max speed, 20 - the lowest.
+Cursor movement delay: 2
+
+# ➥ If the option is enabled and the cursor size is, for example, 10px, then the cursor will move not 10px to the side, but 1px.
+Move the cursor one pixel at a time: false
+Move the cursor with SHIFT on N pixels: 10
+
+# ➥ Invisible color (png) - TRANSPARENT
+Maximum cursor size: 16
+Default canvas background color: '#FFFFFF'
+Default cursor color: '#FF0000'
+Default cursor size: 1
+
+# ➥ Which characters will be processed by the loaded font. Will only work on fonts added later.
+#   To apply to existing fonts - delete .yml files in the Fonts folder and load them again.
+Font symbols: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+# ➥ All possible font sizes to use
+Font min size: 8
+Font max size: 24
+
+# ➥ Easel settings. If you want to draw by placing the map on the wall.
+#   You can place several maps on the wall at once, forming a rectangular shape. The material is responsible for the item you will be using to set the size.
+Easel material: ['PAPER', 0]
+Easel max height: 4
+Easel max width: 6
+
+
+# ╔═════════════════════════════════════════╗
+# ║     ANOTHER DRAWINGS & GUI SETTINGS     ║
+# ╚═════════════════════════════════════════╝
+
+Disable copying of paintings: true
+Activate flight in drawing mode: true
+Activate invisibility in drawing mode: true
+How many paintings can be moderated at the same time: 50
+How many paintings can be in download gui: 56
+How many users can draw at the same time: 3
+How many pictures can a user have in collection: 3
+How many pictures can a user have in draft: 5
+Max price for a painting: 9999.0
+Prices for using commands and functions:
+  command-draw: 0.0
+  command-draw-start: 0.0
+  command-draw-easel-start: 0.0
+  command-draw-save: 0.0
+  command-draw-discord: 0.0
+  command-draw-edit-image: 0.0
+  command-draw-edit-url: 0.0
+  command-draw-place-image: 0.0
+  command-draw-place-url: 0.0
+  import-image: 0.0
+  publish-draft: 0.0
+
+# ➥ When moderation is disabled, all paintings will immediately go into the collection.
+Moderation enable: true
+
+
+# ╔═════════════════════════════════════════╗
+# ║             CATALOG OPTIONS             ║
+# ╚═════════════════════════════════════════╝
+
+# ➥ Necessary for quick decoration. For example, wallpapering.
+Spawn an invisible frame when clicking a picture from a catalog: true
+Break the picture when a block breaks: true
+
+
+# ╔═════════════════════════════════════════╗
+# ║            DISCORD SETTINGS             ║
+# ╚═════════════════════════════════════════╝
+
+# ➥ You can use 2 plugins to choose from: DiscordSRV or DiscordSynthesis.
+#    Name of channel from DiscordSRV config. Create one more than "global", for example "drawonmap"
+Use DiscordSRV: false
+DiscordSRV channel: 'drawonmap'
+
+# ➥ You can use 2 plugins to choose from: DiscordSRV or DiscordSynthesis.
+#    Channel types: CHATSYNC, COMMANDLOG, SERVERSTATUS, CONSOLE, LEAVEJOIN, DEATHLOG, REPORTS, BROADCAST
+Use DiscordSynthesis: false
+DiscordSynthesis channel type: 'BROADCAST'
+
+Who is editing now enable: true
+Send picture as file enable: true
+Send picture delay (in seconds): 30
+
+
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                             ===> MAIN GUI <===                                     ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Main GUI size: 6
+Main GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+  2: ['PINK_STAINED_GLASS_PANE', 0]
+  6: ['PINK_STAINED_GLASS_PANE', 0]
+  18: ['PINK_STAINED_GLASS_PANE', 0]
+  27: ['PINK_STAINED_GLASS_PANE', 0]
+  26: ['PINK_STAINED_GLASS_PANE', 0]
+  35: ['PINK_STAINED_GLASS_PANE', 0]
+  47: ['PINK_STAINED_GLASS_PANE', 0]
+  51: ['PINK_STAINED_GLASS_PANE', 0]
+Main GUI collection slot: 20
+Main GUI collection material: ['BOOKSHELF', 0]
+Main GUI import slot: 32
+Main GUI import material: ['HOPPER', 0]
+Main GUI draft slot: 22
+Main GUI draft material: ['BARREL', 0]
+Main GUI rating slot: 48
+Main GUI rating material: ['ENCHANTING_TABLE', 0]
+Main GUI manuals slot: 49
+Main GUI manuals material: ['BOOK', 0]
+Main GUI new painting slot: 30
+Main GUI new painting material: ['MAP', 0]
+Main GUI revenue slot: 50
+Main GUI revenue material: ['SUNFLOWER', 0]
+Main GUI downloads slot: 24
+Main GUI downloads material: ['CHEST', 0]
+Main GUI moderation slot: 23
+Main GUI moderation material: ['COMPASS', 0]
+Main GUI catalog slot: 13
+Main GUI catalog material: ['275bcff2e74deed37a319a1f404e70d06a5f360cacee99c71346f38560cbd72a', 0]
+Main GUI easel slot: 31
+Main GUI easel material: ['51e8c957088402d1976544d184d197780b4525b93eea69b650852daa724c7a', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                             ===> MANUALS GUI <===                                  ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Manuals GUI size: 6
+Manuals GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Manuals GUI manual material: ['BOOK', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                             ===> DRAFT GUI <===                                    ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Draft GUI size: 6
+Draft GUI empty materials:
+  0: ['PINK_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  2: ['PURPLE_STAINED_GLASS_PANE', 0]
+  3: ['PINK_STAINED_GLASS_PANE', 0]
+  4: ['PINK_STAINED_GLASS_PANE', 0]
+  5: ['PINK_STAINED_GLASS_PANE', 0]
+  6: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PINK_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  10: ['PURPLE_STAINED_GLASS_PANE', 0]
+  13: ['PURPLE_STAINED_GLASS_PANE', 0]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  16: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  26: ['PURPLE_STAINED_GLASS_PANE', 0]
+  35: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  47: ['PURPLE_STAINED_GLASS_PANE', 0]
+  48: ['PINK_STAINED_GLASS_PANE', 0]
+  50: ['PINK_STAINED_GLASS_PANE', 0]
+  51: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Draft GUI draft material: ['FILLED_MAP', 0]
+Draft GUI delete all drafts slot: 49
+Draft GUI delete all drafts material: ['BARRIER', 0]
+Draft GUI slots for drafts: [29, 30, 31, 32, 33]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                           ===> EDIT DRAFT GUI <===                                 ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Edit draft GUI size: 6
+Edit draft GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  26: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  35: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Edit draft GUI painting slot: 20
+Edit draft GUI painting material: ['MAP', 0]
+Edit draft GUI edit the draft slot: 23
+Edit draft GUI edit the draft material: ['CRAFTING_TABLE', 0]
+Edit draft GUI publish the draft slot: 22
+Edit draft GUI publish the draft material: ['CHEST', 0]
+Edit draft GUI delete slot: 24
+Edit draft GUI delete material: ['BARRIER', 0]
+Edit draft GUI start over slot: 32
+Edit draft GUI start over material: ['CLOCK', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                          ===> PUBLISH DRAFT GUI <===                               ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Publish draft GUI size: 6
+Publish draft GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  26: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  35: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Publish draft GUI how many will be in stock slot: 20
+Publish draft GUI how many will be in stock material: ['CHEST', 0]
+Publish draft GUI default stock value: 0
+Publish draft GUI price slot: 21
+Publish draft GUI price material: ['201637d3de11451a7d42924b02b684bd504e03ca4d41670c92b54c2a30c887f', 0]
+Publish draft GUI default price value: 0.0
+Publish draft GUI name slot: 22
+Publish draft GUI name material: ['NAME_TAG', 0]
+Publish draft GUI collection slot: 23
+Publish draft GUI collection material: ['BOOKSHELF', 0]
+Publish draft GUI editable slot: 24
+Publish draft GUI editable material: ['ANVIL', 0]
+Publish draft GUI for catalog slot: 31
+Publish draft GUI for catalog material: ['CHEST', 0]
+Publish draft GUI publish slot: 49
+Publish draft GUI publish material: ['CLOCK', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                            ===> COLLECTION GUI <===                                ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Collection GUI size: 6
+Collection GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  26: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  35: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  36: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  44: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Collection GUI slots for paintings: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+Collection GUI previous page slot: 48
+Collection GUI previous page material: ['2eff7559102aa8ff9712976b62292ee45e0793c46f668916868207f399effab', 0]
+Collection GUI next page slot: 50
+Collection GUI next page material: ['f726d288a74e8ac924c58c93f5b35cacd6946a6ccfdbda85fe8acb9e3eecebdb', 0]
+Collection GUI page slot: 49
+Collection GUI page materials:
+  1: ['78a42df06fc916de110f61bd76eddbf58ed4249fce5ee51c219ec75a37b414', 0]
+  2: ['1ef134f0efa88351b837f7c087afe1b3fb36435ab7d746fa37c0ef155e4f29', 0]
+  3: ['1965e9c57c14c95c84e622e5306e1cf23bc5f1e47ac791f3d357b5ae8cded24', 0]
+  4: ['6e31837d89c264c3b54f8214ae24f89a368a92bc46df9225333ad7cd449f856', 0]
+  5: ['49357cb4664426a9ae0f9c7725ea4351dc69f15a8062c03591e26ac11bbc5a', 0]
+  6: ['b8d550717d26ae8dda55e9a0a9edc92f04a774b501a36e24c8c4e682e32c59', 0]
+  7: ['89141952aabca4987bddf208c5e15ca6a5bfce239af39584aeb5ee876d87', 0]
+  8: ['a112a392ef19ee393a14505bbdad9c1e9293a04ec3ab337e374880222e708244', 0]
+  9: ['b7277b841ef2f06e6b7631d9cfac275498f889fad94687668b251fc339a51f0', 0]
+  10: ['61cae1ab0fce04ebf5391c65f65347497cc92be73a5b8f93a16373ae438ccf5', 0]
+  11: ['6acdf8938c1b25ca1638b1896ba9dbc2ede7976c12258dd7d1267418fceeb36e', 0]
+  12: ['ad13993a1fe1f984a78bc33163198bcfb6536e74d65e42653878daa6d768184', 0]
+  13: ['395c0f482e4f5db7249e32537b57a927abef191f376fbf779502ebbbd2ac1', 0]
+  14: ['50814a67aad55b705028fd27a716ea17da23f46d329d176e36c26c8f98', 0]
+  15: ['41c5e7fc387913fc0d73dcf5a34777ea31033955d2d79623dfdcec2320f8', 0]
+  16: ['af50871d5aad448f3b24966c0f7e97a8336dfd743ad13d1e51246fbf57355', 0]
+  17: ['16c634d51c84a72ec3764c46e66022e01af5583eab58e562c514d7fcac56', 0]
+  18: ['896d1b8db9f24efe9aa5ca9ba7caba3b66edaaff738dd210e2ad6e1aa2c3f57', 0]
+  19: ['acecc87f4ac813664bf6b182d069834b6c542175ad2493367a4a3cc37d39f', 0]
+Collection GUI painting material: ['MAP', 0]
+Collection GUI sort by rating slot: 2
+Collection GUI sort by rating material: ['c91d46f1844341bc94d1f8f4519d3f7c6e2fa718b664b935661a2782a670e2', 0]
+Collection GUI shuffle slot: 4
+Collection GUI shuffle material: ['9d3841a1b85bf22bacdbe8a28e076ddc88fa869d469ac3b49b16fcb4f492b', 0]
+Collection GUI sort by date slot: 6
+Collection GUI sort by date material: ['ed68ae3150d81e4c0a9d172bd84c4ff73cdc0b87fee8ec661213468d544483', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                         ===> COLLECTION ITEM GUI <===                              ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Collection item GUI size: 6
+Collection item GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  26: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  35: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  36: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  44: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+  23: ['PURPLE_STAINED_GLASS_PANE', 0]
+Collection item GUI painting slot: 20
+Collection item GUI painting material: ['MAP', 0]
+Collection item GUI move to draft slot: 14
+Collection item GUI move to draft material: ['BARREL', 0]
+Collection item GUI download slot: 22
+Collection item GUI download material: ['HOPPER', 0]
+Collection item GUI delete slot: 24
+Collection item GUI delete material: ['BARRIER', 0]
+Collection item GUI how many in stock slot: 32
+Collection item GUI how many in stock material: ['CHEST', 0]
+Collection item GUI like slot: 14
+Collection item GUI like material: ['551c8e23ddf916cf15e69615dea1dce20e697b9bbf9f28840c42ab929745128e', 0]
+Collection item GUI dislike slot: 23
+Collection item GUI dislike material: ['e8feeca56cc0aabaac46ad4036690cdc66da3c9f2c85c371b67952fe73898f04', 0]
+Collection item GUI buy slot: 32
+Collection item GUI buy material: ['14aeab01c04f36ba887b7bda8d9c538bc9686dbbce7e3a5bb10f308c50302bc4', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                            ===> CATALOG GUI <===                                   ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Catalog GUI size: 6
+Catalog GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  26: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  35: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  36: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  44: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+
+# Page:
+#   Slot: ['Category', 'Material', Custom model data, 'Name', Lore, Enchant, Permission]
+Catalog GUI categories:
+  1:
+    10: ['Kitchen', '863bd9cbcac38b3ad435d16985fda8c5d248ec9ea47915163cfa78a381036ca8', 0, '&c&lKITCHEN', [], false, '']
+    11: ['Wallpapers', 'cb9f36ee11323efff309c68a8bae19b437c7923c9afb59241973565bffc55f99', 0, '&3&lWALLPAPERS', [], false, '']
+    12: ['Windows', '3deff0e11eef14d9349fc48a382fbb62c1bba504e6b4c19c9b6360ea72254f32', 0, '&b&lWINDOWS', [], false, '']
+    13: ['Lamps', '7eb4b34519fe15847dbea7229179feeb6ea57712d165dcc8ff6b785bb58911b0', 0, '&e&lLAMPS', [], false, '']
+    14: ['Spots', '23b683aac675ce703b3ea7bd784043b1caf7b66957d75b88fb26321695b74097', 0, '&7&lSPOTS', [], false, '']
+    15: ['Paintings', '5e44280d42db07b012eb76dee73249c86fc712e8eb14fa2b44847714bbb95f83', 0, '&d&lPAINTINGS', [], false, '']
+    16: ['Coins', '95fd67d56ffc53fb360a17879d9b5338d7332d8f129491a5e17e8d6e8aea6c3a', 0, '&6&lCOINS', [], false, '']
+    19: ['Boxes', 'fd761cc16562c88d2fbe40ad38502bc3b4a87859887dbc35f272e30d8070eeec', 0, '&e&lBOXES', [], false, '']
+    20: ['Miscellaneous', '5284a765f58328bf4dfc27d6c709526dfb7d8d9d4493de90adce4d2c02009c99', 0, '&d&lMISCELLANEOUS', [], false, '']
+
+Catalog GUI previous page slot: 48
+Catalog GUI previous page material: ['2eff7559102aa8ff9712976b62292ee45e0793c46f668916868207f399effab', 0]
+Catalog GUI next page slot: 50
+Catalog GUI next page material: ['f726d288a74e8ac924c58c93f5b35cacd6946a6ccfdbda85fe8acb9e3eecebdb', 0]
+Catalog GUI page slot: 49
+Catalog GUI page materials:
+  1: ['78a42df06fc916de110f61bd76eddbf58ed4249fce5ee51c219ec75a37b414', 0]
+  2: ['1ef134f0efa88351b837f7c087afe1b3fb36435ab7d746fa37c0ef155e4f29', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                           ===> CATALOG ITEM GUI <===                               ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Catalog item GUI size: 6
+Catalog item GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  26: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  35: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Catalog item GUI painting material: ['MAP', 0]
+Catalog item GUI slots for paintings: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+Catalog item GUI previous page slot: 48
+Catalog item GUI previous page material: ['2eff7559102aa8ff9712976b62292ee45e0793c46f668916868207f399effab', 0]
+Catalog item GUI next page slot: 50
+Catalog item GUI next page material: ['f726d288a74e8ac924c58c93f5b35cacd6946a6ccfdbda85fe8acb9e3eecebdb', 0]
+Catalog item GUI page slot: 49
+Catalog item GUI page materials:
+  1: ['78a42df06fc916de110f61bd76eddbf58ed4249fce5ee51c219ec75a37b414', 0]
+  2: ['1ef134f0efa88351b837f7c087afe1b3fb36435ab7d746fa37c0ef155e4f29', 0]
+  3: ['1965e9c57c14c95c84e622e5306e1cf23bc5f1e47ac791f3d357b5ae8cded24', 0]
+  4: ['6e31837d89c264c3b54f8214ae24f89a368a92bc46df9225333ad7cd449f856', 0]
+  5: ['49357cb4664426a9ae0f9c7725ea4351dc69f15a8062c03591e26ac11bbc5a', 0]
+  6: ['b8d550717d26ae8dda55e9a0a9edc92f04a774b501a36e24c8c4e682e32c59', 0]
+  7: ['89141952aabca4987bddf208c5e15ca6a5bfce239af39584aeb5ee876d87', 0]
+  8: ['a112a392ef19ee393a14505bbdad9c1e9293a04ec3ab337e374880222e708244', 0]
+  9: ['b7277b841ef2f06e6b7631d9cfac275498f889fad94687668b251fc339a51f0', 0]
+  10: ['61cae1ab0fce04ebf5391c65f65347497cc92be73a5b8f93a16373ae438ccf5', 0]
+  11: ['6acdf8938c1b25ca1638b1896ba9dbc2ede7976c12258dd7d1267418fceeb36e', 0]
+  12: ['ad13993a1fe1f984a78bc33163198bcfb6536e74d65e42653878daa6d768184', 0]
+  13: ['395c0f482e4f5db7249e32537b57a927abef191f376fbf779502ebbbd2ac1', 0]
+  14: ['50814a67aad55b705028fd27a716ea17da23f46d329d176e36c26c8f98', 0]
+  15: ['41c5e7fc387913fc0d73dcf5a34777ea31033955d2d79623dfdcec2320f8', 0]
+  16: ['af50871d5aad448f3b24966c0f7e97a8336dfd743ad13d1e51246fbf57355', 0]
+  17: ['16c634d51c84a72ec3764c46e66022e01af5583eab58e562c514d7fcac56', 0]
+  18: ['896d1b8db9f24efe9aa5ca9ba7caba3b66edaaff738dd210e2ad6e1aa2c3f57', 0]
+  19: ['acecc87f4ac813664bf6b182d069834b6c542175ad2493367a4a3cc37d39f', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                            ===> MODERATION GUI <===                                ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Moderation GUI size: 6
+Moderation GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  26: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  35: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Moderation GUI slots for paintings: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+Moderation GUI painting material: ['MAP', 0]
+Moderation GUI previous page slot: 48
+Moderation GUI previous page material: ['2eff7559102aa8ff9712976b62292ee45e0793c46f668916868207f399effab', 0]
+Moderation GUI next page slot: 50
+Moderation GUI next page material: ['f726d288a74e8ac924c58c93f5b35cacd6946a6ccfdbda85fe8acb9e3eecebdb', 0]
+Moderation GUI page slot: 49
+Moderation GUI page materials:
+  1: ['78a42df06fc916de110f61bd76eddbf58ed4249fce5ee51c219ec75a37b414', 0]
+  2: ['1ef134f0efa88351b837f7c087afe1b3fb36435ab7d746fa37c0ef155e4f29', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                           ===> DOWNLOADS GUI <===                                  ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Downloads GUI size: 6
+Downloads GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  26: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  35: [ 'PURPLE_STAINED_GLASS_PANE', 0 ]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Downloads GUI slots for paintings: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+Downloads GUI painting material: ['FILLED_MAP', 0]
+Downloads GUI previous page slot: 48
+Downloads GUI previous page material: ['2eff7559102aa8ff9712976b62292ee45e0793c46f668916868207f399effab', 0]
+Downloads GUI next page slot: 50
+Downloads GUI next page material: ['f726d288a74e8ac924c58c93f5b35cacd6946a6ccfdbda85fe8acb9e3eecebdb', 0]
+Downloads GUI page slot: 49
+Downloads GUI page materials:
+  1: ['78a42df06fc916de110f61bd76eddbf58ed4249fce5ee51c219ec75a37b414', 0]
+  2: ['1ef134f0efa88351b837f7c087afe1b3fb36435ab7d746fa37c0ef155e4f29', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                         ===> DRAWING MAIN GUI <===                                 ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Drawing main GUI size: 6
+Drawing main GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+  2: ['PINK_STAINED_GLASS_PANE', 0]
+  6: ['PINK_STAINED_GLASS_PANE', 0]
+  18: ['PINK_STAINED_GLASS_PANE', 0]
+  27: ['PINK_STAINED_GLASS_PANE', 0]
+  26: ['PINK_STAINED_GLASS_PANE', 0]
+  35: ['PINK_STAINED_GLASS_PANE', 0]
+  47: ['PINK_STAINED_GLASS_PANE', 0]
+  51: ['PINK_STAINED_GLASS_PANE', 0]
+Drawing main GUI save slot: 48
+Drawing main GUI save material: ['5ff31431d64587ff6ef98c0675810681f8c13bf96f51d9cb07ed7852b2ffd1', 0]
+Drawing main GUI cancel slot: 50
+Drawing main GUI cancel material: ['beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7', 0]
+Drawing main GUI cursor size slot: 15
+Drawing main GUI cursor size material: ['749c567753f7747219f568c39c081d4ddbd83c4a163018f7adf18c6f419789d', 0]
+Drawing main GUI cursor color slot: 16
+Drawing main GUI cursor color material: ['d19014e1145d410f11ba448f03e15e96f2c666cf84dcb90f15e216425ccd0514', 0]
+Drawing main GUI background color slot: 24
+Drawing main GUI background color material: ['e534d70e4486dc33012f9e745ae6fd396f4b0fe519b1e9b51c9c6d96880fc4f9', 0]
+Drawing main GUI roll back slot: 4
+Drawing main GUI roll back material: ['81050754e49764d504076cf8d53914bf1e0c714c5aacf8abcd150d44b88f879a', 0]
+Drawing main GUI pencil slot: 10
+Drawing main GUI pencil material: ['6c97d6b12af6ef1ec47423706d606ee22e10ec6df70d734053ac0c4a06734e23', 0]
+Drawing main GUI line slot: 11
+Drawing main GUI line material: ['d20175bcdefce982dc6525d9044f834b257de2fdf9d22c7c0c1e1d6b1a81247', 0]
+Drawing main GUI eraser slot: 25
+Drawing main GUI eraser material: ['1187d92c1551d4587396457c24c13bc1d2eac628ede0f7c5064919823c206b60', 0]
+Drawing main GUI fill slot: 19
+Drawing main GUI fill material: ['2fd4083a1e4493be73584eb8aaab83c7b5c330111bab09c57b37ca5d7a05b386', 0]
+Drawing main GUI selection slot: 20
+Drawing main GUI selection material: ['9c8ff2f2bcdbd713d729e4033ac8f7114cecd4e608758bc86b68838b63b3b3bd', 0]
+Drawing main GUI shape square slot: 28
+Drawing main GUI shape square material: ['9701ba519bb615726ac044240016a9fb749d8a9b0543222f5ba4cfb78a4aed7e', 0]
+Drawing main GUI shape filled square slot: 29
+Drawing main GUI shape filled square material: ['f688c4485b3452489303be7fbf08b983958e03547615e58a5a57d141b911d280', 0]
+Drawing main GUI shape circle slot: 37
+Drawing main GUI shape circle material: ['8778e1a540a471c32d5c30ea32705feaee89e89557366128059e7d26231996e', 0]
+Drawing main GUI shape filled circle slot: 38
+Drawing main GUI shape filled circle material: ['e8631aa6c91e796d8f5da5e702f5f3974a35a7586d86044175879744912c8a85', 0]
+Drawing main GUI text slot: 34
+Drawing main GUI text material: ['f1648c607a97b994c8d65bd69864194760d8f2ba418069799943eae33ecef998', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                      ===> DRAWING CURSOR SIZES GUI <===                            ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Drawing cursor sizes GUI size: 6
+Drawing cursor sizes GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: [ 'PURPLE_STAINED_GLASS_PANE', 0]
+  46: [ 'PURPLE_STAINED_GLASS_PANE', 0]
+  52: [ 'PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+Drawing cursor sizes GUI sizes slots:
+  12: [1, '78a42df06fc916de110f61bd76eddbf58ed4249fce5ee51c219ec75a37b414', 0, "&5&l1 PX"]
+  13: [2, '78a42df06fc916de110f61bd76eddbf58ed4249fce5ee51c219ec75a37b414', 0, "&5&l2 PX"]
+  14: [3, '1965e9c57c14c95c84e622e5306e1cf23bc5f1e47ac791f3d357b5ae8cded24', 0, "&5&l3 PX"]
+  20: [4, '6e31837d89c264c3b54f8214ae24f89a368a92bc46df9225333ad7cd449f856', 0, "&5&l4 PX"]
+  21: [5, '49357cb4664426a9ae0f9c7725ea4351dc69f15a8062c03591e26ac11bbc5a', 0, "&5&l5 PX"]
+  22: [6, 'b8d550717d26ae8dda55e9a0a9edc92f04a774b501a36e24c8c4e682e32c59', 0, "&5&l6 PX"]
+  23: [7, '89141952aabca4987bddf208c5e15ca6a5bfce239af39584aeb5ee876d87', 0, "&5&l7 PX"]
+  24: [8, 'a112a392ef19ee393a14505bbdad9c1e9293a04ec3ab337e374880222e708244', 0, "&5&l8 PX"]
+  29: [9, 'b7277b841ef2f06e6b7631d9cfac275498f889fad94687668b251fc339a51f0', 0, "&5&l9 PX"]
+  30: [10, '61cae1ab0fce04ebf5391c65f65347497cc92be73a5b8f93a16373ae438ccf5', 0, "&5&l10 PX"]
+  31: [11, '6acdf8938c1b25ca1638b1896ba9dbc2ede7976c12258dd7d1267418fceeb36e', 0, "&5&l11 PX"]
+  32: [12, 'ad13993a1fe1f984a78bc33163198bcfb6536e74d65e42653878daa6d768184', 0, "&5&l12 PX"]
+  33: [13, '395c0f482e4f5db7249e32537b57a927abef191f376fbf779502ebbbd2ac1', 0, "&5&l13 PX"]
+  39: [14, '50814a67aad55b705028fd27a716ea17da23f46d329d176e36c26c8f98', 0, "&5&l14 PX"]
+  40: [15, '41c5e7fc387913fc0d73dcf5a34777ea31033955d2d79623dfdcec2320f8', 0, "&5&l15 PX"]
+  41: [16, 'af50871d5aad448f3b24966c0f7e97a8336dfd743ad13d1e51246fbf57355', 0, "&5&l16 PX"]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                          ===> DRAWING COLORS GUI <===                              ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Drawing colors GUI size: 6
+Drawing colors GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: [ 'PURPLE_STAINED_GLASS_PANE', 0]
+  26: [ 'PURPLE_STAINED_GLASS_PANE', 0]
+  35: [ 'PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+# Page:
+#   Slot: ['HEX Color', 'Material', 'Display Name', Custom model data, 'Command name']
+# If command name is '' -> /draw color #5cdbd5. If command name is 'blue' -> /draw color blue
+Drawing colors GUI colors:
+  1:
+    11: ['#5cdbd5', 'BLUE_CONCRETE', '#5cdbd5█5cdbd5', 0, '']
+    12: ['#4c7f99', 'BLUE_CONCRETE', '#4c7f99█4c7f99', 0, '']
+    13: ['#4a80ff', 'BLUE_CONCRETE', '#4a80ff█4a80ff', 0, '']
+    14: ['#4040ff', 'BLUE_CONCRETE', '#4040ff█4040ff', 0, '']
+    15: ['#334cb2', 'BLUE_CONCRETE', '#334cb2█334cb2', 0, '']
+    20: ['#4fbcb7', 'BLUE_CONCRETE', '#4fbcb7█4fbcb7', 0, '']
+    21: ['#416d84', 'BLUE_CONCRETE', '#416d84█416d84', 0, '']
+    22: ['#3f6edc', 'BLUE_CONCRETE', '#3f6edc█3f6edc', 0, '']
+    23: ['#3737dc', 'BLUE_CONCRETE', '#3737dc█3737dc', 0, '']
+    24: ['#2c4199', 'BLUE_CONCRETE', '#2c4199█2c4199', 0, '']
+    29: ['#409a96', 'BLUE_CONCRETE', '#409a96█409a96', 0, '']
+    30: ['#35596c', 'BLUE_CONCRETE', '#35596c█35596c', 0, '']
+    31: ['#345ab4', 'BLUE_CONCRETE', '#345ab4█345ab4', 0, '']
+    32: ['#2d2db4', 'BLUE_CONCRETE', '#2d2db4█2d2db4', 0, '']
+    33: ['#24357d', 'BLUE_CONCRETE', '#24357d█24357d', 0, '']
+    38: ['#307370', 'BLUE_CONCRETE', '#307370█307370', 0, '']
+    39: ['#284351', 'BLUE_CONCRETE', '#284351█284351', 0, '']
+    40: ['#274387', 'BLUE_CONCRETE', '#274387█274387', 0, '']
+    41: ['#212187', 'BLUE_CONCRETE', '#212187█212187', 0, '']
+    42: ['#1b285e', 'BLUE_CONCRETE', '#1b285e█1b285e', 0, '']
+  2:
+    11: [ '#00d93a', 'LIME_CONCRETE', '#00d93a█00d93a', 0, '']
+    12: [ '#7fcc19', 'LIME_CONCRETE', '#7fcc19█7fcc19', 0, '']
+    13: [ '#7fb238', 'LIME_CONCRETE', '#7fb238█7fb238', 0, '']
+    14: [ '#677535', 'LIME_CONCRETE', '#677535█677535', 0, '']
+    15: [ '#007c00', 'LIME_CONCRETE', '#007c00█007c00', 0, '']
+    20: [ '#00bb32', 'LIME_CONCRETE', '#00bb32█00bb32', 0, '']
+    21: [ '#6db015', 'LIME_CONCRETE', '#6db015█6db015', 0, '']
+    22: [ '#6d9930', 'LIME_CONCRETE', '#6d9930█6d9930', 0, '']
+    23: [ '#58642d', 'LIME_CONCRETE', '#58642d█58642d', 0, '']
+    24: [ '#006a00', 'LIME_CONCRETE', '#006a00█006a00', 0, '']
+    29: [ '#009928', 'LIME_CONCRETE', '#009928█009928', 0, '']
+    30: [ '#599011', 'LIME_CONCRETE', '#599011█599011', 0, '']
+    31: [ '#597d27', 'LIME_CONCRETE', '#597d27█597d27', 0, '']
+    32: [ '#485225', 'LIME_CONCRETE', '#485225█485225', 0, '']
+    33: [ '#005700', 'LIME_CONCRETE', '#005700█005700', 0, '']
+    38: [ '#00721e', 'LIME_CONCRETE', '#00721e█00721e', 0, '']
+    39: [ '#436c0d', 'LIME_CONCRETE', '#436c0d█436c0d', 0, '']
+    40: [ '#435e1d', 'LIME_CONCRETE', '#435e1d█435e1d', 0, '']
+    41: [ '#363d1c', 'LIME_CONCRETE', '#363d1c█363d1c', 0, '']
+    42: [ '#004100', 'LIME_CONCRETE', '#004100█004100', 0, '']
+  3:
+    11: [ '#7fa796', 'CYAN_CONCRETE', '#7fa796█7fa796', 0, '']
+    12: [ '#3a8e8c', 'CYAN_CONCRETE', '#3a8e8c█3a8e8c', 0, '']
+    13: [ '#167e86', 'CYAN_CONCRETE', '#167e86█167e86', 0, '']
+    14: [ '#4c7f99', 'CYAN_CONCRETE', '#4c7f99█4c7f99', 0, '']
+    15: [ '#14b485', 'CYAN_CONCRETE', '#14b485█14b485', 0, '']
+    20: [ '#6d9081', 'CYAN_CONCRETE', '#6d9081█6d9081', 0, '']
+    21: [ '#327a78', 'CYAN_CONCRETE', '#327a78█327a78', 0, '']
+    22: [ '#126c73', 'CYAN_CONCRETE', '#126c73█126c73', 0, '']
+    23: [ '#416d84', 'CYAN_CONCRETE', '#416d84█416d84', 0, '']
+    24: [ '#119b72', 'CYAN_CONCRETE', '#119b72█119b72', 0, '']
+    29: [ '#597569', 'CYAN_CONCRETE', '#597569█597569', 0, '']
+    30: [ '#286462', 'CYAN_CONCRETE', '#286462█286462', 0, '']
+    31: [ '#0f585e', 'CYAN_CONCRETE', '#0f585e█0f585e', 0, '']
+    32: [ '#35596c', 'CYAN_CONCRETE', '#35596c█35596c', 0, '']
+    33: [ '#0e7f5d', 'CYAN_CONCRETE', '#0e7f5d█0e7f5d', 0, '']
+    38: [ '#43584f', 'CYAN_CONCRETE', '#43584f█43584f', 0, '']
+    39: [ '#1e4b4a', 'CYAN_CONCRETE', '#1e4b4a█1e4b4a', 0, '']
+    40: [ '#0b4246', 'CYAN_CONCRETE', '#0b4246█0b4246', 0, '']
+    41: [ '#284351', 'CYAN_CONCRETE', '#284351█284351', 0, '']
+    42: [ '#0a5f46', 'CYAN_CONCRETE', '#0a5f46█0a5f46', 0, '']
+  4:
+    11: [ '#f7e9a3', 'YELLOW_CONCRETE', '#f7e9a3█f7e9a3', 0, '']
+    12: [ '#faee4d', 'YELLOW_CONCRETE', '#faee4d█faee4d', 0, '']
+    13: [ '#e5e533', 'YELLOW_CONCRETE', '#e5e533█e5e533', 0, '']
+    14: [ '#ba8524', 'YELLOW_CONCRETE', '#ba8524█ba8524', 0, '']
+    15: [ '#d87f33', 'YELLOW_CONCRETE', '#d87f33█d87f33', 0, '']
+    20: [ '#d5c98c', 'YELLOW_CONCRETE', '#d5c98c█d5c98c', 0, '']
+    21: [ '#d7cd42', 'YELLOW_CONCRETE', '#d7cd42█d7cd42', 0, '']
+    22: [ '#c5c52c', 'YELLOW_CONCRETE', '#c5c52c█c5c52c', 0, '']
+    23: [ '#a0721f', 'YELLOW_CONCRETE', '#a0721f█a0721f', 0, '']
+    24: [ '#ba6d2c', 'YELLOW_CONCRETE', '#ba6d2c█ba6d2c', 0, '']
+    29: [ '#aea473', 'YELLOW_CONCRETE', '#aea473█aea473', 0, '']
+    30: [ '#b0a836', 'YELLOW_CONCRETE', '#b0a836█b0a836', 0, '']
+    31: [ '#a1a124', 'YELLOW_CONCRETE', '#a1a124█a1a124', 0, '']
+    32: [ '#835d19', 'YELLOW_CONCRETE', '#835d19█835d19', 0, '']
+    33: [ '#985924', 'YELLOW_CONCRETE', '#985924█985924', 0, '']
+    38: [ '#827b56', 'YELLOW_CONCRETE', '#827b56█827b56', 0, '']
+    39: [ '#847e28', 'YELLOW_CONCRETE', '#847e28█847e28', 0, '']
+    40: [ '#79791b', 'YELLOW_CONCRETE', '#79791b█79791b', 0, '']
+    41: [ '#624613', 'YELLOW_CONCRETE', '#624613█624613', 0, '']
+    42: [ '#72431b', 'YELLOW_CONCRETE', '#72431b█72431b', 0, '']
+  5:
+    11: [ '#ff0000', 'RED_CONCRETE', '#ff0000█ff0000', 0, '']
+    12: [ '#bd3031', 'RED_CONCRETE', '#bd3031█bd3031', 0, '']
+    13: [ '#993333', 'RED_CONCRETE', '#993333█993333', 0, '']
+    14: [ '#5c191d', 'RED_CONCRETE', '#5c191d█5c191d', 0, '']
+    15: [ '#700200', 'RED_CONCRETE', '#700200█700200', 0, '']
+    20: [ '#dc0000', 'RED_CONCRETE', '#dc0000█dc0000', 0, '']
+    21: [ '#a3292a', 'RED_CONCRETE', '#a3292a█a3292a', 0, '']
+    22: [ '#842c2c', 'RED_CONCRETE', '#842c2c█842c2c', 0, '']
+    23: [ '#4f1519', 'RED_CONCRETE', '#4f1519█4f1519', 0, '']
+    24: [ '#600100', 'RED_CONCRETE', '#600100█600100', 0, '']
+    29: [ '#b40000', 'RED_CONCRETE', '#b40000█b40000', 0, '']
+    30: [ '#852122', 'RED_CONCRETE', '#852122█852122', 0, '']
+    31: [ '#6c2424', 'RED_CONCRETE', '#6c2424█6c2424', 0, '']
+    32: [ '#401114', 'RED_CONCRETE', '#401114█401114', 0, '']
+    33: [ '#4f0100', 'RED_CONCRETE', '#4f0100█4f0100', 0, '']
+    38: [ '#870000', 'RED_CONCRETE', '#870000█870000', 0, '']
+    39: [ '#641919', 'RED_CONCRETE', '#641919█641919', 0, '']
+    40: [ '#511b1b', 'RED_CONCRETE', '#511b1b█511b1b', 0, '']
+    41: [ '#300d0f', 'RED_CONCRETE', '#300d0f█300d0f', 0, '']
+    42: [ '#3b0100', 'RED_CONCRETE', '#3b0100█3b0100', 0, '']
+  6:
+    11: [ '#f27fa5', 'PINK_CONCRETE', '#f27fa5█f27fa5', 0, '']
+    12: [ '#95576c', 'PINK_CONCRETE', '#95576c█95576c', 0, '']
+    13: [ '#7a4958', 'PINK_CONCRETE', '#7a4958█7a4958', 0, '']
+    14: [ '#943f61', 'PINK_CONCRETE', '#943f61█943f61', 0, '']
+    15: [ '#562c3e', 'PINK_CONCRETE', '#562c3e█562c3e', 0, '']
+    20: [ '#d06d8e', 'PINK_CONCRETE', '#d06d8e█d06d8e', 0, '']
+    21: [ '#804b5d', 'PINK_CONCRETE', '#804b5d█804b5d', 0, '']
+    22: [ '#693e4b', 'PINK_CONCRETE', '#693e4b█693e4b', 0, '']
+    23: [ '#7f3653', 'PINK_CONCRETE', '#7f3653█7f3653', 0, '']
+    24: [ '#4a2535', 'PINK_CONCRETE', '#4a2535█4a2535', 0, '']
+    29: [ '#aa5974', 'PINK_CONCRETE', '#aa5974█aa5974', 0, '']
+    30: [ '#693d4c', 'PINK_CONCRETE', '#693d4c█693d4c', 0, '']
+    31: [ '#56333e', 'PINK_CONCRETE', '#56333e█56333e', 0, '']
+    32: [ '#682c44', 'PINK_CONCRETE', '#682c44█682c44', 0, '']
+    33: [ '#3c1f2b', 'PINK_CONCRETE', '#3c1f2b█3c1f2b', 0, '']
+    38: [ '#804357', 'PINK_CONCRETE', '#804357█804357', 0, '']
+    39: [ '#4e2e39', 'PINK_CONCRETE', '#4e2e39█4e2e39', 0, '']
+    40: [ '#40262e', 'PINK_CONCRETE', '#40262e█40262e', 0, '']
+    41: [ '#4e2133', 'PINK_CONCRETE', '#4e2133█4e2133', 0, '']
+    42: [ '#2d1720', 'PINK_CONCRETE', '#2d1720█2d1720', 0, '']
+  7:
+    11: [ '#a0a0ff', 'PURPLE_CONCRETE', '#a0a0ff█a0a0ff', 0, '']
+    12: [ '#b24cd8', 'PURPLE_CONCRETE', '#b24cd8█b24cd8', 0, '']
+    13: [ '#7f3fb2', 'PURPLE_CONCRETE', '#7f3fb2█7f3fb2', 0, '']
+    14: [ '#706c8a', 'PURPLE_CONCRETE', '#706c8a█706c8a', 0, '']
+    15: [ '#4c3e5c', 'PURPLE_CONCRETE', '#4c3e5c█4c3e5c', 0, '']
+    20: [ '#8a8adc', 'PURPLE_CONCRETE', '#8a8adc█8a8adc', 0, '']
+    21: [ '#9941ba', 'PURPLE_CONCRETE', '#9941ba█9941ba', 0, '']
+    22: [ '#6d3699', 'PURPLE_CONCRETE', '#6d3699█6d3699', 0, '']
+    23: [ '#605d77', 'PURPLE_CONCRETE', '#605d77█605d77', 0, '']
+    24: [ '#41354f', 'PURPLE_CONCRETE', '#41354f█41354f', 0, '']
+    29: [ '#7070b4', 'PURPLE_CONCRETE', '#7070b4█7070b4', 0, '']
+    30: [ '#7d3598', 'PURPLE_CONCRETE', '#7d3598█7d3598', 0, '']
+    31: [ '#592c7d', 'PURPLE_CONCRETE', '#592c7d█592c7d', 0, '']
+    32: [ '#4f4c61', 'PURPLE_CONCRETE', '#4f4c61█4f4c61', 0, '']
+    33: [ '#352b40', 'PURPLE_CONCRETE', '#352b40█352b40', 0, '']
+    38: [ '#545487', 'PURPLE_CONCRETE', '#545487█545487', 0, '']
+    39: [ '#5e2872', 'PURPLE_CONCRETE', '#5e2872█5e2872', 0, '']
+    40: [ '#43215e', 'PURPLE_CONCRETE', '#43215e█43215e', 0, '']
+    41: [ '#3b3949', 'PURPLE_CONCRETE', '#3b3949█3b3949', 0, '']
+    42: [ '#282030', 'PURPLE_CONCRETE', '#282030█282030', 0, '']
+  8:
+    11: [ '#d8af93', 'BROWN_CONCRETE', '#d8af93█d8af93', 0, '']
+    12: [ '#8f7748', 'BROWN_CONCRETE', '#8f7748█8f7748', 0, '']
+    13: [ '#976d4d', 'BROWN_CONCRETE', '#976d4d█976d4d', 0, '']
+    14: [ '#815631', 'BROWN_CONCRETE', '#815631█815631', 0, '']
+    15: [ '#664c33', 'BROWN_CONCRETE', '#664c33█664c33', 0, '']
+    20: [ '#ba967e', 'BROWN_CONCRETE', '#ba967e█ba967e', 0, '']
+    21: [ '#7b663e', 'BROWN_CONCRETE', '#7b663e█7b663e', 0, '']
+    22: [ '#825e42', 'BROWN_CONCRETE', '#825e42█825e42', 0, '']
+    23: [ '#6f4a2a', 'BROWN_CONCRETE', '#6f4a2a█6f4a2a', 0, '']
+    24: [ '#58412c', 'BROWN_CONCRETE', '#58412c█58412c', 0, '']
+    29: [ '#987b67', 'BROWN_CONCRETE', '#987b67█987b67', 0, '']
+    30: [ '#645432', 'BROWN_CONCRETE', '#645432█645432', 0, '']
+    31: [ '#6a4c36', 'BROWN_CONCRETE', '#6a4c36█6a4c36', 0, '']
+    32: [ '#5b3c22', 'BROWN_CONCRETE', '#5b3c22█5b3c22', 0, '']
+    33: [ '#483524', 'BROWN_CONCRETE', '#483524█483524', 0, '']
+    38: [ '#725c4d', 'BROWN_CONCRETE', '#725c4d█725c4d', 0, '']
+    39: [ '#4b3f26', 'BROWN_CONCRETE', '#4b3f26█4b3f26', 0, '']
+    40: [ '#4f3928', 'BROWN_CONCRETE', '#4f3928█4f3928', 0, '']
+    41: [ '#442d19', 'BROWN_CONCRETE', '#442d19█442d19', 0, '']
+    42: [ '#36281b', 'BROWN_CONCRETE', '#36281b█36281b', 0, '']
+  9:
+    11: [ '#ffffff', 'WHITE_CONCRETE', '#ffffff█ffffff', 0, '']
+    12: [ '#fffcf5', 'WHITE_CONCRETE', '#fffcf5█fffcf5', 0, '']
+    13: [ '#c7c7c7', 'WHITE_CONCRETE', '#c7c7c7█c7c7c7', 0, '']
+    14: [ '#a7a7a7', 'WHITE_CONCRETE', '#a7a7a7█a7a7a7', 0, '']
+    15: [ '#999999', 'WHITE_CONCRETE', '#999999█999999', 0, '']
+    20: [ '#dcdcdc', 'WHITE_CONCRETE', '#dcdcdc█dcdcdc', 0, '']
+    21: [ '#dcd9d3', 'WHITE_CONCRETE', '#dcd9d3█dcd9d3', 0, '']
+    22: [ '#ababab', 'WHITE_CONCRETE', '#ababab█ababab', 0, '']
+    23: [ '#909090', 'WHITE_CONCRETE', '#909090█909090', 0, '']
+    24: [ '#848484', 'WHITE_CONCRETE', '#848484█848484', 0, '']
+    29: [ '#b4b4b4', 'WHITE_CONCRETE', '#b4b4b4█b4b4b4', 0, '']
+    30: [ '#b4b1ac', 'WHITE_CONCRETE', '#b4b1ac█b4b1ac', 0, '']
+    31: [ '#8c8c8c', 'WHITE_CONCRETE', '#8c8c8c█8c8c8c', 0, '']
+    32: [ '#757575', 'WHITE_CONCRETE', '#757575█757575', 0, '']
+    33: [ '#6c6c6c', 'WHITE_CONCRETE', '#6c6c6c█6c6c6c', 0, '']
+    38: [ '#878787', 'WHITE_CONCRETE', '#878787█878787', 0, '']
+    39: [ '#878581', 'WHITE_CONCRETE', '#878581█878581', 0, '']
+    40: [ '#696969', 'WHITE_CONCRETE', '#696969█696969', 0, '']
+    41: [ '#585858', 'WHITE_CONCRETE', '#585858█585858', 0, '']
+    42: [ '#515151', 'WHITE_CONCRETE', '#515151█515151', 0, '']
+  10:
+    11: [ '#707070', 'GRAY_CONCRETE', '#707070█707070', 0, '']
+    12: [ '#646464', 'GRAY_CONCRETE', '#646464█646464', 0, '']
+    13: [ '#575c5c', 'GRAY_CONCRETE', '#575c5c█575c5c', 0, '']
+    14: [ '#4c4c4c', 'GRAY_CONCRETE', '#4c4c4c█4c4c4c', 0, '']
+    15: [ '#191919', 'GRAY_CONCRETE', '#191919█191919', 0, '']
+    20: [ '#606060', 'GRAY_CONCRETE', '#606060█606060', 0, '']
+    21: [ '#565656', 'GRAY_CONCRETE', '#565656█565656', 0, '']
+    22: [ '#4b4f4f', 'GRAY_CONCRETE', '#4b4f4f█4b4f4f', 0, '']
+    23: [ '#414141', 'GRAY_CONCRETE', '#414141█414141', 0, '']
+    24: [ '#151515', 'GRAY_CONCRETE', '#151515█151515', 0, '']
+    29: [ '#4f4f4f', 'GRAY_CONCRETE', '#4f4f4f█4f4f4f', 0, '']
+    30: [ '#464646', 'GRAY_CONCRETE', '#464646█464646', 0, '']
+    31: [ '#3d4040', 'GRAY_CONCRETE', '#3d4040█3d4040', 0, '']
+    32: [ '#353535', 'GRAY_CONCRETE', '#353535█353535', 0, '']
+    33: [ '#111111', 'GRAY_CONCRETE', '#111111█111111', 0, '']
+    38: [ '#3b3b3b', 'GRAY_CONCRETE', '#3b3b3b█3b3b3b', 0, '']
+    39: [ '#343434', 'GRAY_CONCRETE', '#343434█343434', 0, '']
+    40: [ '#2e3030', 'GRAY_CONCRETE', '#2e3030█2e3030', 0, '']
+    41: [ '#282828', 'GRAY_CONCRETE', '#282828█282828', 0, '']
+    42: [ '#0d0d0d', 'GRAY_CONCRETE', '#0d0d0d█0d0d0d', 0, '']
+
+Drawing colors GUI previous page slot: 48
+Drawing colors GUI previous page material: ['2eff7559102aa8ff9712976b62292ee45e0793c46f668916868207f399effab', 0]
+Drawing colors GUI next page slot: 50
+Drawing colors GUI next page material: ['f726d288a74e8ac924c58c93f5b35cacd6946a6ccfdbda85fe8acb9e3eecebdb', 0]
+Drawing colors GUI page slot: 49
+Drawing colors GUI page materials:
+  1: ['78a42df06fc916de110f61bd76eddbf58ed4249fce5ee51c219ec75a37b414', 0]
+  2: ['1ef134f0efa88351b837f7c087afe1b3fb36435ab7d746fa37c0ef155e4f29', 0]
+  3: ['1965e9c57c14c95c84e622e5306e1cf23bc5f1e47ac791f3d357b5ae8cded24', 0]
+  4: ['6e31837d89c264c3b54f8214ae24f89a368a92bc46df9225333ad7cd449f856', 0]
+  5: ['49357cb4664426a9ae0f9c7725ea4351dc69f15a8062c03591e26ac11bbc5a', 0]
+  6: ['b8d550717d26ae8dda55e9a0a9edc92f04a774b501a36e24c8c4e682e32c59', 0]
+  7: ['89141952aabca4987bddf208c5e15ca6a5bfce239af39584aeb5ee876d87', 0]
+  8: ['a112a392ef19ee393a14505bbdad9c1e9293a04ec3ab337e374880222e708244', 0]
+  9: ['b7277b841ef2f06e6b7631d9cfac275498f889fad94687668b251fc339a51f0', 0]
+  10: ['61cae1ab0fce04ebf5391c65f65347497cc92be73a5b8f93a16373ae438ccf5', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                             ===> ANVIL GUI <===                                    ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Anvil GUI accept button material: ['LIME_CONCRETE', 0]
+
+
+# ╔════════════════════════════════════════════════════════════════════════════════════╗
+# ║                              ===> EASEL GUI <===                                   ║
+# ║  > GUI size - How many lines will be in the inventory. From 1 to 6.                ║
+# ║  > GUI empty materials - Empty slots, like glass panels. The format is like this:  ║
+# ║     Slot: ['MATERIAL, 'Custom model data'] => 0: ['PURPLE_STAINED_GLASS_PANE', 0]  ║
+# ║  > GUI material - Material (or Head URL) for the item and Custom model data.       ║
+# ║    For static fields you can specify slot -1 to hide it!                           ║
+# ╚════════════════════════════════════════════════════════════════════════════════════╝
+
+Easel GUI size: 6
+Easel GUI empty materials:
+  0: ['PURPLE_STAINED_GLASS_PANE', 0]
+  1: ['PURPLE_STAINED_GLASS_PANE', 0]
+  7: ['PURPLE_STAINED_GLASS_PANE', 0]
+  8: ['PURPLE_STAINED_GLASS_PANE', 0]
+  9: ['PURPLE_STAINED_GLASS_PANE', 0]
+  17: ['PURPLE_STAINED_GLASS_PANE', 0]
+  18: ['PURPLE_STAINED_GLASS_PANE', 0]
+  26: ['PURPLE_STAINED_GLASS_PANE', 0]
+  27: ['PURPLE_STAINED_GLASS_PANE', 0]
+  35: ['PURPLE_STAINED_GLASS_PANE', 0]
+  36: ['PURPLE_STAINED_GLASS_PANE', 0]
+  44: ['PURPLE_STAINED_GLASS_PANE', 0]
+  45: ['PURPLE_STAINED_GLASS_PANE', 0]
+  46: ['PURPLE_STAINED_GLASS_PANE', 0]
+  52: ['PURPLE_STAINED_GLASS_PANE', 0]
+  53: ['PURPLE_STAINED_GLASS_PANE', 0]
+Easel GUI start drawing slot: 22
+Easel GUI start drawing material: ['LIME_CONCRETE', 0]
+Easel GUI cancel drawing slot: 31
+Easel GUI cancel drawing material: ['RED_CONCRETE', 0]
+
+#onUi9mbihVOLFmdRV2R3ZjcVdVTuR3RTZDZXR2dCh0UXhGWlJnbrFUW1U3R2sGczZlenh0M
