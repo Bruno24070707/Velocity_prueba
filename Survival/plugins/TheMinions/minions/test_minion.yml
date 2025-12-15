@@ -36,6 +36,7 @@
 
 
 
+
 id: test_minion
 display-name: Test Minion
 type: BLOCK_BREAK
@@ -238,10 +239,10 @@ minion-settings:
           count: 1
           components:
             minecraft:lore: '["",{extra:[{bold:0b,color:"light_purple",italic:0b,obfuscated:0b,strikethrough:0b,text:"EPIC",underlined:0b}],text:""}]'
+            minecraft:tooltip_display: '{hidden_components:["minecraft:attribute_modifiers","minecraft:enchantments"]}'
+            minecraft:enchantments: '{"minecraft:knockback":1}'
             minecraft:custom_name: '{extra:[{bold:0b,color:"dark_gray",italic:0b,obfuscated:0b,strikethrough:0b,text:"Epic
               Diamond Block",underlined:0b}],text:""}'
-            minecraft:enchantments: '{"minecraft:knockback":1}'
-            minecraft:tooltip_display: '{hidden_components:["minecraft:attribute_modifiers","minecraft:enchantments"]}'
           schema_version: 1
         requiredItemsToCreate:
           2:
@@ -250,10 +251,10 @@ minion-settings:
             count: 1
             components:
               minecraft:lore: '["",{extra:[{bold:0b,color:"light_purple",italic:0b,obfuscated:0b,strikethrough:0b,text:"EPIC",underlined:0b}],text:""}]'
+              minecraft:tooltip_display: '{hidden_components:["minecraft:attribute_modifiers","minecraft:enchantments"]}'
+              minecraft:enchantments: '{"minecraft:knockback":1}'
               minecraft:custom_name: '{extra:[{bold:0b,color:"dark_gray",italic:0b,obfuscated:0b,strikethrough:0b,text:"Epic
                 Diamond",underlined:0b}],text:""}'
-              minecraft:enchantments: '{"minecraft:knockback":1}'
-              minecraft:tooltip_display: '{hidden_components:["minecraft:attribute_modifiers","minecraft:enchantments"]}'
             schema_version: 1
   # If this minion can use fuel
   canUseFuel: false
