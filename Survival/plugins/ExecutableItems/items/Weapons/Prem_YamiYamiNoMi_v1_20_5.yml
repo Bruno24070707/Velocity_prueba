@@ -1,4 +1,6 @@
+# El nombre o nombre mostrado
 name: '&fYami Yami No Mi'
+# La descripción del objeto
 lore:
 - '&fShift-Right-Click to destroy nearby'
 - '&f &f projectiles'
@@ -7,126 +9,261 @@ lore:
 - '&f'
 - '&fRight-Click to suck targets into a black hole'
 - '&f &f and toss them away after 3s'
+# El material
 material: BLACK_DYE
+# Efecto de brillo del objeto
 glow: true
+# ¿Desactivar el apilado de objetos?
 disableStack: false
+# ¿Mantener el objeto al morir?
 keepItemOnDeath: false
+# Solo puede ser usado por el propietario
+# ⚠ Requiere Almacenar información del objeto en true
 canBeUsedOnlyByTheOwner: false
+# ¿Almacenar información del objeto?
+# Almacenar la información del objeto como el propietario
 storeItemInfo: false
+# ¿Objeto irrompible?
 unbreakable: false
 usage: 1
 usageLimit: -1
+# La durabilidad del objeto
 durability: 0
 cancelEventIfNoPerm: false
+# Cancelar evento si no es propietario
 cancelEventIfNotOwner: false
 disabledWorlds: []
-recognitions: []
 config_5: true
 config_update: true
+# Desactivar el efecto de brillo de encantamiento
+disableEnchantGlide: false
+# Activadores en Lista Negra
+# (pueden ser usados por todos incluso si
+# la característica de solo propietario está activada)
+onlyOwnerBlackListedActivators: []
+# La característica de durabilidad
+# será ignorada, y el uso
+# será usado como durabilidad
+isDurabilityBasedOnUsage: false
+# Cancelar el evento si el jugador no tiene permiso
+cancelEventIfNoPermission: false
+# Las características de mundos en lista blanca
+whitelistedWorlds: []
+# El planeador
+glider: false
+# Mantener los atributos predeterminados
+# Solo para 1.19+
+keepDefaultAttributes: true
+# Para nuevo objeto DÉJALO FALSO POR FAVOR
+# De lo contrario puedes dejarlo verdadero
+# si quieres actualizar tus objetos antiguos ponlo en FALSO
+# Pero ten cuidado, las etiquetas del objeto pueden cambiar
+# puede afectar a shopkeeper o recetas de crafteo personalizadas
+# Solo para 1.19+
+ignoreKeepDefaultAttributesFeature: false
+# Las características de uso
+# Incrementar o Disminuir este uso con
+# UsageModification en tus activadores
+usageFeatures:
+  # El uso del objeto
+  # -1 = Infinito
+  # Incrementar o Disminuir este uso con
+  # UsageModification en tus activadores
+  usage: 1
+  # Es limpieza actualizable
+  isRefreshableClean: true
+  # El límite de uso del objeto
+  # El uso no puede incrementarse por encima de este valor
+  usageLimit: -1
+# Las características de drop
 dropFeatures:
+  # Brillo al soltar
   glowDrop: false
+  # El color del brillo
   glowDropColor: WHITE
+  # Mostrar nombre personalizado sobre el objeto
   displayNameDrop: false
-hiders:
-  hideEnchantments: false
-  hideUnbreakable: false
-  hideAttributes: false
-  hidePotionEffects: false
-  hideUsage: true
+# Los encantamientos del objeto
 enchantments: {}
+# Las características de ocultación
+# Ocultadores para ocultar:
+# Atributos, Encantamientos, ...
+hiders:
+  # Ocultar encantamientos
+  hideEnchantments: false
+  # Ocultar irrompible
+  hideUnbreakable: false
+  # Ocultar atributos
+  hideAttributes: false
+  # Ocultar uso
+  hideUsage: true
+  # Ocultar destruye
+  hideDestroys: false
+  # Ocultar colocado en
+  hidePlacedOn: false
+  # Ocultar tinte
+  hideDye: false
+  # Ocultar decoración de armadura
+  hideArmorTrim: false
+  # Ocultar información adicional
+  hideAdditionalTooltip: false
+  # Ocultar información emergente
+  hideToolTip: false
+# Las características de dar al primer ingreso
 giveFirstJoinFeatures:
+  # Activar la característica
   giveFirstJoin: false
+  # La cantidad a dar
   giveFirstJoinAmount: 1
+  # Ranura entre 0 y 8 inclusive
   giveFirstJoinSlot: 0
-restrictions: {}
+# Las características de restricciones
+restrictions:
+  # El objeto no puede ser
+  # movido del inventario
+  locked-in-inventory: false
+# Las variables
+# Las variables se usan para almacenar datos como muertes/asesinatos...
 variables: {}
+# Los activadores / disparadores
 activators:
   activator0:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_RIGHT_CLICK
     typeTarget: NO_TYPE_TARGET
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 5
-      isCooldownInTicks: false
+      # El mensaje de enfriamiento
       cooldownMsg: '&cWait %time_S%s to recast black hole.'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - LAUNCH ONEPIECE_004_1_BLACK_HOLE
+    #
     playerConditions:
       ifNotSneaking: true
+      # The message displayed
+      # when the condition is not met
       ifNotSneakingMsg: ''
-      ifIsNotInTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotInTheBlockMsg: ''
-      ifIsNotOnTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotOnTheBlockMsg: ''
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator1:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_CUSTOM_LAUNCH
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands: []
+    #
     playerConditions:
-      ifIsNotInTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotInTheBlockMsg: ''
-      ifIsNotOnTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotOnTheBlockMsg: ''
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions:
       plchCdt0:
         type: PLAYER_STRING
         comparator: EQUALS
+        # La primera parte de la condición
         part1: '%projectile_name%'
+        # La segunda parte de la condición
         part2: ONEPIECE_004_1_BLACK_HOLE
+        # ¿Cancelar el evento si el bloque no es válido?
         cancelEventIfNotValid: false
+        # Mensaje si la condición no es válida
         messageIfNotValid: ''
+        # El mensaje a mostrar si
+        # la condición no es válida para el objetivo
+        messageIfNotValidForTarget: ''
+        # Detener la verificación de otras condiciones
+        # si la condición no es válida
+        stopCheckingOtherConditionsIfNotValid: true
     detailedEntities: []
     entityCommands:
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
@@ -137,91 +274,115 @@ activators:
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
     - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^ ^5
-    - AROUND 2 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
-      2
+    - AROUND 2 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x%
+      %projectile_y% %projectile_z% <+> DAMAGE 2
     - MOB_AROUND 3 BLACKLIST(ARMOR_STAND) CUSTOMDASH1 %projectile_x% %projectile_y%
       %projectile_z% <+> DAMAGE 2
-    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2} ~ ~ ~ 2.5 2.5 2.5 0 50
+    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2}
+      ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
     - LOOP END
     - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1 ^6
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
-    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
-      1
+    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x%
+      %projectile_y% %projectile_z% <+> DAMAGE 1
     - MOB_AROUND 3 BLACKLIST(ARMOR_STAND) CUSTOMDASH1 %projectile_x% %projectile_y%
       %projectile_z% <+> DAMAGE 1
-    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2} ~ ~ ~ 2.5 2.5 2.5 0 50
+    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2}
+      ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
     - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1.2 ^7
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
-    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
-      1
+    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x%
+      %projectile_y% %projectile_z% <+> DAMAGE 1
     - MOB_AROUND 3 BLACKLIST(ARMOR_STAND) CUSTOMDASH1 %projectile_x% %projectile_y%
       %projectile_z% <+> DAMAGE 1
-    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2} ~ ~ ~ 2.5 2.5 2.5 0 50
+    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2}
+      ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
     - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1.4 ^8
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
-    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
-      1
+    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x%
+      %projectile_y% %projectile_z% <+> DAMAGE 1
     - MOB_AROUND 3 BLACKLIST(ARMOR_STAND) CUSTOMDASH1 %projectile_x% %projectile_y%
       %projectile_z% <+> DAMAGE 1
-    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2} ~ ~ ~ 2.5 2.5 2.5 0 50
+    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2}
+      ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
     - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1.6 ^9
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
-    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
-      1
+    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x%
+      %projectile_y% %projectile_z% <+> DAMAGE 1
     - MOB_AROUND 3 BLACKLIST(ARMOR_STAND) CUSTOMDASH1 %projectile_x% %projectile_y%
       %projectile_z% <+> DAMAGE 1
-    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2} ~ ~ ~ 2.5 2.5 2.5 0 50
+    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2}
+      ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
     - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^1.8 ^10
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
-    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
-      1
+    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x%
+      %projectile_y% %projectile_z% <+> DAMAGE 1
     - MOB_AROUND 3 BLACKLIST(ARMOR_STAND) CUSTOMDASH1 %projectile_x% %projectile_y%
       %projectile_z% <+> DAMAGE 1
-    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2} ~ ~ ~ 2.5 2.5 2.5 0 50
+    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2}
+      ~ ~ ~ 2.5 2.5 2.5 0 50
     - DELAYTICK 2
     - execute at %player% as %projectile_uuid% run minecraft:tp ^ ^2 ^12
     - execute at %projectile_uuid% run playsound entity.ender_dragon.flap ambient
       @a[distance=..10]
-    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x% %projectile_y% %projectile_z% <+> DAMAGE
-      1
+    - AROUND 3 CONDITIONS(%::player_name::%!=%player%) CUSTOMDASH1 %projectile_x%
+      %projectile_y% %projectile_z% <+> DAMAGE 1
     - MOB_AROUND 3 BLACKLIST(ARMOR_STAND) CUSTOMDASH1 %projectile_x% %projectile_y%
       %projectile_z% <+> DAMAGE 1
-    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2} ~ ~ ~ 2.5 2.5 2.5 0 50
+    - execute at %projectile_uuid% run particle dust{color:[0.0,0.0,0.0],scale:2}
+      ~ ~ ~ 2.5 2.5 2.5 0 50
     - minecraft:kill %projectile_uuid%
+    #
     entityConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator4:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: LOOP
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - 'LOOP START: 5'
@@ -285,60 +446,85 @@ activators:
     - RANDOM END
     - DELAYTICK 4
     - LOOP END
+    #
     playerConditions:
-      ifIsNotInTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotInTheBlockMsg: ''
-      ifIsNotOnTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotOnTheBlockMsg: ''
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
+    # Retraso entre cada activación
+    # Mín: 5 ticks
     delay: 1
+    # ¿Está el retraso en ticks?
     delayInTick: false
+    # Parte para modificar tus variables
     variablesModification: {}
   activator2:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_CLICK_ON_ENTITY
     detailedClick: LEFT
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - REGAIN HEALTH 5
+    #
     playerConditions:
-      ifIsNotInTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotInTheBlockMsg: ''
-      ifIsNotOnTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotOnTheBlockMsg: ''
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands:
@@ -350,46 +536,66 @@ activators:
     - STUN_ENABLE
     - DELAY 1
     - STUN_DISABLE
+    #
     entityConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator3:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_CLICK_ON_PLAYER
     detailedClick: LEFT
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - REGAIN HEALTH 5
+    #
     playerConditions:
-      ifIsNotInTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotInTheBlockMsg: ''
-      ifIsNotOnTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotOnTheBlockMsg: ''
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
     targetCommands:
     - execute at %target% run particle large_smoke ~ ~1 ~ 0.01 0.01 0.01 0.5 50
@@ -400,31 +606,48 @@ activators:
     - STUN_ENABLE
     - DELAY 1
     - STUN_DISABLE
+    #
     targetConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator5:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_RIGHT_CLICK
     typeTarget: NO_TYPE_TARGET
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - execute at %player% run playsound entity.wither.ambient ambient @a[distance=..10]
@@ -613,178 +836,311 @@ activators:
       ^0.344 0 %math_(%rand:5|10%)*0.1% 0 %math_(%rand:5|10%)*0.1% 0
     - execute at %player% positioned ~ ~1 ~ run particle large_smoke ^-0.140 ^-1.282
       ^1.528 0 %math_(%rand:5|10%)*0.1% 0 %math_(%rand:5|10%)*0.1% 0
+    #
     playerConditions:
       ifSneaking: true
+      # The message displayed
+      # when the condition is not met
       ifSneakingMsg: ''
-      ifIsNotInTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotInTheBlockMsg: ''
-      ifIsNotOnTheBlock:
-        material0:
-          material: WATER
+      # The message displayed
+      # when the condition is not met
       ifIsNotOnTheBlockMsg: ''
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator6:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_RECEIVE_HIT_GLOBAL
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: true
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots:
     - -1
     playerCommands: []
+    #
     playerConditions: {}
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions:
       plchC1:
         type: PLAYER_NUMBER
         comparator: SUPERIOR_OR_EQUALS
+        # La primera parte de la condición
         part1: '%math_0_({player_time})-(24000*(FLOOR({player_time}/24000)))%'
+        # La segunda parte de la condición
         part2: '13000.0'
+        # ¿Cancelar el evento si el bloque no es válido?
         cancelEventIfNotValid: false
+        # Mensaje si la condición no es válida
         messageIfNotValid: '&e'
+        # El mensaje a mostrar si
+        # la condición no es válida para el objetivo
+        messageIfNotValidForTarget: ''
+        # Detener la verificación de otras condiciones
+        # si la condición no es válida
+        stopCheckingOtherConditionsIfNotValid: true
       plchC2:
         type: PLAYER_NUMBER
         comparator: INFERIOR_OR_EQUALS
+        # La primera parte de la condición
         part1: '%math_0_({player_time})-(24000*(FLOOR({player_time}/24000)))%'
+        # La segunda parte de la condición
         part2: '23000.0'
+        # ¿Cancelar el evento si el bloque no es válido?
         cancelEventIfNotValid: false
+        # Mensaje si la condición no es válida
         messageIfNotValid: '&e'
+        # El mensaje a mostrar si
+        # la condición no es válida para el objetivo
+        messageIfNotValidForTarget: ''
+        # Detener la verificación de otras condiciones
+        # si la condición no es válida
+        stopCheckingOtherConditionsIfNotValid: true
+    # Especificar una lista de causas de daño que
+    # pueden ser afectadas
+    # vacío = todas las causas
     detailedDamageCauses: []
+    # Parte para modificar tus variables
     variablesModification: {}
   activator7:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: LOOP
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - REGAIN FOOD 1000
     - REGAIN HEALTH 1000
+    #
     playerConditions: {}
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions:
       plchC1:
         type: PLAYER_NUMBER
         comparator: SUPERIOR_OR_EQUALS
+        # La primera parte de la condición
         part1: '%math_0_({player_time})-(24000*(FLOOR({player_time}/24000)))%'
+        # La segunda parte de la condición
         part2: '13000.0'
+        # ¿Cancelar el evento si el bloque no es válido?
         cancelEventIfNotValid: false
+        # Mensaje si la condición no es válida
         messageIfNotValid: '&e'
+        # El mensaje a mostrar si
+        # la condición no es válida para el objetivo
+        messageIfNotValidForTarget: ''
+        # Detener la verificación de otras condiciones
+        # si la condición no es válida
+        stopCheckingOtherConditionsIfNotValid: true
       plchC2:
         type: PLAYER_NUMBER
         comparator: INFERIOR_OR_EQUALS
+        # La primera parte de la condición
         part1: '%math_0_({player_time})-(24000*(FLOOR({player_time}/24000)))%'
+        # La segunda parte de la condición
         part2: '23000.0'
+        # ¿Cancelar el evento si el bloque no es válido?
         cancelEventIfNotValid: false
+        # Mensaje si la condición no es válida
         messageIfNotValid: '&e'
+        # El mensaje a mostrar si
+        # la condición no es válida para el objetivo
+        messageIfNotValidForTarget: ''
+        # Detener la verificación de otras condiciones
+        # si la condición no es válida
+        stopCheckingOtherConditionsIfNotValid: true
+    # Retraso entre cada activación
+    # Mín: 5 ticks
     delay: 2
+    # ¿Está el retraso en ticks?
     delayInTick: false
+    # Parte para modificar tus variables
     variablesModification: {}
   activator8:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_LEFT_CLICK
     typeTarget: NO_TYPE_TARGET
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - LAUNCH ONEPIECE_004_2_BLACK_PUNCH
+    #
     playerConditions:
       ifSneaking: true
+      # The message displayed
+      # when the condition is not met
       ifSneakingMsg: ''
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator9:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_CUSTOM_LAUNCH
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - AROUND 5 false CUSTOMDASH1 %x% %y% %z% <+> DELAYTICK 10 <+> DAMAGE 35
     - MOB_AROUND 5 true CUSTOMDASH1 %x% %y% %z% <+> DELAYTICK 10 <+> DAMAGE 35
     - 'LOOP START: 10'
-    - execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid% ^ ^ ^15
+    - execute at %player% as %projectile_uuid% run minecraft:tp %projectile_uuid%
+      ^ ^ ^15
     - DELAYTICK 1
     - LOOP END
     - execute at %player% run playsound entity.generic.explode ambient @a[distance=..15]
@@ -842,89 +1198,165 @@ activators:
       1
     - DELAYTICK 2
     - minecraft:kill %projectile_uuid%
+    #
     playerConditions: {}
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions:
       plchCdt0:
         type: PLAYER_STRING
         comparator: EQUALS
+        # La primera parte de la condición
         part1: '%projectile_name%'
+        # La segunda parte de la condición
         part2: ONEPIECE_004_2_BLACK_PUNCH
+        # ¿Cancelar el evento si el bloque no es válido?
         cancelEventIfNotValid: false
+        # Mensaje si la condición no es válida
         messageIfNotValid: ''
+        # El mensaje a mostrar si
+        # la condición no es válida para el objetivo
+        messageIfNotValidForTarget: ''
+        # Detener la verificación de otras condiciones
+        # si la condición no es válida
+        stopCheckingOtherConditionsIfNotValid: true
     detailedEntities: []
     entityCommands: []
+    #
     entityConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator10:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_RECEIVE_HIT_GLOBAL
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: true
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands: []
+    #
     playerConditions: {}
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions:
       plchC1:
         type: PLAYER_NUMBER
         comparator: SUPERIOR_OR_EQUALS
+        # La primera parte de la condición
         part1: '%math_0_({player_time})-(24000*(FLOOR({player_time}/24000)))%'
+        # La segunda parte de la condición
         part2: '13000.0'
+        # ¿Cancelar el evento si el bloque no es válido?
         cancelEventIfNotValid: false
+        # Mensaje si la condición no es válida
         messageIfNotValid: '&e'
+        # El mensaje a mostrar si
+        # la condición no es válida para el objetivo
+        messageIfNotValidForTarget: ''
+        # Detener la verificación de otras condiciones
+        # si la condición no es válida
+        stopCheckingOtherConditionsIfNotValid: true
       plchC2:
         type: PLAYER_NUMBER
         comparator: INFERIOR_OR_EQUALS
+        # La primera parte de la condición
         part1: '%math_0_({player_time})-(24000*(FLOOR({player_time}/24000)))%'
+        # La segunda parte de la condición
         part2: '23000.0'
+        # ¿Cancelar el evento si el bloque no es válido?
         cancelEventIfNotValid: false
+        # Mensaje si la condición no es válida
         messageIfNotValid: '&e'
+        # El mensaje a mostrar si
+        # la condición no es válida para el objetivo
+        messageIfNotValidForTarget: ''
+        # Detener la verificación de otras condiciones
+        # si la condición no es válida
+        stopCheckingOtherConditionsIfNotValid: true
+    # Especificar una lista de causas de daño que
+    # pueden ser afectadas
+    # vacío = todas las causas
     detailedDamageCauses: []
+    # Parte para modificar tus variables
     variablesModification: {}
   activator11:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_JUMP
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems: {}
+    # Los ExecutableItems requeridos
     requiredExecutableItems: {}
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots: []
     playerCommands:
     - execute at %player% run playsound entity.generic.explode ambient @a[distance=..20]
@@ -947,12 +1379,102 @@ activators:
     - AROUND 7 false DAMAGE 10
     - DELAYTICK 1
     - LOOP END
+    #
     playerConditions:
       ifSneaking: true
+      # The message displayed
+      # when the condition is not met
       ifSneakingMsg: ''
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
+# Mostrar condiciones en la descripción
+displayConditions:
+  #
+  playerConditions: {}
+  #
+  worldConditions: {}
+  #
+  itemConditions: {}
+  # Las condiciones de placeholders
+  placeholdersConditions: {}
+  # Activar o desactivar esta característica
+  enableFeature: false
+# Características de comida
+foodFeatures:
+  # ¿Es el alimento carne?
+  isMeat: false
+  # La nutrición del alimento
+  nutrition: 1
+  # La saturación del alimento
+  saturation: 1
+  # ¿Puede el jugador comer siempre este alimento?
+  canAlwaysEat: false
+# Características Consumibles
+consumableFeatures:
+  # Enable this features
+  enable: false
+  # La animación
+  animation: EAT
+  # Tiene partículas de consumo
+  hasConsumeParticles: false
+  # Los segundos de consumo
+  consumeSeconds: 3
+# Las características del arma
+weaponFeatures:
+  # Enable this features
+  enable: false
+  # El tiempo para desactivar el bloqueo
+  # en ticks
+  disableBlockingTime: 0
+  # El daño por ataque
+  damagePerAttack: 5
+# The block attacks features
+blockAttacksFeatures:
+  # Enable this features
+  enable: false
+  # The block delay in seconds
+  blockDelay: 0
+  disableCooldownScale: 1.0
+  # The damage reductions
+  damageReductions: {}
+# La rareza del objeto
+itemRarity:
+  # Activar o desactivar la característica de rareza
+  enableRarity: false
+  # La rareza del objeto
+  rarity: COMMON
+# Las características de reparación
+repairableFeatures:
+  # Enable this features
+  enable: false
+  # El costo de reparación
+  repairCost: 2
+# Las características equipables
+equippableFeatures:
+  # Enable this features
+  enable: false
+  # La ranura
+  slot: BODY
+  # Activar el sonido
+  enableSound: false
+  # El sonido
+  sound: ITEM.ARMOR.EQUIP_DIAMOND
+  # El objeto tomará daño cuando el jugador sea herido
+  damageableOnHurt: false
+  # El objeto puede ser dispensado
+  dispensable: true
+  # El objeto puede ser intercambiado
+  swappable: true
+  # Las entidades permitidas
+  allowedEntities:
+  - PLAYER
+# Los atributos
 attributes: {}

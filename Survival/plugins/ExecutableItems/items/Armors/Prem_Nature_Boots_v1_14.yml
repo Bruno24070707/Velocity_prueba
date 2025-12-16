@@ -1,4 +1,6 @@
+# El nombre o nombre mostrado
 name: '#956E32✦#A07D39♢ #AB8D40Nature Boots #A07D39♢#956E32✦'
+# La descripción del objeto
 lore:
 - '&8————————————————————'
 - ''
@@ -8,225 +10,361 @@ lore:
 - ' &f &f plants.'
 - ''
 - '&8————————————————————'
+# El material
 material: NETHERITE_BOOTS
+# Efecto de brillo del objeto
 glow: true
+# ¿Desactivar el apilado de objetos?
 disableStack: false
+# ¿Mantener el objeto al morir?
 keepItemOnDeath: false
+# Solo puede ser usado por el propietario
+# ⚠ Requiere Almacenar información del objeto en true
 canBeUsedOnlyByTheOwner: false
+# ¿Almacenar información del objeto?
+# Almacenar la información del objeto como el propietario
 storeItemInfo: false
+# ¿Objeto irrompible?
 unbreakable: false
 usage: 1
 usageLimit: -1
+# La durabilidad del objeto
 durability: 481
 cancelEventIfNoPerm: false
+# Cancelar evento si no es propietario
 cancelEventIfNotOwner: false
 disabledWorlds: []
-recognitions: []
 config_5: true
 config_update: true
 config_5_98: true
+# Activadores en Lista Negra
+# (pueden ser usados por todos incluso si
+# la característica de solo propietario está activada)
 onlyOwnerBlackListedActivators: []
+# La característica de durabilidad
+# será ignorada, y el uso
+# será usado como durabilidad
 isDurabilityBasedOnUsage: false
+# Las características de mundos en lista blanca
 whitelistedWorlds: []
+# Desactivar el efecto de brillo de encantamiento
+disableEnchantGlide: false
+# Cancelar el evento si el jugador no tiene permiso
+cancelEventIfNoPermission: false
+# El planeador
+glider: false
+# Mantener los atributos predeterminados
+# Solo para 1.19+
+keepDefaultAttributes: true
+# Para nuevo objeto DÉJALO FALSO POR FAVOR
+# De lo contrario puedes dejarlo verdadero
+# si quieres actualizar tus objetos antiguos ponlo en FALSO
+# Pero ten cuidado, las etiquetas del objeto pueden cambiar
+# puede afectar a shopkeeper o recetas de crafteo personalizadas
+# Solo para 1.19+
+ignoreKeepDefaultAttributesFeature: false
+# Las características de uso
+# Incrementar o Disminuir este uso con
+# UsageModification en tus activadores
+usageFeatures:
+  # El uso del objeto
+  # -1 = Infinito
+  # Incrementar o Disminuir este uso con
+  # UsageModification en tus activadores
+  usage: 1
+  # Es limpieza actualizable
+  isRefreshableClean: true
+  # El límite de uso del objeto
+  # El uso no puede incrementarse por encima de este valor
+  usageLimit: -1
+# Las características de drop
 dropFeatures:
+  # Brillo al soltar
   glowDrop: false
+  # El color del brillo
   glowDropColor: WHITE
+  # Mostrar nombre personalizado sobre el objeto
   displayNameDrop: false
-hiders:
-  hideEnchantments: true
-  hideUnbreakable: true
-  hideAttributes: false
-  hidePotionEffects: false
-  hideUsage: true
-  hideDestroys: false
-  hidePlacedOn: false
-  hideDye: false
-  hideArmorTrim: false
+# Los encantamientos del objeto
 enchantments: {}
+# Las características de ocultación
+# Ocultadores para ocultar:
+# Atributos, Encantamientos, ...
+hiders:
+  # Ocultar encantamientos
+  hideEnchantments: true
+  # Ocultar irrompible
+  hideUnbreakable: true
+  # Ocultar atributos
+  hideAttributes: false
+  # Ocultar uso
+  hideUsage: true
+  # Ocultar destruye
+  hideDestroys: false
+  # Ocultar colocado en
+  hidePlacedOn: false
+  # Ocultar tinte
+  hideDye: false
+  # Ocultar decoración de armadura
+  hideArmorTrim: false
+  # Ocultar información adicional
+  hideAdditionalTooltip: false
+  # Ocultar información emergente
+  hideToolTip: false
+# Las características de dar al primer ingreso
 giveFirstJoinFeatures:
+  # Activar la característica
   giveFirstJoin: false
+  # La cantidad a dar
   giveFirstJoinAmount: 1
+  # Ranura entre 0 y 8 inclusive
   giveFirstJoinSlot: 0
+# Las características de restricciones
 restrictions:
+  # El objeto no puede ser
+  # colocado en un yunque
   cancel-anvil: true
+  # El objeto no puede ser
+  # movido del inventario
+  locked-in-inventory: false
+# Las variables
+# Las variables se usan para almacenar datos como muertes/asesinatos...
 variables: {}
+# Los activadores / disparadores
+activators:
+  activator1:
+    # El nombre o nombre mostrado
+    name: Activator name
+    option: PLAYER_WALK
+    # Modificación de uso
+    usageModification: 0
+    # Cancelar el evento vanilla
+    cancelEvent: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Silenciar la salida del comando
+    # (Solo en la consola)
+    silenceOutput: true
+    # Actualizar automáticamente el objeto
+    autoUpdateItem: false
+    # El enfriamiento
+    cooldownFeatures:
+      # El tiempo de reutilización
+      cooldown: 1
+      # El mensaje de enfriamiento
+      cooldownMsg: ''
+      # Mostrar el mensaje de enfriamiento
+      displayCooldownMessage: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
+    globalCooldownFeatures:
+      # El tiempo de reutilización
+      cooldown: 0
+    # Para añadir enfriamiento
+    # a otro EI
+    otherEICooldowns: {}
+    # Los objetos requeridos
+    requiredItems:
+      # El mensaje de error
+      errorMessage: ''
+    # Los ExecutableItems requeridos
+    requiredExecutableItems:
+      # El mensaje de error
+      errorMessage: ''
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
+    detailedSlots:
+    - 36
+    playerCommands:
+    - effect give %player% speed 2 1 true
+    #
+    playerConditions:
+      # The message displayed
+      # when the condition is not met
+      ifIsInTheBlockMsg: ''
+      ifIsOnTheBlock:
+        # Bloques
+        blocks:
+        - GRASS_BLOCK
+      # The message displayed
+      # when the condition is not met
+      ifIsOnTheBlockMsg: ''
+    #
+    worldConditions: {}
+    #
+    itemConditions: {}
+    #
+    customConditions: {}
+    # Las condiciones de placeholders
+    placeholdersConditions: {}
+    # Parte para modificar tus variables
+    variablesModification: {}
+  activator2:
+    # El nombre o nombre mostrado
+    name: Activator name
+    option: PLAYER_WALK
+    # Modificación de uso
+    usageModification: 0
+    # Cancelar el evento vanilla
+    cancelEvent: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Silenciar la salida del comando
+    # (Solo en la consola)
+    silenceOutput: true
+    # Actualizar automáticamente el objeto
+    autoUpdateItem: false
+    # El enfriamiento
+    cooldownFeatures:
+      # El tiempo de reutilización
+      cooldown: 1
+      # El mensaje de enfriamiento
+      cooldownMsg: ''
+      # Mostrar el mensaje de enfriamiento
+      displayCooldownMessage: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
+    globalCooldownFeatures:
+      # El tiempo de reutilización
+      cooldown: 0
+    # Para añadir enfriamiento
+    # a otro EI
+    otherEICooldowns: {}
+    # Los objetos requeridos
+    requiredItems:
+      # El mensaje de error
+      errorMessage: ''
+    # Los ExecutableItems requeridos
+    requiredExecutableItems:
+      # El mensaje de error
+      errorMessage: ''
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
+    detailedSlots:
+    - 36
+    playerCommands:
+    - effect give %player% speed 2 1 true
+    #
+    playerConditions:
+      # The message displayed
+      # when the condition is not met
+      ifIsInTheBlockMsg: ''
+      ifIsOnTheBlock:
+        # Bloques
+        blocks:
+        - FARMLAND
+      # The message displayed
+      # when the condition is not met
+      ifIsOnTheBlockMsg: ''
+    #
+    worldConditions: {}
+    #
+    itemConditions: {}
+    #
+    customConditions: {}
+    # Las condiciones de placeholders
+    placeholdersConditions: {}
+    # Parte para modificar tus variables
+    variablesModification: {}
+# Mostrar condiciones en la descripción
 displayConditions:
+  #
   playerConditions: {}
+  #
   worldConditions: {}
+  #
   itemConditions: {}
+  # Las condiciones de placeholders
   placeholdersConditions: {}
+  # Activar o desactivar esta característica
   enableFeature: false
+# Características de comida
 foodFeatures:
-  nutrition: 1
-  saturation: 1
+  # ¿Es el alimento carne?
   isMeat: false
+  # La nutrición del alimento
+  nutrition: 1
+  # La saturación del alimento
+  saturation: 1
+  # ¿Puede el jugador comer siempre este alimento?
   canAlwaysEat: false
-  eatSeconds: 1
+# Características Consumibles
+consumableFeatures:
+  # Enable this features
+  enable: false
+  # La animación
+  animation: EAT
+  # Tiene partículas de consumo
+  hasConsumeParticles: false
+  # Los segundos de consumo
+  consumeSeconds: 3
+# Las características del arma
+weaponFeatures:
+  # Enable this features
+  enable: false
+  # El tiempo para desactivar el bloqueo
+  # en ticks
+  disableBlockingTime: 0
+  # El daño por ataque
+  damagePerAttack: 5
+# The block attacks features
+blockAttacksFeatures:
+  # Enable this features
+  enable: false
+  # The block delay in seconds
+  blockDelay: 0
+  disableCooldownScale: 1.0
+  # The damage reductions
+  damageReductions: {}
+# La rareza del objeto
+itemRarity:
+  # Activar o desactivar la característica de rareza
+  enableRarity: false
+  # La rareza del objeto
+  rarity: COMMON
+# Las características de reparación
+repairableFeatures:
+  # Enable this features
+  enable: false
+  # El costo de reparación
+  repairCost: 2
+# Las características equipables
+equippableFeatures:
+  # Enable this features
+  enable: false
+  # La ranura
+  slot: BODY
+  # Activar el sonido
+  enableSound: false
+  # El sonido
+  sound: ITEM.ARMOR.EQUIP_DIAMOND
+  # El objeto tomará daño cuando el jugador sea herido
+  damageableOnHurt: false
+  # El objeto puede ser dispensado
+  dispensable: true
+  # El objeto puede ser intercambiado
+  swappable: true
+  # Las entidades permitidas
+  allowedEntities:
+  - PLAYER
+# Los atributos
 attributes: {}
 armorTrim:
+  # Activar decoración de armadura
   enableArmorTrim: false
   trimMaterial: DIAMOND
   pattern: EYE
-activators:
-  activator1:
-    name: Activator name
-    option: PLAYER_WALK
-    usageModification: 0
-    cancelEvent: false
-    noActivatorRunIfTheEventIsCancelled: false
-    silenceOutput: true
-    autoUpdateItem: false
-    updateName: true
-    updateLore: true
-    updateDurability: false
-    updateAttributes: false
-    updateEnchants: false
-    updateCustomModelData: false
-    updateArmorSettings: false
-    cooldownFeatures:
-      cooldown: 1
-      isCooldownInTicks: false
-      cooldownMsg: ''
-      displayCooldownMessage: false
-      cancelEventIfInCooldown: false
-      pauseWhenOffline: false
-      pausePlaceholdersConditions: {}
-    globalCooldownFeatures:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-      pauseWhenOffline: false
-      pausePlaceholdersConditions: {}
-    otherEICooldowns: {}
-    requiredItems:
-      errorMessage: ''
-    requiredExecutableItems:
-      errorMessage: ''
-    requiredMagics: {}
-    detailedSlots:
-    - 36
-    playerCommands:
-    - effect give %player% speed 2 1 true
-    playerConditions:
-      ifIsInTheBlock:
-        mat3:
-          material: SEAGRASS
-        mat2:
-          material: TALL_GRASS
-        mat1:
-          material: GRASS_BLOCK
-        mat0:
-          material: AIR
-        mat7:
-          material: BLUE_ORCHID
-        mat6:
-          material: POPPY
-        mat19:
-          material: RED_MUSHROOM
-        mat5:
-          material: DANDELION
-        mat4:
-          material: SEA_PICKLE
-        mat16:
-          material: LILY_OF_THE_VALLEY
-        mat15:
-          material: CORNFLOWER
-        mat9:
-          material: AZURE_BLUET
-        mat18:
-          material: BROWN_MUSHROOM
-        mat8:
-          material: ALLIUM
-        mat17:
-          material: SPORE_BLOSSOM
-        mat12:
-          material: WHITE_TULIP
-        mat11:
-          material: ORANGE_TULIP
-        mat14:
-          material: OXEYE_DAISY
-        mat13:
-          material: PINK_TULIP
-        mat10:
-          material: RED_TULIP
-        mat21:
-          material: WARPED_FUNGUS
-        mat20:
-          material: CRIMSON_FUNGUS
-      ifIsInTheBlockMsg: ''
-      ifIsOnTheBlock:
-        blocks:
-        - GRASS_BLOCK
-      ifIsOnTheBlockMsg: ''
-    worldConditions: {}
-    itemConditions: {}
-    customConditions: {}
-    placeholdersConditions: {}
-    variablesModification: {}
-  activator2:
-    name: Activator name
-    option: PLAYER_WALK
-    usageModification: 0
-    cancelEvent: false
-    noActivatorRunIfTheEventIsCancelled: false
-    silenceOutput: true
-    autoUpdateItem: false
-    updateName: true
-    updateLore: true
-    updateDurability: false
-    updateAttributes: false
-    updateEnchants: false
-    updateCustomModelData: false
-    updateArmorSettings: false
-    cooldownFeatures:
-      cooldown: 1
-      isCooldownInTicks: false
-      cooldownMsg: ''
-      displayCooldownMessage: false
-      cancelEventIfInCooldown: false
-      pauseWhenOffline: false
-      pausePlaceholdersConditions: {}
-    globalCooldownFeatures:
-      cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
-      pauseWhenOffline: false
-      pausePlaceholdersConditions: {}
-    otherEICooldowns: {}
-    requiredItems:
-      errorMessage: ''
-    requiredExecutableItems:
-      errorMessage: ''
-    requiredMagics: {}
-    detailedSlots:
-    - 36
-    playerCommands:
-    - effect give %player% speed 2 1 true
-    playerConditions:
-      ifIsInTheBlock:
-        mat3:
-          material: BEETROOTS
-        mat2:
-          material: CARROTS
-        mat1:
-          material: WHEAT
-        mat0:
-          material: POTATOES
-        mat5:
-          material: PUMPKIN_STEM
-        mat4:
-          material: MELON_STEM
-      ifIsInTheBlockMsg: ''
-      ifIsOnTheBlock:
-        blocks:
-        - FARMLAND
-      ifIsOnTheBlockMsg: ''
-    worldConditions: {}
-    itemConditions: {}
-    customConditions: {}
-    placeholdersConditions: {}
-    variablesModification: {}

@@ -250,9 +250,9 @@ aesthetic:
 
     particles:
       # If false all trails are disabled.
-      enabled: true
+      enabled: false
       # The default particle type.
-      type: 'VILLAGER_HAPPY'
+      type: 'COMPOSTER'
       # If true all players will have the default particle trail enabled by default.
       display_by_default: true
       # If true particles will not be displayed if the player is vanished.
@@ -262,7 +262,7 @@ aesthetic:
   # Title to warn players of remaining flight time
   warning:
     # If enabled, players will recieve a warning title when they reach a flight marker defined under seconds.
-    enabled: true
+    enabled: false
     # Supports placeholders for time.
     title: "&cWARNING!"
     subtitle: "&fYou have {FORMATTED_TIME} &fof flight remaining!"

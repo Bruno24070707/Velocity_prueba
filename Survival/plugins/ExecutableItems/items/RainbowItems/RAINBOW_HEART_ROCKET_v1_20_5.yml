@@ -1,5 +1,7 @@
+# El nombre o nombre mostrado
 name: '#FB7777R#F58F75a#EFA674i#E8BE72n#E2D671b#DCED6Fo#CFFA76w #B4F18EH#99E8A5e#7FDEBDa#64D5D4r#49CCECt
   #51B5F0R#6A97EAo#8379E4c#9D5ADFk#B63CD9e#CF1ED3t'
+# La descripción del objeto
 lore:
 - '&7Colours of the World'
 - '&8————————————————————'
@@ -22,61 +24,181 @@ lore:
 - '&f'
 - '&8—————— #FF97D6P#FFAEDFr#FFC5E8i#FFDCF1d#FFF3FAe #F4FDFFC#DEF9FFr#C9F5FFa#B3F1FFt#9DEDFFe
   &8——————'
+# El material
 material: CROSSBOW
+# Efecto de brillo del objeto
 glow: true
+# ¿Desactivar el apilado de objetos?
 disableStack: false
+# ¿Mantener el objeto al morir?
 keepItemOnDeath: false
+# Solo puede ser usado por el propietario
+# ⚠ Requiere Almacenar información del objeto en true
 canBeUsedOnlyByTheOwner: false
+# ¿Almacenar información del objeto?
+# Almacenar la información del objeto como el propietario
 storeItemInfo: false
+# ¿Objeto irrompible?
 unbreakable: false
 usage: 0
 usageLimit: -1
+# La durabilidad del objeto
 durability: 326
-dropFeatures:
-  glowDrop: false
-  glowDropColor: WHITE
-  displayNameDrop: false
-hiders:
-  hideEnchantments: false
-  hideUnbreakable: false
-  hideAttributes: false
-  hidePotionEffects: false
-  hideUsage: false
-enchantments: {}
-giveFirstJoinFeatures:
-  giveFirstJoin: false
-  giveFirstJoinAmount: 1
-  giveFirstJoinSlot: 0
-restrictions: {}
 cancelEventIfNoPerm: false
+# Cancelar evento si no es propietario
 cancelEventIfNotOwner: false
 disabledWorlds: []
+config_5: true
+config_update: true
+config_5_98: true
+# Desactivar el efecto de brillo de encantamiento
+disableEnchantGlide: false
+# Activadores en Lista Negra
+# (pueden ser usados por todos incluso si
+# la característica de solo propietario está activada)
+onlyOwnerBlackListedActivators: []
+# La característica de durabilidad
+# será ignorada, y el uso
+# será usado como durabilidad
+isDurabilityBasedOnUsage: false
+# Cancelar el evento si el jugador no tiene permiso
+cancelEventIfNoPermission: false
+# Las características de mundos en lista blanca
+whitelistedWorlds: []
+# Los proyectiles cargados
+chargedProjectiles: []
+# El planeador
+glider: false
+# Mantener los atributos predeterminados
+# Solo para 1.19+
+keepDefaultAttributes: true
+# Para nuevo objeto DÉJALO FALSO POR FAVOR
+# De lo contrario puedes dejarlo verdadero
+# si quieres actualizar tus objetos antiguos ponlo en FALSO
+# Pero ten cuidado, las etiquetas del objeto pueden cambiar
+# puede afectar a shopkeeper o recetas de crafteo personalizadas
+# Solo para 1.19+
+ignoreKeepDefaultAttributesFeature: false
+nbt:
+  '0':
+    key: Damage
+    type: INT
+    value: 0
+  '1':
+    key: Charged
+    type: BYTE
+    value: 1
+  '2':
+    key: ChargedProjectiles
+    type: STRING_LIST
+    value: []
+# Las características de uso
+# Incrementar o Disminuir este uso con
+# UsageModification en tus activadores
+usageFeatures:
+  # El uso del objeto
+  # -1 = Infinito
+  # Incrementar o Disminuir este uso con
+  # UsageModification en tus activadores
+  usage: 1
+  # Es limpieza actualizable
+  isRefreshableClean: true
+  # El límite de uso del objeto
+  # El uso no puede incrementarse por encima de este valor
+  usageLimit: -1
+# Las características de drop
+dropFeatures:
+  # Brillo al soltar
+  glowDrop: false
+  # El color del brillo
+  glowDropColor: WHITE
+  # Mostrar nombre personalizado sobre el objeto
+  displayNameDrop: false
+# Los encantamientos del objeto
+enchantments: {}
+# Las características de ocultación
+# Ocultadores para ocultar:
+# Atributos, Encantamientos, ...
+hiders:
+  # Ocultar encantamientos
+  hideEnchantments: false
+  # Ocultar irrompible
+  hideUnbreakable: false
+  # Ocultar atributos
+  hideAttributes: false
+  # Ocultar uso
+  hideUsage: true
+  # Ocultar destruye
+  hideDestroys: false
+  # Ocultar colocado en
+  hidePlacedOn: false
+  # Ocultar tinte
+  hideDye: false
+  # Ocultar decoración de armadura
+  hideArmorTrim: false
+  # Ocultar información adicional
+  hideAdditionalTooltip: false
+  # Ocultar información emergente
+  hideToolTip: false
+# Las características de dar al primer ingreso
+giveFirstJoinFeatures:
+  # Activar la característica
+  giveFirstJoin: false
+  # La cantidad a dar
+  giveFirstJoinAmount: 1
+  # Ranura entre 0 y 8 inclusive
+  giveFirstJoinSlot: 0
+# Las características de restricciones
+restrictions:
+  # El objeto no puede ser
+  # movido del inventario
+  locked-in-inventory: false
+# Las variables
+# Las variables se usan para almacenar datos como muertes/asesinatos...
 variables: {}
+# Los activadores / disparadores
 activators:
   activator1:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PROJECTILE_HIT_BLOCK
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems:
+      # El mensaje de error
       errorMessage: ''
+    # Los ExecutableItems requeridos
     requiredExecutableItems:
+      # El mensaje de error
       errorMessage: ''
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots:
     - -1
     playerCommands:
@@ -155,78 +277,136 @@ activators:
     - minecraft:execute at %projectile_uuid% run minecraft:particle flash ^ ^4 ^ .1
       .1 .1 0 1
     - minecraft:kill %projectile_uuid%
+    #
     playerConditions: {}
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
     detailedBlocks:
+      # Bloques
       blocks: []
+      # ¿Cancelar el evento si el bloque no es válido?
       cancelEventIfNotValid: false
+      # Mensaje si la condición no es válida
       messageIfNotValid: ''
     blockCommands: []
-    blockConditions: {}
+    #
+    blockConditions:
+      # Los objetos requeridos
+      requiredItems: {}
+      # Los ExecutableItems requeridos
+      requiredExecutableItems: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator2:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_RIGHT_CLICK
     typeTarget: NO_TYPE_TARGET
+    # Modificación de uso
     usageModification: -1
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 10
-      isCooldownInTicks: false
+      # El mensaje de enfriamiento
       cooldownMsg: ''
-      displayCooldownMessage: true
+      # ¿Cancelar el evento si el jugador está en enfriamiento?
       cancelEventIfInCooldown: true
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems:
+      # El mensaje de error
       errorMessage: ''
+    # Los ExecutableItems requeridos
     requiredExecutableItems:
+      # El mensaje de error
       errorMessage: ''
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots:
     - -1
     playerCommands:
     - LAUNCH ARROW_MODULE
     - ei giveslot %player% RAINBOW_HEART_ROCKET 1 %slot% 0 true
+    #
     playerConditions: {}
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
   activator3:
+    # El nombre o nombre mostrado
     name: '&eActivator'
     option: PLAYER_CUSTOM_LAUNCH
+    # Modificación de uso
     usageModification: 0
+    # Cancelar el evento vanilla
     cancelEvent: false
-    silenceOutput: false
+    # Si otro plugin cancela el evento que
+    # activa el activador y has activado esta característica
+    # el activador no será activado
+    noActivatorRunIfTheEventIsCancelled: false
+    # Actualizar automáticamente el objeto
     autoUpdateItem: false
+    # El enfriamiento
     cooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+      # Las condiciones de placeholders para pausar el enfriamiento
+      pausePlaceholdersConditions: {}
+    # El enfriamiento global
+    # (Para TODOS los jugadores y entidades)
     globalCooldownFeatures:
+      # El tiempo de reutilización
       cooldown: 0
-      isCooldownInTicks: false
-      cooldownMsg: '&cYou are in cooldown ! &7(&e%time_H%&6H &e%time_M%&6M &e%time_S%&6S&7)'
-      displayCooldownMessage: true
-      cancelEventIfInCooldown: false
+    # Para añadir enfriamiento
+    # a otro EI
     otherEICooldowns: {}
+    # Los objetos requeridos
     requiredItems:
+      # El mensaje de error
       errorMessage: ''
+    # Los ExecutableItems requeridos
     requiredExecutableItems:
+      # El mensaje de error
       errorMessage: ''
+    # Las magias requeridas
+    # (de EcoSkills)
+    requiredMagics: {}
+    # Las ranuras donde el
+    # activador funcionará
     detailedSlots:
     - -1
     playerCommands:
@@ -544,10 +724,15 @@ activators:
     - minecraft:execute at %projectile_uuid% run minecraft:particle flash ^ ^4 ^ .1
       .1 .1 0 1
     - minecraft:kill %projectile_uuid%
+    #
     playerConditions: {}
+    #
     worldConditions: {}
+    #
     itemConditions: {}
+    #
     customConditions: {}
+    # Las condiciones de placeholders
     placeholdersConditions: {}
     detailedEntities: []
     entityCommands:
@@ -592,23 +777,90 @@ activators:
       ~ ~ ~ 0.1 0.2 0.1 1 10
     - DELAYTICK 1
     - LOOP END
+    #
     entityConditions: {}
+    # Parte para modificar tus variables
     variablesModification: {}
-recognitions: []
+# Mostrar condiciones en la descripción
+displayConditions:
+  #
+  playerConditions: {}
+  #
+  worldConditions: {}
+  #
+  itemConditions: {}
+  # Las condiciones de placeholders
+  placeholdersConditions: {}
+  # Activar o desactivar esta característica
+  enableFeature: false
+# Características de comida
+foodFeatures:
+  # ¿Es el alimento carne?
+  isMeat: false
+  # La nutrición del alimento
+  nutrition: 1
+  # La saturación del alimento
+  saturation: 1
+  # ¿Puede el jugador comer siempre este alimento?
+  canAlwaysEat: false
+# Características Consumibles
+consumableFeatures:
+  # Enable this features
+  enable: false
+  # La animación
+  animation: EAT
+  # Tiene partículas de consumo
+  hasConsumeParticles: false
+  # Los segundos de consumo
+  consumeSeconds: 3
+# Las características del arma
+weaponFeatures:
+  # Enable this features
+  enable: false
+  # El tiempo para desactivar el bloqueo
+  # en ticks
+  disableBlockingTime: 0
+  # El daño por ataque
+  damagePerAttack: 5
+# The block attacks features
+blockAttacksFeatures:
+  # Enable this features
+  enable: false
+  # The block delay in seconds
+  blockDelay: 0
+  disableCooldownScale: 1.0
+  # The damage reductions
+  damageReductions: {}
+# La rareza del objeto
+itemRarity:
+  # Activar o desactivar la característica de rareza
+  enableRarity: false
+  # La rareza del objeto
+  rarity: COMMON
+# Las características de reparación
+repairableFeatures:
+  # Enable this features
+  enable: false
+  # El costo de reparación
+  repairCost: 2
+# Las características equipables
+equippableFeatures:
+  # Enable this features
+  enable: false
+  # La ranura
+  slot: BODY
+  # Activar el sonido
+  enableSound: false
+  # El sonido
+  sound: ITEM.ARMOR.EQUIP_DIAMOND
+  # El objeto tomará daño cuando el jugador sea herido
+  damageableOnHurt: false
+  # El objeto puede ser dispensado
+  dispensable: true
+  # El objeto puede ser intercambiado
+  swappable: true
+  # Las entidades permitidas
+  allowedEntities:
+  - PLAYER
+# Los atributos
 attributes: {}
-nbt:
-  '0':
-    key: Damage
-    type: INT
-    value: 0
-  '1':
-    key: Charged
-    type: BYTE
-    value: 1
-  '2':
-    key: ChargedProjectiles
-    type: STRING_LIST
-    value: []
-config_5: true
-config_update: true
-config_5_98: true
