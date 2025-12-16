@@ -1,0 +1,8 @@
+# Format:
+# <custom-color-name>: <color>
+orange: '&u[#F9CD40]'
+blue: '&u[#03fcdb]'
+pink: '&u[#ff57b0]'
+red: '&u[#ff4545]'
+white: '&u[#FFFFFF]'
+green: '&u[#45ff8c]'

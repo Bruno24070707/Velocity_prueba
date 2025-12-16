@@ -16,15 +16,23 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1765819050338
-  login: 1765819048370
+  logout: 1765843727366
+  login: 1765843619686
 money: '0'
 last-account-name: Bruno240707
 logoutlocation:
   world: f9f42665-d084-4921-862b-ce7d2039b3ff
-  world-name: spawn
-  x: -316.0063430526433
+  world-name: Lobby
+  x: -316.5716520749536
   y: 64.0
-  z: -340.50907243060294
-  yaw: 90.64021301269531
-  pitch: 0.9826469421386719
+  z: -333.4316437682745
+  yaw: 3.7679338455200195
+  pitch: 16.013715744018555
+lastlocation:
+  world: f9f42665-d084-4921-862b-ce7d2039b3ff
+  world-name: spawn
+  x: -319.5
+  y: 62.0
+  z: -335.5
+  yaw: 0.0
+  pitch: 0.0

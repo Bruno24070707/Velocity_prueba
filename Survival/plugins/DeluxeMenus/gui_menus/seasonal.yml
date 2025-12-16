@@ -1,0 +1,241 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Coin Shop | Seasonal Keys'
+open_command:
+  - seasonalkeys
+open_commands: []
+size: 36
+# as always, only cool people can open this menu :)
+items:
+  'seasonal':
+    material: red_shulker_box
+    slot: 11
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&cSeasonal Crate Keys'
+    lore:
+      - '&8Exclusive Crate Keys'
+      - '&r'
+      - '&bDescription:'
+      - '&fListed below are the Seasonal Crate'
+      - '&fkeys! You can purchase these keys'
+      - '&fto win prizes from the Seasonal Crate!'
+      - ''
+      - '&c◆ &fCoin Balance: &c%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+
+# Seasonal Keys
+
+  's1_1':
+    material: red_dye
+    slot: 13
+    priority: 0
+    update: true
+    enchantments:
+      - 'DAMAGE_ALL;1'
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 4000"
+    display_name: '&c1x Seasonal Key'
+    lore:
+      - '&8Seasonal Crate Keys'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase some keys to open crates'
+      - '&fand win amazing gear or cosmetics!'
+      - ''
+      - '&e◆ &fPrice: &e4,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 4000'
+      - '[message] &eCoins &8| &fYou purchased &e1x Seasonal Key&f!'
+      - '[console] crates key give %player_name% seasonal 1'
+      - '[close]'
+  
+  's1_2':
+    material: red_dye
+    slot: 13
+    priority: 1
+    update: true
+    enchantments:
+      - 'DAMAGE_ALL;1'
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c1x Seasonal Key'
+    lore:
+      - '&8Seasonal Crate Keys'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase some keys to open crates'
+      - '&fand win amazing gear or cosmetics!'
+      - ''
+      - '&e◆ &fPrice: &e4,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  
+  's2_1':
+    material: red_dye
+    slot: 14
+    priority: 0
+    amount: 3
+    update: true
+    enchantments:
+      - 'DAMAGE_ALL;1'
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 12000"
+    display_name: '&c3x Seasonal Keys'
+    lore:
+      - '&8Seasonal Crate Keys'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase some keys to open crates'
+      - '&fand win amazing gear or cosmetics!'
+      - ''
+      - '&e◆ &fPrice: &e12,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 12000'
+      - '[message] &eCoins &8| &fYou purchased &e3x Seasonal Keys&f!'
+      - '[console] crates key give %player_name% seasonal 3'
+      - '[close]'
+  
+  's2_2':
+    material: red_dye
+    slot: 14
+    priority: 1
+    amount: 3
+    update: true
+    enchantments:
+      - 'DAMAGE_ALL;1'
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c3x Seasonal Keys'
+    lore:
+      - '&8Seasonal Crate Keys'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase some keys to open crates'
+      - '&fand win amazing gear or cosmetics!'
+      - ''
+      - '&e◆ &fPrice: &e12,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  's3_1':
+    material: red_dye
+    slot: 15
+    priority: 0
+    amount: 3
+    update: true
+    enchantments:
+      - 'DAMAGE_ALL;1'
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 20000"
+    display_name: '&c5x Seasonal Keys'
+    lore:
+      - '&8Seasonal Crate Keys'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase some keys to open crates'
+      - '&fand win amazing gear or cosmetics!'
+      - ''
+      - '&e◆ &fPrice: &e20,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 20000'
+      - '[message] &eCoins &8| &fYou purchased &e5x Seasonal Keys&f!'
+      - '[console] crates key give %player_name% seasonal 5'
+      - '[close]'
+  
+  's3_2':
+    material: red_dye
+    slot: 15
+    priority: 1
+    amount: 5
+    update: true
+    enchantments:
+      - 'DAMAGE_ALL;1'
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&c5x Seasonal Keys'
+    lore:
+      - '&8Seasonal Crate Keys'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase some keys to open crates'
+      - '&fand win amazing gear or cosmetics!'
+      - ''
+      - '&e◆ &fPrice: &e20,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+
+  
+  
+  
+
+  'back':
+    material: flower_banner_pattern
+    slot: 31
+    hide_effects: true
+    display_name: '&cGo Back'
+    lore:
+      - '&fClick to return to the main menu'
+    left_click_commands:
+      - '[openguimenu] coinshop'
+    
+  

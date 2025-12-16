@@ -1,0 +1,150 @@
+2024-09-15 17:25:08 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Index "IDX_LOG_PURCHASE_SHOP" already exists; SQL statement:
+ALTER TABLE `log_purchase` ADD INDEX `idx_log_purchase_shop`(`shop`) [42111-214]
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.message.DbException.get(DbException.java:223)
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.message.DbException.get(DbException.java:199)
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.command.ddl.CreateIndex.update(CreateIndex.java:74)
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.command.Command.executeUpdate(Command.java:252)
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:190)
+	at QuickShop-Hikari-6.2.0.7.jar//org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at QuickShop-Hikari-6.2.0.7.jar//cc.carm.lib.easysql.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:119)
+	at QuickShop-Hikari-6.2.0.7.jar//cc.carm.lib.easysql.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java)
+	at QuickShop-Hikari-6.2.0.7.jar//cc.carm.lib.easysql.action.SQLUpdateActionImpl.execute(SQLUpdateActionImpl.java:42)
+	at QuickShop-Hikari-6.2.0.7.jar//cc.carm.lib.easysql.action.SQLUpdateActionImpl.execute(SQLUpdateActionImpl.java:14)
+	at QuickShop-Hikari-6.2.0.7.jar//com.ghostchu.quickshop.database.SimpleDatabaseHelperV2.performLogPurchasesIndex(SimpleDatabaseHelperV2.java:937)
+	at QuickShop-Hikari-6.2.0.7.jar//com.ghostchu.quickshop.database.SimpleDatabaseHelperV2$DatabaseUpgrade.upgrade(SimpleDatabaseHelperV2.java:905)
+	at QuickShop-Hikari-6.2.0.7.jar//com.ghostchu.quickshop.database.SimpleDatabaseHelperV2.checkColumns(SimpleDatabaseHelperV2.java:91)
+	at QuickShop-Hikari-6.2.0.7.jar//com.ghostchu.quickshop.database.SimpleDatabaseHelperV2.<init>(SimpleDatabaseHelperV2.java:62)
+	at QuickShop-Hikari-6.2.0.7.jar//com.ghostchu.quickshop.QuickShop.setupDatabase(QuickShop.java:992)
+	at QuickShop-Hikari-6.2.0.7.jar//com.ghostchu.quickshop.QuickShop.initDatabase(QuickShop.java:790)
+	at QuickShop-Hikari-6.2.0.7.jar//com.ghostchu.quickshop.QuickShop.onEnable(QuickShop.java:666)
+	at QuickShop-Hikari-6.2.0.7.jar//com.ghostchu.quickshop.QuickShopBukkit.onEnable(QuickShopBukkit.java:103)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288)
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202)
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:640)
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:589)
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:754)
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:516)
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:329)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-15 21:34:37 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-214]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.get(DbException.java:212)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.db.Store.close(Store.java:402)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1261)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.closeImpl(Database.java:1225)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.close(Database.java:1144)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-214]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 7 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.IllegalStateException: The plugin classloader for QuickShop-Hikari has thrown a zip file error. [2.1.214/3]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2052)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactFile(MVStore.java:2282)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.closeStore(MVStore.java:1329)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.close(MVStore.java:1291)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.db.Store.close(Store.java:386)
+	... 5 more
+Caused by: java.lang.IllegalStateException: The plugin classloader for QuickShop-Hikari has thrown a zip file error.
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:225)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557)
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:177)
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:172)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.findChunksToMove(MVStore.java:2103)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2064)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2041)
+	... 9 more
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:826)
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:290)
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:505)
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:460)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:220)
+	... 16 more
+2025-12-15 22:34:28 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-214]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.get(DbException.java:212)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.db.Store.close(Store.java:402)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1261)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.closeImpl(Database.java:1225)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.close(Database.java:1144)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-214]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 7 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.IllegalStateException: The plugin classloader for QuickShop-Hikari has thrown a zip file error. [2.1.214/3]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2052)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactFile(MVStore.java:2282)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.closeStore(MVStore.java:1329)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.close(MVStore.java:1291)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.db.Store.close(Store.java:386)
+	... 5 more
+Caused by: java.lang.IllegalStateException: The plugin classloader for QuickShop-Hikari has thrown a zip file error.
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:225)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557)
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:177)
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:172)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.findChunksToMove(MVStore.java:2103)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2064)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2041)
+	... 9 more
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:826)
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:290)
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:505)
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:460)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:220)
+	... 16 more
+2025-12-15 22:45:28 database: close
+org.h2.message.DbException: IO Exception: "Closing" [90028-214]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.get(DbException.java:212)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.db.Store.close(Store.java:402)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1261)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.closeImpl(Database.java:1225)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.Database.close(Database.java:1144)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: IO Exception: "Closing" [90028-214]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 7 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.IllegalStateException: The plugin classloader for QuickShop-Hikari has thrown a zip file error. [2.1.214/3]
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2052)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactFile(MVStore.java:2282)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.closeStore(MVStore.java:1329)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.close(MVStore.java:1291)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.db.Store.close(Store.java:386)
+	... 5 more
+Caused by: java.lang.IllegalStateException: The plugin classloader for QuickShop-Hikari has thrown a zip file error.
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:225)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557)
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:177)
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:172)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.findChunksToMove(MVStore.java:2103)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2064)
+	at QuickShop-Hikari-6.2.0.10.jar//org.h2.mvstore.MVStore.compactMoveChunks(MVStore.java:2041)
+	... 9 more
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:826)
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:290)
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:505)
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:460)
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:220)
+	... 16 more

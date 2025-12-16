@@ -1,0 +1,17 @@
+version: 1.13.1
+stats: true
+settings:
+  event-priority: LOWEST
+  auto-save: true
+  save-interval: 10
+  color-override: false
+  notify-others: true
+  join-message: false
+  confirm-timeout: 10
+  default-color: '&f'
+  command-name: chatcolor
+  force-group-colors: true
+  default-color-enabled: true
+default:
+  code: 1692811637
+  color: '&f'

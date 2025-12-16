@@ -1,0 +1,19 @@
+locations:
+  EnchantmentTable1:
+    world: Spawn
+    x: -85
+    y: 87
+    z: 48
+    particle: magic
+  EnchantmentTable2:
+    world: Spawn
+    x: -81
+    y: 87
+    z: 39
+    particle: magic
+  EnchantmentTable3:
+    world: Spawn
+    x: -72
+    y: 87
+    z: 35
+    particle: magic

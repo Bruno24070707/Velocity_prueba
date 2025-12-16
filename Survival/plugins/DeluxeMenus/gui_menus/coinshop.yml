@@ -1,0 +1,208 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Coin Shop'
+open_command:
+  - coinshop
+  - cs
+  - cshop
+open_commands: []
+size: 45
+# as always, only cool people can open this menu :)
+items:
+  'info':
+    material: END_CRYSTAL
+    slot: 4
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#F9CD40&lCoin Shop'
+    lore:
+      - '&8Helpful Information'
+      - '&r'
+      - '&bDescription:'
+      - '&fCoins are a virtual currency used'
+      - '&fto purchase store items like &bkeys&f,'
+      - '&bchat colors&f, and &bexclusive &fitems!'
+      - ''
+      - '&e◆ &fCoin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+
+  'cratekeys':
+    material: TRIPWIRE_HOOK
+    slot: 21
+    priority: 1
+    update: true
+    enchantments:
+      - 'DAMAGE_ALL;1'
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&b&lCrate Keys'
+    lore:
+      - '&8Category'
+      - '&r'
+      - '&bDescription:'
+      - '&fUse your keys to open crates'
+      - '&ffor some awesome in-game rewards!'
+      - ''
+      - '&e◆ &fStarting from: &e400 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[openguimenu] cratemerchant'
+    
+  
+  'chat_colors':
+    material: orange_dye
+    slot: 22
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#F9CD40&lChat Colors'
+    lore:
+      - '&8Category'
+      - '&r'
+      - '&bDescription:'
+      - '&fStand out in chat with your own'
+      - '&fchat color, purchase colors here!'
+      - ''
+      - '&e◆ &fStarting from: &e500 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[openguimenu] chatcolorbuy'
+  
+  'seasonal_crates':
+    material: ENDER_CHEST
+    slot: 23
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&5&lSeasonal Crates'
+    lore:
+      - '&8Category'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase Seasonal Crates to win exclusive'
+      - '&fin-game items and cosmetics!'
+      - ''
+      - '&e◆ &fStarting from: &e4,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[openguimenu] seasonal'
+  
+
+  'perks':
+    material: ENCHANTED_BOOK
+    slot: 24
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&d&lPerks'
+    lore:
+      - '&8Category'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase various perks & permissions'
+      - '&fto help aid your gameplay experience!'
+      - ''
+      - '&e◆ &fStarting from: &e1,200 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[openguimenu] perks'
+  
+  'flight_time':
+    material: FEATHER
+    slot: 30
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&f&lFlight Time'
+    lore:
+      - '&8Category'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more flight time in bulk here'
+      - '&fto help aid your gameplay experience!'
+      - ''
+      - '&e◆ &fStarting from: &e400 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[openguimenu] flight_time'
+  
+  'claim_blocks':
+    material: GRASS_BLOCK
+    slot: 20
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#45ff8c&lClaim Blocks'
+    lore:
+      - '&8Category'
+      - '&r'
+      - '&bDescription:'
+      - '&fNeed some extra claim blocks?'
+      - '&fPurchase more claim blocks here!'
+      - ''
+      - '&e◆ &fStarting from: &e1,400 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[openguimenu] claimblocks'
+  
+  'chat_tags':
+    material: NAME_TAG
+    slot: 32
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#03fcdb&lTags'
+    lore:
+      - '&8Category'
+      - '&r'
+      - '&bDescription:'
+      - '&fWant a cool tag beside your name?'
+      - '&fPurchase some cool tags here!'
+      - ''
+      - '&e◆ &fStarting from: &e1,000 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[openguimenu] tags'
+  
+
+  
+  
+  

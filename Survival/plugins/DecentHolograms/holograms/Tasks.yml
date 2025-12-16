@@ -1,0 +1,20 @@
+location: Spawn:-28.500:93.500:65.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:CLOCK'
+    height: 0.6
+  - content: '&e&lTasks'
+    height: 0.3
+  - content: '&rComplete tasks for Money!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&7Click to Open'
+    height: 0.3
+  actions: {}

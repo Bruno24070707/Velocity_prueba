@@ -10,5 +10,6 @@ groups:
     - world_nether
     - pvp
     - mina
+    - Spawn
     shares:
     - all

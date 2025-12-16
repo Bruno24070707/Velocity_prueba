@@ -1,0 +1,2123 @@
+menu_title: "&0              Pets Shop"
+open_command:
+  - petshop
+size: 53
+update_interval: 1
+open_commands:
+  - "[sound] BLOCK_CHEST_OPEN"
+items:
+  "pane":
+    material: GRAY_STAINED_GLASS_PANE
+    priority: 1000
+    slots:
+      - 0-8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 44
+  "pane2":
+    material: BLACK_STAINED_GLASS_PANE
+    priority: 1000
+    slots:
+      - 45-53
+  "manage":
+    material: "chest"
+    priority: 2
+    slot: 48
+    display_name: "&#50E924Pet Manage"
+    lore:
+      - ""
+      - "&#fcfcfcHere you can manage your "
+      - "&#fcfcfcpet like spawn, remove, ride,"
+      - "&#fcfcfcrename, etc.."
+      - ""
+      - "&#898989&oShortcut: /pets"
+      - ""
+      - "&#f6eb33▶ Click to access."
+    left_click_commands:
+      - "[player] pets"
+      - "[sound] ENTITY_CHICKEN_EGG"
+    right_click_commands:
+      - "[player] pets"
+      - "[sound] ENTITY_CHICKEN_EGG"
+  "close":
+    material: BARRIER
+    priority: 2
+    slot: 50
+    display_name: "&4✘ Close &7(Click)"
+    left_click_commands:
+      - "[close]"
+      - "[sound] ENTITY_CHICKEN_EGG"
+    right_click_commands:
+      - "[close]"
+      - "[sound] ENTITY_CHICKEN_EGG"
+  "item1":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzVhOWNkNThkNGM2N2JjY2M4ZmIxZjVmNzU2YTJkMzgxYzlmZmFjMjkyNGI3ZjRjYjcxYWE5ZmExM2ZiNWMifX19"
+    slot: 10
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Cow Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3000
+      deny_commands:
+        - "[meta] set pets1 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets1 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.cow.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3000"
+      - "[refresh]"
+  "item1-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzVhOWNkNThkNGM2N2JjY2M4ZmIxZjVmNzU2YTJkMzgxYzlmZmFjMjkyNGI3ZjRjYjcxYWE5ZmExM2ZiNWMifX19"
+    slot: 10
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.cow.*
+    display_name: "&#c6f591Cow Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn cow"
+      - "[close]"
+  "item1-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 10
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets1"
+          meta_type: INTEGER
+          value: 1
+  "item2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTYzODQ2OWE1OTljZWVmNzIwNzUzNzYwMzI0OGE5YWIxMWZmNTkxZmQzNzhiZWE0NzM1YjM0NmE3ZmFlODkzIn19fQ=="
+    slot: 11
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Chicken Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3000
+      deny_commands:
+        - "[meta] set pets2 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets2 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.chicken.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3000"
+      - "[refresh]"
+  "item2-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTYzODQ2OWE1OTljZWVmNzIwNzUzNzYwMzI0OGE5YWIxMWZmNTkxZmQzNzhiZWE0NzM1YjM0NmE3ZmFlODkzIn19fQ=="
+    slot: 11
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.chicken.*
+    display_name: "&#c6f591Chicken Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn chicken"
+      - "[close]"
+  "item2-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 11
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets2"
+          meta_type: INTEGER
+          value: 1
+  "item3":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19"
+    slot: 12
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Sheep Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3000
+      deny_commands:
+        - "[meta] set pets3 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets3 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.sheep.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3000"
+      - "[refresh]"
+  "item3-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19"
+    slot: 12
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.sheep.*
+    display_name: "&#c6f591Sheep Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn sheep"
+      - "[close]"
+  "item3-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 12
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets3"
+          meta_type: INTEGER
+          value: 1
+  "item4":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNjY4ZWY3Y2I3OWRkOWMyMmNlM2QxZjNmNGNiNmUyNTU5ODkzYjZkZjRhNDY5NTE0ZTY2N2MxNmFhNCJ9fX0="
+    slot: 13
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Pig Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3000
+      deny_commands:
+        - "[meta] set pets4 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets4 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.pig.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3000"
+      - "[refresh]"
+  "item4-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNjY4ZWY3Y2I3OWRkOWMyMmNlM2QxZjNmNGNiNmUyNTU5ODkzYjZkZjRhNDY5NTE0ZTY2N2MxNmFhNCJ9fX0="
+    slot: 13
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.pig.*
+    display_name: "&#c6f591Pig Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn pig"
+      - "[close]"
+  "item4-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 13
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets4"
+          meta_type: INTEGER
+          value: 1
+
+  "item5":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI4ZDFhYjRiZTFlMjhiN2I0NjFmZGVhNDYzODFhYzM2M2E3ZTVjMzU5MWM5ZTVkMjY4M2ZiZTFlYzlmY2QzIn19fQ=="
+    slot: 14
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Horse Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3000
+      deny_commands:
+        - "[meta] set pets5 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets5 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.horse.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3000"
+      - "[refresh]"
+  "item5-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI4ZDFhYjRiZTFlMjhiN2I0NjFmZGVhNDYzODFhYzM2M2E3ZTVjMzU5MWM5ZTVkMjY4M2ZiZTFlYzlmY2QzIn19fQ=="
+    slot: 14
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.horse.*
+    display_name: "&#c6f591Horse Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn horse"
+      - "[close]"
+  "item5-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 14
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets5"
+          meta_type: INTEGER
+          value: 1
+  "item6":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg5NTRhNDJlNjllMDg4MWFlNmQyNGQ0MjgxNDU5YzE0NGEwZDVhOTY4YWVkMzVkNmQzZDczYTNjNjVkMjZhIn19fQ=="
+    slot: 15
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Fox Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4000
+      deny_commands:
+        - "[meta] set pets6 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets6 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.fox.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4000"
+      - "[refresh]"
+  "item6-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg5NTRhNDJlNjllMDg4MWFlNmQyNGQ0MjgxNDU5YzE0NGEwZDVhOTY4YWVkMzVkNmQzZDczYTNjNjVkMjZhIn19fQ=="
+    slot: 15
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.fox.*
+    display_name: "&#c6f591Fox Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn fox"
+      - "[close]"
+  "item6-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 15
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets6"
+          meta_type: INTEGER
+          value: 1
+
+  "item7":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIyNTNmYzZiNjU2OTg4NDUzYTJkNzEzOGZjYTRkMWYyNzUyZjQ3NjkxZjBjNDM0ZTQzMjE4Mzc3MWNmZTEifX19"
+    slot: 16
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Cat Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3000
+      deny_commands:
+        - "[meta] set pets7 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets7 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.cat.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3000"
+      - "[refresh]"
+  "item7-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIyNTNmYzZiNjU2OTg4NDUzYTJkNzEzOGZjYTRkMWYyNzUyZjQ3NjkxZjBjNDM0ZTQzMjE4Mzc3MWNmZTEifX19"
+    slot: 16
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.cat.*
+    display_name: "&#c6f591Cat Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn cat"
+      - "[close]"
+  "item7-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 16
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets7"
+          meta_type: INTEGER
+          value: 1
+
+  "item8":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEyY2I3NGMxMzI0NWQzY2U5YmFjYzhiMTYwMGFmMDJmZDdjOTFmNTAxZmVhZjk3MzY0ZTFmOGI2ZjA0ZjQ3ZiJ9fX0="
+    slot: 19
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Bee Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,500$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3500
+      deny_commands:
+        - "[meta] set pets8 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets8 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.bee.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3500"
+      - "[refresh]"
+  "item8-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEyY2I3NGMxMzI0NWQzY2U5YmFjYzhiMTYwMGFmMDJmZDdjOTFmNTAxZmVhZjk3MzY0ZTFmOGI2ZjA0ZjQ3ZiJ9fX0="
+    slot: 19
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.bee.*
+    display_name: "&#c6f591Bee Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn bee"
+      - "[close]"
+  "item8-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 19
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets8"
+          meta_type: INTEGER
+          value: 1
+
+  "item9":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=="
+    slot: 20
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Dolphin Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,500$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3500
+      deny_commands:
+        - "[meta] set pets9 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets9 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.dolphin.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3500"
+      - "[refresh]"
+  "item9-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=="
+    slot: 20
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.dolphin.*
+    display_name: "&#c6f591Dolphin Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn dolphin"
+      - "[close]"
+  "item9-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 20
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets9"
+          meta_type: INTEGER
+          value: 1
+
+  "item10":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBlMWM3MDY0YWY3ZGVlNjg2NzdlZmFhOTVmNmU2ZTAxNDMwYjAwNmRkOTE2MzhlYTJhNjE4NDkyNTQ0ODhlYyJ9fX0="
+    slot: 21
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Allay Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,200$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4200
+      deny_commands:
+        - "[meta] set pets10 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets10 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.allay.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4200"
+      - "[refresh]"
+  "item10-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBlMWM3MDY0YWY3ZGVlNjg2NzdlZmFhOTVmNmU2ZTAxNDMwYjAwNmRkOTE2MzhlYTJhNjE4NDkyNTQ0ODhlYyJ9fX0="
+    slot: 21
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.allay.*
+    display_name: "&#c6f591Allay Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn allay"
+      - "[close]"
+  "item10-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 21
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets10"
+          meta_type: INTEGER
+          value: 1
+
+  "item11":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNjZTZmOTk5OGVkMmRhNzU3ZDFlNjM3MmYwNGVmYTIwZTU3ZGZjMTdjM2EwNjQ3ODY1N2JiZGY1MWMyZjJhMiJ9fX0="
+    slot: 22
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Frog Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,200$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4200
+      deny_commands:
+        - "[meta] set pets11 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets11 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.frog.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4200"
+      - "[refresh]"
+  "item11-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNjZTZmOTk5OGVkMmRhNzU3ZDFlNjM3MmYwNGVmYTIwZTU3ZGZjMTdjM2EwNjQ3ODY1N2JiZGY1MWMyZjJhMiJ9fX0="
+    slot: 22
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.frog.*
+    display_name: "&#c6f591Frog Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn frog"
+      - "[close]"
+  "item11-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 22
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets11"
+          meta_type: INTEGER
+          value: 1
+
+  "item12":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3NjA3MDk5ZDA2YjdhOGIxMzI3MDkzY2QwYTQ4OGJlN2M5ZjUwYjYxMjFiMjIxNTEyNzFiNTkxNzBmM2MyMSJ9fX0="
+    slot: 23
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Goat Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,300$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4300
+      deny_commands:
+        - "[meta] set pets12 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets12 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.goat.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4300"
+      - "[refresh]"
+  "item12-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3NjA3MDk5ZDA2YjdhOGIxMzI3MDkzY2QwYTQ4OGJlN2M5ZjUwYjYxMjFiMjIxNTEyNzFiNTkxNzBmM2MyMSJ9fX0="
+    slot: 23
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.goat.*
+    display_name: "&#c6f591Goat Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn goat"
+      - "[close]"
+  "item12-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 23
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets12"
+          meta_type: INTEGER
+          value: 1
+
+  "item13":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNhMDk2ZWVhNTA2MzAxYmVhNmQ0YjE3ZWUxNjA1NjI1YTZmNTA4MmM3MWY3NGE2MzljYzk0MDQzOWY0NzE2NiJ9fX0="
+    slot: 24
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Panda Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,300$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4300
+      deny_commands:
+        - "[meta] set pets13 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets13 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.panda.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4300"
+      - "[refresh]"
+  "item13-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNhMDk2ZWVhNTA2MzAxYmVhNmQ0YjE3ZWUxNjA1NjI1YTZmNTA4MmM3MWY3NGE2MzljYzk0MDQzOWY0NzE2NiJ9fX0="
+    slot: 24
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.panda.*
+    display_name: "&#c6f591Panda Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn panda"
+      - "[close]"
+  "item13-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 24
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets13"
+          meta_type: INTEGER
+          value: 1
+
+  "item14":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiYThkNjZmZWNiMTk5MmU5NGI4Njg3ZDZhYjRhNTMyMGFiNzU5NGFjMTk0YTI2MTVlZDRkZjgxOGVkYmMzIn19fQ=="
+    slot: 25
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Parrot Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4000
+      deny_commands:
+        - "[meta] set pets14 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets14 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.parrot.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4000"
+      - "[refresh]"
+  "item14-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiYThkNjZmZWNiMTk5MmU5NGI4Njg3ZDZhYjRhNTMyMGFiNzU5NGFjMTk0YTI2MTVlZDRkZjgxOGVkYmMzIn19fQ=="
+    slot: 25
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.parrot.*
+    display_name: "&#c6f591Parrot Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn parrot"
+      - "[close]"
+  "item14-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 25
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets14"
+          meta_type: INTEGER
+          value: 1
+
+  "item15":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGE0MDUwZTdhYWNjNDUzOTIwMjY1OGZkYzMzOWRkMTgyZDdlMzIyZjlmYmNjNGQ1Zjk5YjU3MThhIn19fQ=="
+    slot: 28
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Turtle Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5913,500$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 3500
+      deny_commands:
+        - "[meta] set pets15 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets15 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.turtle.*"
+      - "[close]"
+      - "[console] eco take %player_name% 3500"
+      - "[refresh]"
+  "item15-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGE0MDUwZTdhYWNjNDUzOTIwMjY1OGZkYzMzOWRkMTgyZDdlMzIyZjlmYmNjNGQ1Zjk5YjU3MThhIn19fQ=="
+    slot: 28
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.turtle.*
+    display_name: "&#c6f591Turtle Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn turtle"
+      - "[close]"
+  "item15-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 28
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets15"
+          meta_type: INTEGER
+          value: 1
+
+  "item16":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY3NGM2M2M4ZGI1ZjRjYTYyOGQ2OWEzYjFmOGEzNmUyOWQ4ZmQ3NzVlMWE2YmRiNmNhYmI0YmU0ZGIxMjEifX19"
+    slot: 29
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Husk Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,500$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4500
+      deny_commands:
+        - "[meta] set pets16 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets16 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.husk.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4500"
+      - "[refresh]"
+  "item16-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY3NGM2M2M4ZGI1ZjRjYTYyOGQ2OWEzYjFmOGEzNmUyOWQ4ZmQ3NzVlMWE2YmRiNmNhYmI0YmU0ZGIxMjEifX19"
+    slot: 29
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.husk.*
+    display_name: "&#c6f591Husk Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn husk"
+      - "[close]"
+  "item16-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 29
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets16"
+          meta_type: INTEGER
+          value: 1
+
+  "item17":
+    material: "CREEPER_HEAD"
+    slot: 30
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Creeper Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,500$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4500
+      deny_commands:
+        - "[meta] set pets17 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets17 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.creeper.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4500"
+      - "[refresh]"
+  "item17-2":
+    material: "CREEPER_HEAD"
+    slot: 30
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.creeper.*
+    display_name: "&#c6f591Creeper Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn creeper"
+      - "[close]"
+  "item17-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 30
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets17"
+          meta_type: INTEGER
+          value: 1
+
+  "item18":
+    material: "SKELETON_SKULL"
+    slot: 31
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Skeleton Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,500$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4500
+      deny_commands:
+        - "[meta] set pets18 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets18 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.skeleton.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4500"
+      - "[refresh]"
+  "item18-2":
+    material: "SKELETON_SKULL"
+    slot: 31
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.skeleton.*
+    display_name: "&#c6f591Skeleton Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn skeleton"
+      - "[close]"
+  "item18-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 31
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets18"
+          meta_type: INTEGER
+          value: 1
+
+  "item19":
+    material: "ZOMBIE_HEAD"
+    slot: 32
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Zombie Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,500$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4500
+      deny_commands:
+        - "[meta] set pets19 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets19 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.zombie.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4500"
+      - "[refresh]"
+  "item19-2":
+    material: "ZOMBIE_HEAD"
+    slot: 32
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.zombie.*
+    display_name: "&#c6f591Zombie Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn zombie"
+      - "[close]"
+  "item19-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 32
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets19"
+          meta_type: INTEGER
+          value: 1
+
+  "item20":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZjMGIzNmQ1M2ZmZjY5YTQ5YzdkNmYzOTMyZjJiMGZlOTQ4ZTAzMjIyNmQ1ZTgwNDVlYzU4NDA4YTM2ZTk1MSJ9fX0="
+    slot: 33
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Enderman Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5915,500$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 5500
+      deny_commands:
+        - "[meta] set pets20 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets20 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.enderman.*"
+      - "[close]"
+      - "[console] eco take %player_name% 5500"
+      - "[refresh]"
+  "item20-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZjMGIzNmQ1M2ZmZjY5YTQ5YzdkNmYzOTMyZjJiMGZlOTQ4ZTAzMjIyNmQ1ZTgwNDVlYzU4NDA4YTM2ZTk1MSJ9fX0="
+    slot: 33
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.enderman.*
+    display_name: "&#c6f591Enderman Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn enderman"
+      - "[close]"
+  "item20-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 33
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets20"
+          meta_type: INTEGER
+          value: 1
+
+  "item21":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0="
+    slot: 34
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Magma Cube Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5916,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 6000
+      deny_commands:
+        - "[meta] set pets21 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets21 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.magmacube.*"
+      - "[close]"
+      - "[console] eco take %player_name% 6000"
+      - "[refresh]"
+  "item21-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0="
+    slot: 34
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.magmacube.*
+    display_name: "&#c6f591Magma Cube Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn magmacube"
+      - "[close]"
+  "item21-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 34
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets21"
+          meta_type: INTEGER
+          value: 1
+
+  "item22":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRmZTkyNjkyMmZiYjQwNmYzNDNiMzRhMTBiYjk4OTkyY2VlNDQxMDEzN2QzZjg4MDk5NDI3YjIyZGUzYWI5MCJ9fX0="
+    slot: 37
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Polabear Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5916,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 6000
+      deny_commands:
+        - "[meta] set pets22 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets22 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.polabear.*"
+      - "[close]"
+      - "[console] eco take %player_name% 6000"
+      - "[refresh]"
+  "item22-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzRmZTkyNjkyMmZiYjQwNmYzNDNiMzRhMTBiYjk4OTkyY2VlNDQxMDEzN2QzZjg4MDk5NDI3YjIyZGUzYWI5MCJ9fX0="
+    slot: 37
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.polabear.*
+    display_name: "&#c6f591Polabear Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn polabear"
+      - "[close]"
+  "item22-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 37
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets22"
+          meta_type: INTEGER
+          value: 1
+
+  "item23":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmIxMzEzM2E4ZmI0ZWYwMGI3MWVmOWJhYjYzOWE2NmZiYzdkNWNmZmNjMTkwYzFkZjc0YmYyMTYxZGZkM2VjNyJ9fX0="
+    slot: 38
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Slime Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5916,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 6000
+      deny_commands:
+        - "[meta] set pets23 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets23 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.slime.*"
+      - "[close]"
+      - "[console] eco take %player_name% 6000"
+      - "[refresh]"
+  "item23-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmIxMzEzM2E4ZmI0ZWYwMGI3MWVmOWJhYjYzOWE2NmZiYzdkNWNmZmNjMTkwYzFkZjc0YmYyMTYxZGZkM2VjNyJ9fX0="
+    slot: 38
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.slime.*
+    display_name: "&#c6f591Slime Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn slime"
+      - "[close]"
+  "item23-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 38
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets23"
+          meta_type: INTEGER
+          value: 1
+
+  "item24":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFlZDlmZTRlZDA4OTNlMzI1ZjRmYmQzMmIwOTNjMWNjNTYyY2JhMjdmZjczMzU5ZDM1NmYxYzI4OGU0NDFmOSJ9fX0"
+    slot: 39
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Snowman Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5916,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 6000
+      deny_commands:
+        - "[meta] set pets24 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets24 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.snowman.*"
+      - "[close]"
+      - "[console] eco take %player_name% 6000"
+      - "[refresh]"
+  "item24-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWFlZDlmZTRlZDA4OTNlMzI1ZjRmYmQzMmIwOTNjMWNjNTYyY2JhMjdmZjczMzU5ZDM1NmYxYzI4OGU0NDFmOSJ9fX0"
+    slot: 39
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.snowman.*
+    display_name: "&#c6f591Snowman Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn snowman"
+      - "[close]"
+  "item24-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 39
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets24"
+          meta_type: INTEGER
+          value: 1
+
+  "item25":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg3YTk2YThjMjNiODNiMzJhNzNkZjA1MWY2Yjg0YzJlZjI0ZDI1YmE0MTkwZGJlNzRmMTExMzg2MjliNWFlZiJ9fX0="
+    slot: 40
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Spider Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5914,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 4000
+      deny_commands:
+        - "[meta] set pets25 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets25 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.spider.*"
+      - "[close]"
+      - "[console] eco take %player_name% 4000"
+      - "[refresh]"
+  "item25-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg3YTk2YThjMjNiODNiMzJhNzNkZjA1MWY2Yjg0YzJlZjI0ZDI1YmE0MTkwZGJlNzRmMTExMzg2MjliNWFlZiJ9fX0="
+    slot: 40
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.spider.*
+    display_name: "&#c6f591Spider Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn spider"
+      - "[close]"
+  "item25-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 40
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets25"
+          meta_type: INTEGER
+          value: 1
+
+  "item26":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTEyNTEyZTdkMDE2YTIzNDNhN2JmZjFhNGNkMTUzNTdhYjg1MTU3OWYxMzg5YmQ0ZTNhMjRjYmViODhiIn19fQ=="
+    slot: 41
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Illusioner Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5917,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 7000
+      deny_commands:
+        - "[meta] set pets26 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets26 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.Illusioner.*"
+      - "[close]"
+      - "[console] eco take %player_name% 7000"
+      - "[refresh]"
+  "item26-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTEyNTEyZTdkMDE2YTIzNDNhN2JmZjFhNGNkMTUzNTdhYjg1MTU3OWYxMzg5YmQ0ZTNhMjRjYmViODhiIn19fQ=="
+    slot: 41
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.Illusioner.*
+    display_name: "&#c6f591Illusioner Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn Illusioner"
+      - "[close]"
+  "item26-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 41
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets26"
+          meta_type: INTEGER
+          value: 1
+
+  "item27":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRlYWVjMzQ0YWIwOTViNDhjZWFkNzUyN2Y3ZGVlNjFiMDYzZmY3OTFmNzZhOGZhNzY2NDJjODY3NmUyMTczIn19fQ=="
+    slot: 42
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Vindicator Pet &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5917,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 7000
+      deny_commands:
+        - "[meta] set pets27 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets27 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.Vindicator.*"
+      - "[close]"
+      - "[console] eco take %player_name% 7000"
+      - "[refresh]"
+  "item27-2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRlYWVjMzQ0YWIwOTViNDhjZWFkNzUyN2Y3ZGVlNjFiMDYzZmY3OTFmNzZhOGZhNzY2NDJjODY3NmUyMTczIn19fQ=="
+    slot: 42
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.Vindicator.*
+    display_name: "&#c6f591Vindicator Pet &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn Vindicator"
+      - "[close]"
+  "item27-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 42
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets27"
+          meta_type: INTEGER
+          value: 1
+  "item28":
+    material: "WITHER_SKELETON_SKULL"
+    slot: 43
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#c6f591Wither Skeleton &8(&c✘&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcAfter unlock the pet, you "
+      - "&#fcfcfccan spawn the pet at any "
+      - "&#fcfcfctime."
+      - ""
+      - "&#c6f591&l▬ &#fcfcfcPrice: &#c6f5918,000$"
+      - ""
+      - "&#f6eb33▶ Click to buy this pet."
+    left_click_requirement:
+      requirements:
+        balance_check:
+          type: has money
+          amount: 8000
+      deny_commands:
+        - "[meta] set pets28 INTEGER null<delay=10>"
+        - "[refresh]<delay=12>"
+        - "[meta] set pets28 INTEGER 1"
+        - "[message] &#c6f591» Pets: &#fcfcfcYou don't have enough money for this!"
+        - "[refresh]"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[console] lp user %player_name% permission set pet.type.witherskeleton.*"
+      - "[close]"
+      - "[console] eco take %player_name% 8000"
+      - "[refresh]"
+  "item28-2":
+    material: "WITHER_SKELETON_SKULL"
+    slot: 43
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: pet.type.witherskeleton.*
+    display_name: "&#c6f591Wither Skeleton &8(&a✔&8)"
+    lore:
+      - "&8Miscellaneous"
+      - ""
+      - "&#fcfcfcYou have unlocked this pet,"
+      - "&#fcfcfcclick to summon.."
+      - ""
+      - "&#5FF633▶ Click to summon this pet!"
+    left_click_commands:
+      - "[sound] ENTITY_CHICKEN_EGG"
+      - "[player] pet spawn wither_skeleton"
+      - "[close]"
+  "item28-lock2":
+    material: BARRIER
+    priority: 0
+    slot: 43
+    update: true
+    display_name: "&cYou don't have enough money."
+    lore: []
+    left_click_commands:
+      - "[refresh]"
+    view_requirement:
+      requirements:
+        test:
+          type: "has meta"
+          key: "pets28"
+          meta_type: INTEGER
+          value: 1

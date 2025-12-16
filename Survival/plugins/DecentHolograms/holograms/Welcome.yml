@@ -1,0 +1,38 @@
+location: Spawn:8.500:92.500:19.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:gold_ingot'
+    height: 0.6
+  - content: '&#fbe200★ &#fbe400&lS&#fbe500&lE&#fce700&lR&#fce800&lV&#fcea00&lE&#fceb00&lR
+      &#fced00&lN&#fcee00&lA&#fdf000&lM&#fdf100&lE &#fdf300★'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&e&o&lSURVIVAL&r &8&o- &7&o[1.21]'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&f&oWelcome back to Server Name, &e&o{player}&f&o!'
+    height: 0.3
+  - content: '&f&oWe''re happy you''re here for &e&oSeason 1&f&o!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&f&oReady to start? Use &e&o/rtp&f&o to begin your adventure!'
+    height: 0.3
+  - content: '&f&oClaim land and begin to expand your &e&oempire&f&o!'
+    height: 0.3
+  - content: '&f&oClaim your rewards with &e&o/rewards&f&o!'
+    height: 0.5
+  - content: '&f&oMake sure to check our &e&o/help &f&ofor helpful information!'
+    height: 0.3
+  - content: '&f&oSurvival Setup &e&o1.1 &f&owas last updated on &e&o15th September,
+      2024'
+    height: 0.3
+  actions: {}

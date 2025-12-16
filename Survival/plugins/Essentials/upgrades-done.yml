@@ -1,9 +1,8 @@
-updateLegacyToAdventure: true
 newUidCacheBuilt: true
 updateSpawnsToNewSpawnsConfig: true
 updateJailsToNewJailsConfig: true
 warnMetrics: true
-updateRandomTeleport: true
+movemotdToFile: true
 moverulesToFile: true
 sanitizeAllUserFilenames: true
 updateUsersPowerToolsFormat: true
@@ -13,3 +12,5 @@ updateUsersIgnoreListUUID: true
 updateUsersStupidLegacyPathNames: true
 updateUsersMailList: true
 updatePurgeBrokenNpcAccounts: true
+updateLegacyToAdventure: true
+updateRandomTeleport: true

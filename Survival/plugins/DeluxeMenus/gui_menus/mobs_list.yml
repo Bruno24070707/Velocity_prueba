@@ -1,0 +1,380 @@
+menu_title: "&0              Mobs Soul"
+open_command:
+  - souls
+register_command: true
+open_commands:
+  - "[sound] BLOCK_CHEST_OPEN"
+size: 54
+update_interval: 1
+items:
+  "pane":
+    material: GRAY_STAINED_GLASS_PANE
+    priority: 1000
+    slots:
+      - 0-8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 44
+  "pane2":
+    material: BLACK_STAINED_GLASS_PANE
+    priority: 1000
+    slots:
+      - 45-53
+  "previous_page":
+    material: arrow
+    display_name: "&c⤾ Back"
+    slot: 48
+    click_commands:
+      - "[openguimenu] souls_shop"
+  "close":
+    material: BARRIER
+    priority: 2
+    slot: 50
+    display_name: "&4✘ Close &7(Click)"
+    left_click_commands:
+      - "[close]"
+      - "[sound] BLOCK_ANVIL_HIT"
+    right_click_commands:
+      - "[close]"
+      - "[sound] BLOCK_ANVIL_HIT"
+  "item1":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2EzNTgyY2U0ODg5MzMzZGFkMzI5ZTRlMjQzNzJhMDNhNWRhYTJjMzQyODBjNTYyNTZhZjUyODNlZGIwNDNmOCJ9fX0="
+    slot: 10
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Chicken"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &71"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &710%"
+  "item2":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlODUxNDg5MmYzZDc4YTMyZTg0NTZmY2JiOGM2MDgxZTIxYjI0NmQ4MmYzOThiZDk2OWZlYzE5ZDNjMjdiMyJ9fX0="
+    slot: 11
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Pig"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &71"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &720%"
+  "item3":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19"
+    slot: 12
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Sheep"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &71"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &720%"
+  "item4":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY1NTE4NDA5NTVmNTI0MzY3NTgwZjExYjM1MjI4OTM4YjY3ODYzOTdhOGYyZThjOGNjNmIwZWIwMWI1ZGIzZCJ9fX0="
+    slot: 13
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Cow"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &71"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &720%"
+  "item5":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk5MDgyMTk1MWZkOWFiOTMwMWFlYmY1ZDc2YTliNjBmMTVlYmY2MTllMWM5ZThkNjY4OTE5ZDM5NGQ5YTkzMyJ9fX0="
+    slot: 14
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Horse"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &71"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &720%"
+  "item6":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTliZjVlOTI3NDQ5YmZlOGIwZGU1NzhiN2IxZDU4MjU5NWQ5ZmNlMjM1NGI1Mjg0Yjk4ODJjNTZlYmNjOTMzYSJ9fX0="
+    slot: 15
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Bee"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &72"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &720%"
+  "item7":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGE0MDUwZTdhYWNjNDUzOTIwMjY1OGZkYzMzOWRkMTgyZDdlMzIyZjlmYmNjNGQ1Zjk5YjU3MThhIn19fQ=="
+    slot: 16
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Turtle"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &72"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &720%"
+  "item8":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0="
+    slot: 19
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Witch"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &740%"
+  "item9":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDcxYjNhZWUxODJiOWE5OWVkMjZjYmY1ZWNiNDdhZTkwYzJjM2FkYzA5MjdkZGUxMDJjN2IzMGZkZjdmNDU0NSJ9fX0="
+    slot: 20
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Piglin"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &740%"
+  "item10":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQ1MjhiMzIyOTY2MGYzZGZhYjQyNDE0ZjU5ZWU4ZmQwMWU4MDA4MWRkM2RmMzA4Njk1MzZiYTliNDE0ZTA4OSJ9fX0="
+    slot: 21
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Zombie"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &740%"
+  "item11":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0="
+    slot: 22
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Skeleton"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &740%"
+  "item12":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQyNTQ4MzhjMzNlYTIyN2ZmY2EyMjNkZGRhYWJmZTBiMDIxNWY3MGRhNjQ5ZTk0NDQ3N2Y0NDM3MGNhNjk1MiJ9fX0="
+    slot: 23
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Creeper"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &740%"
+  "item13":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWJiOWJjMGYwMWRiZDc2MmEwOGQ5ZTc3YzA4MDY5ZWQ3Yzk1MzY0YWEzMGNhMTA3MjIwODU2MWI3MzBlOGQ3NSJ9fX0="
+    slot: 24
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Hoglin"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &74"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &750%"
+  "item14":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2UzMDBlOTAyNzM0OWM0OTA3NDk3NDM4YmFjMjllM2E0Yzg3YTg0OGM1MGIzNGMyMTI0MjcyN2I1N2Y0ZTFjZiJ9fX0="
+    slot: 25
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Brute"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &74"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &750%"
+  "item15":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E1OWJiMGE3YTMyOTY1YjNkOTBkOGVhZmE4OTlkMTgzNWY0MjQ1MDllYWRkNGU2YjcwOWFkYTUwYjljZiJ9fX0="
+    slot: 28
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Enderman"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &74"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &760%"
+  "item16":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM3OTc0ODJhMTRiZmNiODc3MjU3Y2IyY2ZmMWI2ZTZhOGI4NDEzMzM2ZmZiNGMyOWE2MTM5Mjc4YjQzNmIifX19"
+    slot: 29
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Guardian"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &74"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &760%"
+  "item17":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIwNjU3ZTI0YjU2ZTFiMmY4ZmMyMTlkYTFkZTc4OGMwYzI0ZjM2Mzg4YjFhNDA5ZDBjZDJkOGRiYTQ0YWEzYiJ9fX0="
+    slot: 30
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Blaze"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &74"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &760%"
+  "item18":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNjZTZmOTk5OGVkMmRhNzU3ZDFlNjM3MmYwNGVmYTIwZTU3ZGZjMTdjM2EwNjQ3ODY1N2JiZGY1MWMyZjJhMiJ9fX0="
+    slot: 31
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Frog"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &75"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &770%"
+  "item19":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0="
+    slot: 32
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Allay"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &75"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &770%"
+  "item20":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEzZjM0MjI3MjgzNzk2YmMwMTcyNDRjYjQ2NTU3ZDY0YmQ1NjJmYTlkYWIwZTEyYWY1ZDIzYWQ2OTljZjY5NyJ9fX0="
+    slot: 33
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Iron Golem"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &75"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &770%"
+  "item21":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGViZjJiMTEzZjRhODEzNzBhMWNmOWQyNTA0ZTg3NTZiNjZkZWVmNzllOTQzMzE4N2RhNzc0Yjk2YzlmMzViYSJ9fX0="
+    slot: 34
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Axolotl"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &75"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &770%"
+  "item22":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWI5ZGE2YjhkMDZjZDI4ZDQ0MTM5OGI5Njc2NmMzYjRmMzcwZGU4NWM3ODk4MjA1ZTVjNDI5ZjE3OGEyNDU5NyJ9fX0="
+    slot: 37
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Husk"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &740%"
+  "item23":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E4YjcxNGQzMmQ3ZjZjZjhiMzdlMjIxYjc1OGI5YzU5OWZmNzY2NjdjN2NkNDViYmM0OWM1ZWYxOTg1ODY0NiJ9fX0="
+    slot: 38
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Ghast"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &760%"
+  "item24":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q1NDE1NDFkYWFmZjUwODk2Y2QyNThiZGJkZDRjZjgwYzNiYTgxNjczNTcyNjA3OGJmZTM5MzkyN2U1N2YxIn19fQ=="
+    slot: 39
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Spider"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &730%"
+  "item25":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjOTdhMDZlZmRlMDRkMDAyODdiZjIwNDE2NDA0YWIyMTAzZTEwZjA4NjIzMDg3ZTFiMGMxMjY0YTFjMGYwYyJ9fX0="
+    slot: 40
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Magma"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &73"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &760%"
+  "item26":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGFlZTZiYjM3Y2JmYzkyYjBkODZkYjVhZGE0NzkwYzY0ZmY0NDY4ZDY4Yjg0OTQyZmRlMDQ0MDVlOGVmNTMzMyJ9fX0="
+    slot: 41
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Pillager"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &74"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &770%"
+  "item27":
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVlYzk2NDY0NWE4ZWZhYzc2YmUyZjE2MGQ3Yzk5NTYzNjJmMzJiNjUxNzM5MGM1OWMzMDg1MDM0ZjA1MGNmZiJ9fX0="
+    slot: 42
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Wither Skeleton"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &75"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &775%"
+  "item28":
+    material: "player_head"
+    slot: 43
+    priority: 2
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: "&#0073FBMob &8» &7Player"
+    lore:
+      - "&8Souls Information"
+      - ""
+      - "&#0073FB&l▬ &#fcfcfcSouls Given: &710"
+      - "&#0073FB&l▬ &#fcfcfcSouls Chance: &775%"

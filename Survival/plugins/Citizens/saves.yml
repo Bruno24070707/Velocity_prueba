@@ -1,0 +1,1532 @@
+# Citizens NPC Storage
+last-created-npc-id: 47
+npc:
+  '27':
+    metadata:
+      nameplate-visible: 'false'
+      flyable: true
+    name: Tasks
+    uuid: cd879637-f4d9-4639-aaab-1f47b15d76c2
+    traits:
+      horsemodifiers: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 89.343
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: WITCH
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,horsemodifiers,gravity,mounttrait,lookclose,location,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '26':
+    metadata:
+      nameplate-visible: 'false'
+      ambient-sound: ''
+      death-sound: ''
+      flyable: true
+      hurt-sound: ''
+      silent-sounds: true
+    name: ServerWarps
+    uuid: 6d42ab85-6a18-4e9d-b9b6-7ac925dc06d9
+    traits:
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      skintrait: {
+        }
+      location:
+        bodyYaw: 111.91719
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: WANDERING_TRADER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,gravity,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '25':
+    metadata:
+      nameplate-visible: 'false'
+      cached-skin-uuid: 53ebd7da-9a3b-48a2-80b3-29ba3bba7ab7
+      cached-skin-uuid-name: meerfu
+    name: AuctionHouse
+    uuid: 46a323f5-c695-4e34-9b78-c73bdbe86abb
+    traits:
+      horsemodifiers: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 139.25409
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      skintrait:
+        signature: BKid+TTe6yvil8c9hOZHLUGDtvP3XNc+ZgYjI5J3mz0nttkoXaKJrSJ8VU1pqfARuSZb2LjqZCW2tHb/h0hqXhbLRxWkZH2/vC5cl8MuTlC23AEqdBajd01b4CRxieKQIG08wAYflOEOUi0fdhJpbLzDWGL/BODbrAxw0Zpf4XpKXjD9amw6ucPkrDBuEHtjDwdyQJ5hNpOtNlg87E3N0AeZP4Ronaol+X9sM99W/zQr9e8Ucn8u1qvSomCV8nEGIBk874PvEqBSAiVttX5mlNLa2DRj4uvObxK7hOKiteF0Ev/ux1PjogT4vn/lBSwGweQhKmTXQpB3oLSyeXgR+6a2vRFeq0sDojVg4alLl5QiKbk5FztKPJQUvcrnp5UaLUVu6WrPfxPSGh5PbFcI+WO+cXvVZAAsGN4b9Xr7zbWNcedIEc0RyR/IHKUunyDKITyMFpHPRJ0dlLoP5gzhIni7m58GyUwjPD/ouAmo72dp1aQNU2tjZwp+u2aBJh89GdGREXQ9deONDnYvef9ZYtButoaMP4VJrLP0cyq5SGg2bbs9W6ZkBDQvLYd43YjR4fINfxVusBzqHW9AUiZD854yD2g7VYImg5mTKXkF/rNY9de1iGNA7Xty2cTEMPauoRBfkcHiJ7ZmrVqmj2IvtLvNy8qD7W326PHAJzbie6M=
+        skinName: Meerfu
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY5MjczOTMzMDcxNSwKICAicHJvZmlsZUlkIiA6ICI1M2ViZDdkYTlhM2I0OGEyODBiMzI5YmEzYmJhN2FiNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJNZWVyZnUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MyMzk1ZWFkM2QwMjZlOTI5ZTYwYWQ1NWUyMjQxOTA3YWZlN2RlYzA3NDRiN2MzYzhlYTg3NzY1ZDA4ZDc3MyIKICAgIH0KICB9Cn0=
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,horsemodifiers,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '24':
+    metadata:
+      nameplate-visible: 'false'
+    name: PlayerWarps
+    uuid: b507baba-bcd0-4913-9e64-c0a3845789cb
+    traits:
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -6.8387375
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: CREEPER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '23':
+    metadata:
+      nameplate-visible: 'false'
+      flyable: true
+    name: PlayerVaults
+    uuid: 9fb4993f-9f27-4afe-a6b8-4ae2a85df61a
+    traits:
+      horsemodifiers: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -158.06909
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: COW
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,horsemodifiers,gravity,mounttrait,lookclose,location,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '22':
+    metadata:
+      nameplate-visible: 'false'
+    name: BannerShop
+    uuid: b905e0b7-203f-48b6-9ce4-a4627b7e8de3
+    traits:
+      villagertrait:
+        level: 5
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 128.58865
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: LIBRARIAN
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '21':
+    metadata:
+      nameplate-visible: 'false'
+    name: DecorShop
+    uuid: ebc67bab-e55c-4dbe-a43c-7b71a9c19804
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 101.59454
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: TOOLSMITH
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '20':
+    metadata:
+      nameplate-visible: 'false'
+    name: RedstoneShop
+    uuid: 9165b0e3-5716-4420-94b3-58a64aa826a1
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 65.47012
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: NITWIT
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '19':
+    metadata:
+      nameplate-visible: 'false'
+    name: MiscShop
+    uuid: 0e57d11d-6e9c-4842-8763-e3489b6ce897
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -84.8716
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: CLERIC
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '18':
+    metadata:
+      nameplate-visible: 'false'
+    name: PotionShop
+    uuid: 6703bb24-30d8-46ac-a958-8beb1382cefe
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -86.01287
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: LEATHERWORKER
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '17':
+    metadata:
+      nameplate-visible: 'false'
+    name: BrewingShop
+    uuid: 5129b481-7d92-457f-a010-0c3e6b81c6fb
+    traits:
+      villagertrait:
+        level: 5
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -0.77545166
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: MASON
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '16':
+    metadata:
+      nameplate-visible: 'false'
+    name: FarmandFoodShop
+    uuid: 1fd6575f-2ea1-4a3e-98a9-ac496be98ffc
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -169.77216
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: FARMER
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '15':
+    metadata:
+      nameplate-visible: 'false'
+    name: OreShop
+    uuid: efb3c0b7-acb6-4f97-a121-ee8b2ee34a1e
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -69.18698
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: CARTOGRAPHER
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '14':
+    metadata:
+      nameplate-visible: 'false'
+    name: MobDropShop
+    uuid: 6f328bce-868f-4c5a-8400-87e1d252e391
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -31.040478
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: WEAPONSMITH
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '13':
+    metadata:
+      nameplate-visible: 'false'
+    name: BlockShop
+    uuid: e985bf3e-b198-4000-b25d-9f4d34d6fba0
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 131.4615
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: FLETCHER
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '12':
+    metadata:
+      nameplate-visible: 'false'
+    name: BlockShop
+    uuid: 9ba2e42b-7899-44b7-96a3-2f09208a739c
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -142.72548
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: CARTOGRAPHER
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '11':
+    metadata:
+      nameplate-visible: 'false'
+    name: WoodShop
+    uuid: 9f1fb45d-498f-41e2-b266-9e3b1098a3bb
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: -150.26439
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: TOOLSMITH
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '10':
+    metadata:
+      nameplate-visible: 'false'
+    name: PersonalStats2
+    uuid: 36231fde-8666-4ec3-a06e-c221001c08f0
+    traits:
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      skintrait: {
+        }
+      mirrortrait:
+        enabled: true
+      location:
+        bodyYaw: 121.936386
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,mirrortrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '9':
+    metadata:
+      nameplate-visible: 'false'
+    name: PersonalStats
+    uuid: e2c50cfe-36c3-4c99-b7f5-958c480af6de
+    traits:
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      skintrait: {
+        }
+      mirrortrait:
+        enabled: true
+      location:
+        bodyYaw: -95.87591
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,mirrortrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '8':
+    metadata:
+      glowing: true
+      nameplate-visible: 'false'
+    name: CoinShop
+    uuid: 5de2815f-1c41-430e-a6dd-bb124273accc
+    traits:
+      villagertrait:
+        level: 5
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        color: WHITE
+        tags:
+        - CITIZENS_NPC
+      location:
+        bodyYaw: 65.431625
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: CARTOGRAPHER
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '7':
+    metadata:
+      nameplate-visible: 'false'
+    name: Vote
+    uuid: 4c7b1456-3815-4c2d-a539-09d7d142bbd8
+    traits:
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 10.596024
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: PANDA
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '6':
+    metadata:
+      glowing: true
+      nameplate-visible: 'false'
+    name: CrateMerchant
+    uuid: b796942b-0507-4e1d-9983-8526f743d689
+    traits:
+      villagertrait: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        color: WHITE
+        tags:
+        - CITIZENS_NPC
+      location:
+        bodyYaw: 125.952545
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: VILLAGER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      profession: CARTOGRAPHER
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '3':
+    metadata:
+      nameplate-visible: 'false'
+      ambient-sound: ''
+      death-sound: ''
+      flyable: true
+      hurt-sound: ''
+      silent-sounds: true
+    name: PlayerLevels
+    uuid: b9485512-d19f-4712-aa8b-8262013b66d4
+    traits:
+      horsemodifiers: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 89.64392
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: HUSK
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,horsemodifiers,gravity,mounttrait,lookclose,location,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '2':
+    metadata:
+      nameplate-visible: 'false'
+    name: Discord
+    uuid: b75c36eb-86c8-4db5-afef-2c4cb78c5397
+    traits:
+      horsemodifiers: {
+        }
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      location:
+        bodyYaw: 58.728073
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: EVOKER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      mirrortrait: {
+        }
+      controllable:
+        enabled: false
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,horsemodifiers,mounttrait,controllable,lookclose,location,type,mirrortrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '33':
+    metadata:
+      cached-skin-uuid: b2204047-cbf8-4038-9d46-805b40c4cab7
+      cached-skin-uuid-name: loading
+      nameplate-visible: 'false'
+    name: TopMobKills
+    uuid: 0680c9d3-3295-4ebe-8f1c-28b130ef9c00
+    traits:
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      location:
+        bodyYaw: -8.558411
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: SrleEGQZpymBvRN3zgVF7vVkG7IsttkNQhQd68WvRp2xbZki6FUgum66/nFNksQnM5sGd5kvcxHE3YH+A6JvbeKq171rvrouHDWo0yD5tDAiSMm87zdyNuxUWh2hkNr4qnMssUCRQ4nEj7yaEVzLZ5yCmctcS2GJ2pVDgCodeH6W1jtclGCSSiWsSPQagvjm3bt70hvCpL/VUEPZBVm4FynUrDzaEVbbxgzUegDZIdyQKI18RZ28i8RDjthTdp+Oz+6h4RAJAGucuqnQi3N1m5Z56qDb9CnFT1Uq38//Yn3dVpEvcikBs1QfhJyWhekg2qSTem7YYkYapgPEANwIQSyAJDW1BBuQStB9jwd6SUQUWry0D2MYWcYnVv9kCQA1cYnB3U3zQ6lL0VQwQlQQtCHyskApfELLmsFtDh1SgMihhvZkfzV3I6/tNvsBKxFzOniNvwbxGXjJWrqvErqVPv57cHyGE8U094win9cgcv9bA11OhpeX+4eCS28FNCakLdqfFiXt68D/1plaKUZHlG3hcIWf5vasxAhDVFnRSwWhr5F+Mayc8AZveehNA7Iky6gymkTtDSg8n4WKGSG6eE7hIIt/LFo3A0I3jQzcLrDNxV4nsVEdm/fcweDagNm7ljiZ6zhD8XzBG2HGwVl2LN8YVQaccdsfRNxzI2ArEwY=
+        skinName: '%ajlb_lb_statistic_mob_kills_1_alltime_name%'
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcwMTI5MDc0MDE2OCwKICAicHJvZmlsZUlkIiA6ICJiMjIwNDA0N2NiZjg0MDM4OWQ0NjgwNWI0MGM0Y2FiNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMb2FkaW5nIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZTFhNmM2MmIyNzY4NTZjZmM2YzBkMjIzOWMyNDNkYTRlYzU3NzI2OGM1YzJmYmVjZWYwOWIyNzM3NDczZjYiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '32':
+    metadata:
+      cached-skin-uuid: b2204047-cbf8-4038-9d46-805b40c4cab7
+      cached-skin-uuid-name: loading
+      nameplate-visible: 'false'
+    name: TopDeaths
+    uuid: 65e35cf3-6e67-4515-944e-ab068942e660
+    traits:
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      location:
+        bodyYaw: -8.067909
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: SrleEGQZpymBvRN3zgVF7vVkG7IsttkNQhQd68WvRp2xbZki6FUgum66/nFNksQnM5sGd5kvcxHE3YH+A6JvbeKq171rvrouHDWo0yD5tDAiSMm87zdyNuxUWh2hkNr4qnMssUCRQ4nEj7yaEVzLZ5yCmctcS2GJ2pVDgCodeH6W1jtclGCSSiWsSPQagvjm3bt70hvCpL/VUEPZBVm4FynUrDzaEVbbxgzUegDZIdyQKI18RZ28i8RDjthTdp+Oz+6h4RAJAGucuqnQi3N1m5Z56qDb9CnFT1Uq38//Yn3dVpEvcikBs1QfhJyWhekg2qSTem7YYkYapgPEANwIQSyAJDW1BBuQStB9jwd6SUQUWry0D2MYWcYnVv9kCQA1cYnB3U3zQ6lL0VQwQlQQtCHyskApfELLmsFtDh1SgMihhvZkfzV3I6/tNvsBKxFzOniNvwbxGXjJWrqvErqVPv57cHyGE8U094win9cgcv9bA11OhpeX+4eCS28FNCakLdqfFiXt68D/1plaKUZHlG3hcIWf5vasxAhDVFnRSwWhr5F+Mayc8AZveehNA7Iky6gymkTtDSg8n4WKGSG6eE7hIIt/LFo3A0I3jQzcLrDNxV4nsVEdm/fcweDagNm7ljiZ6zhD8XzBG2HGwVl2LN8YVQaccdsfRNxzI2ArEwY=
+        skinName: '%ajlb_lb_statistic_deaths_1_alltime_name%'
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcwMTI5MDc0MDE2OCwKICAicHJvZmlsZUlkIiA6ICJiMjIwNDA0N2NiZjg0MDM4OWQ0NjgwNWI0MGM0Y2FiNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMb2FkaW5nIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZTFhNmM2MmIyNzY4NTZjZmM2YzBkMjIzOWMyNDNkYTRlYzU3NzI2OGM1YzJmYmVjZWYwOWIyNzM3NDczZjYiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '31':
+    metadata:
+      cached-skin-uuid: b2204047-cbf8-4038-9d46-805b40c4cab7
+      cached-skin-uuid-name: loading
+      nameplate-visible: 'false'
+    name: TopDragonKills
+    uuid: 833d4fa2-b890-481c-a2c4-49fa6e2a05c6
+    traits:
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      location:
+        bodyYaw: -12.629478
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: SrleEGQZpymBvRN3zgVF7vVkG7IsttkNQhQd68WvRp2xbZki6FUgum66/nFNksQnM5sGd5kvcxHE3YH+A6JvbeKq171rvrouHDWo0yD5tDAiSMm87zdyNuxUWh2hkNr4qnMssUCRQ4nEj7yaEVzLZ5yCmctcS2GJ2pVDgCodeH6W1jtclGCSSiWsSPQagvjm3bt70hvCpL/VUEPZBVm4FynUrDzaEVbbxgzUegDZIdyQKI18RZ28i8RDjthTdp+Oz+6h4RAJAGucuqnQi3N1m5Z56qDb9CnFT1Uq38//Yn3dVpEvcikBs1QfhJyWhekg2qSTem7YYkYapgPEANwIQSyAJDW1BBuQStB9jwd6SUQUWry0D2MYWcYnVv9kCQA1cYnB3U3zQ6lL0VQwQlQQtCHyskApfELLmsFtDh1SgMihhvZkfzV3I6/tNvsBKxFzOniNvwbxGXjJWrqvErqVPv57cHyGE8U094win9cgcv9bA11OhpeX+4eCS28FNCakLdqfFiXt68D/1plaKUZHlG3hcIWf5vasxAhDVFnRSwWhr5F+Mayc8AZveehNA7Iky6gymkTtDSg8n4WKGSG6eE7hIIt/LFo3A0I3jQzcLrDNxV4nsVEdm/fcweDagNm7ljiZ6zhD8XzBG2HGwVl2LN8YVQaccdsfRNxzI2ArEwY=
+        skinName: '%ajlb_lb_statistic_kill_entity:ENDER_DRAGON_1_alltime_name%'
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcwMTI5MDc0MDE2OCwKICAicHJvZmlsZUlkIiA6ICJiMjIwNDA0N2NiZjg0MDM4OWQ0NjgwNWI0MGM0Y2FiNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMb2FkaW5nIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZTFhNmM2MmIyNzY4NTZjZmM2YzBkMjIzOWMyNDNkYTRlYzU3NzI2OGM1YzJmYmVjZWYwOWIyNzM3NDczZjYiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '30':
+    metadata:
+      cached-skin-uuid: b2204047-cbf8-4038-9d46-805b40c4cab7
+      cached-skin-uuid-name: loading
+      nameplate-visible: 'false'
+    name: TopPlaytime
+    uuid: e8059193-8663-4442-9eaa-4b58a2c40cb1
+    traits:
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      location:
+        bodyYaw: -34.299843
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: SrleEGQZpymBvRN3zgVF7vVkG7IsttkNQhQd68WvRp2xbZki6FUgum66/nFNksQnM5sGd5kvcxHE3YH+A6JvbeKq171rvrouHDWo0yD5tDAiSMm87zdyNuxUWh2hkNr4qnMssUCRQ4nEj7yaEVzLZ5yCmctcS2GJ2pVDgCodeH6W1jtclGCSSiWsSPQagvjm3bt70hvCpL/VUEPZBVm4FynUrDzaEVbbxgzUegDZIdyQKI18RZ28i8RDjthTdp+Oz+6h4RAJAGucuqnQi3N1m5Z56qDb9CnFT1Uq38//Yn3dVpEvcikBs1QfhJyWhekg2qSTem7YYkYapgPEANwIQSyAJDW1BBuQStB9jwd6SUQUWry0D2MYWcYnVv9kCQA1cYnB3U3zQ6lL0VQwQlQQtCHyskApfELLmsFtDh1SgMihhvZkfzV3I6/tNvsBKxFzOniNvwbxGXjJWrqvErqVPv57cHyGE8U094win9cgcv9bA11OhpeX+4eCS28FNCakLdqfFiXt68D/1plaKUZHlG3hcIWf5vasxAhDVFnRSwWhr5F+Mayc8AZveehNA7Iky6gymkTtDSg8n4WKGSG6eE7hIIt/LFo3A0I3jQzcLrDNxV4nsVEdm/fcweDagNm7ljiZ6zhD8XzBG2HGwVl2LN8YVQaccdsfRNxzI2ArEwY=
+        skinName: '%ajlb_lb_statistic_time_played_1_alltime_name%'
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcwMTI5MDc0MDE2OCwKICAicHJvZmlsZUlkIiA6ICJiMjIwNDA0N2NiZjg0MDM4OWQ0NjgwNWI0MGM0Y2FiNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMb2FkaW5nIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZTFhNmM2MmIyNzY4NTZjZmM2YzBkMjIzOWMyNDNkYTRlYzU3NzI2OGM1YzJmYmVjZWYwOWIyNzM3NDczZjYiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '29':
+    metadata:
+      cached-skin-uuid: b2204047-cbf8-4038-9d46-805b40c4cab7
+      cached-skin-uuid-name: loading
+      nameplate-visible: 'false'
+    name: TopKills
+    uuid: 4b66a011-3dc3-467d-bd22-1d15fc4d7c09
+    traits:
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      location:
+        bodyYaw: 87.92439
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: SrleEGQZpymBvRN3zgVF7vVkG7IsttkNQhQd68WvRp2xbZki6FUgum66/nFNksQnM5sGd5kvcxHE3YH+A6JvbeKq171rvrouHDWo0yD5tDAiSMm87zdyNuxUWh2hkNr4qnMssUCRQ4nEj7yaEVzLZ5yCmctcS2GJ2pVDgCodeH6W1jtclGCSSiWsSPQagvjm3bt70hvCpL/VUEPZBVm4FynUrDzaEVbbxgzUegDZIdyQKI18RZ28i8RDjthTdp+Oz+6h4RAJAGucuqnQi3N1m5Z56qDb9CnFT1Uq38//Yn3dVpEvcikBs1QfhJyWhekg2qSTem7YYkYapgPEANwIQSyAJDW1BBuQStB9jwd6SUQUWry0D2MYWcYnVv9kCQA1cYnB3U3zQ6lL0VQwQlQQtCHyskApfELLmsFtDh1SgMihhvZkfzV3I6/tNvsBKxFzOniNvwbxGXjJWrqvErqVPv57cHyGE8U094win9cgcv9bA11OhpeX+4eCS28FNCakLdqfFiXt68D/1plaKUZHlG3hcIWf5vasxAhDVFnRSwWhr5F+Mayc8AZveehNA7Iky6gymkTtDSg8n4WKGSG6eE7hIIt/LFo3A0I3jQzcLrDNxV4nsVEdm/fcweDagNm7ljiZ6zhD8XzBG2HGwVl2LN8YVQaccdsfRNxzI2ArEwY=
+        skinName: '%ajlb_lb_statistic_player_kills_1_alltime_name%'
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcwMTI5MDc0MDE2OCwKICAicHJvZmlsZUlkIiA6ICJiMjIwNDA0N2NiZjg0MDM4OWQ0NjgwNWI0MGM0Y2FiNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMb2FkaW5nIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZTFhNmM2MmIyNzY4NTZjZmM2YzBkMjIzOWMyNDNkYTRlYzU3NzI2OGM1YzJmYmVjZWYwOWIyNzM3NDczZjYiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '28':
+    metadata:
+      cached-skin-uuid: b2204047-cbf8-4038-9d46-805b40c4cab7
+      cached-skin-uuid-name: loading
+      nameplate-visible: 'false'
+    name: TopBalance
+    uuid: d3ee614f-0255-4e0d-968a-9e5ea0e48606
+    traits:
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      location:
+        bodyYaw: 133.16145
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: SrleEGQZpymBvRN3zgVF7vVkG7IsttkNQhQd68WvRp2xbZki6FUgum66/nFNksQnM5sGd5kvcxHE3YH+A6JvbeKq171rvrouHDWo0yD5tDAiSMm87zdyNuxUWh2hkNr4qnMssUCRQ4nEj7yaEVzLZ5yCmctcS2GJ2pVDgCodeH6W1jtclGCSSiWsSPQagvjm3bt70hvCpL/VUEPZBVm4FynUrDzaEVbbxgzUegDZIdyQKI18RZ28i8RDjthTdp+Oz+6h4RAJAGucuqnQi3N1m5Z56qDb9CnFT1Uq38//Yn3dVpEvcikBs1QfhJyWhekg2qSTem7YYkYapgPEANwIQSyAJDW1BBuQStB9jwd6SUQUWry0D2MYWcYnVv9kCQA1cYnB3U3zQ6lL0VQwQlQQtCHyskApfELLmsFtDh1SgMihhvZkfzV3I6/tNvsBKxFzOniNvwbxGXjJWrqvErqVPv57cHyGE8U094win9cgcv9bA11OhpeX+4eCS28FNCakLdqfFiXt68D/1plaKUZHlG3hcIWf5vasxAhDVFnRSwWhr5F+Mayc8AZveehNA7Iky6gymkTtDSg8n4WKGSG6eE7hIIt/LFo3A0I3jQzcLrDNxV4nsVEdm/fcweDagNm7ljiZ6zhD8XzBG2HGwVl2LN8YVQaccdsfRNxzI2ArEwY=
+        skinName: '%ajlb_lb_vault_eco_balance_1_alltime_name%'
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcwMTI5MDc0MDE2OCwKICAicHJvZmlsZUlkIiA6ICJiMjIwNDA0N2NiZjg0MDM4OWQ0NjgwNWI0MGM0Y2FiNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMb2FkaW5nIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZTFhNmM2MmIyNzY4NTZjZmM2YzBkMjIzOWMyNDNkYTRlYzU3NzI2OGM1YzJmYmVjZWYwOWIyNzM3NDczZjYiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '34':
+    metadata:
+      cached-skin-uuid: b2204047-cbf8-4038-9d46-805b40c4cab7
+      cached-skin-uuid-name: loading
+      nameplate-visible: 'false'
+    name: TopClaimBlocks
+    uuid: 45189e1f-719c-499f-8332-053961e49c3c
+    traits:
+      type: PLAYER
+      location:
+        bodyYaw: 88.06468
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      skintrait:
+        signature: SrleEGQZpymBvRN3zgVF7vVkG7IsttkNQhQd68WvRp2xbZki6FUgum66/nFNksQnM5sGd5kvcxHE3YH+A6JvbeKq171rvrouHDWo0yD5tDAiSMm87zdyNuxUWh2hkNr4qnMssUCRQ4nEj7yaEVzLZ5yCmctcS2GJ2pVDgCodeH6W1jtclGCSSiWsSPQagvjm3bt70hvCpL/VUEPZBVm4FynUrDzaEVbbxgzUegDZIdyQKI18RZ28i8RDjthTdp+Oz+6h4RAJAGucuqnQi3N1m5Z56qDb9CnFT1Uq38//Yn3dVpEvcikBs1QfhJyWhekg2qSTem7YYkYapgPEANwIQSyAJDW1BBuQStB9jwd6SUQUWry0D2MYWcYnVv9kCQA1cYnB3U3zQ6lL0VQwQlQQtCHyskApfELLmsFtDh1SgMihhvZkfzV3I6/tNvsBKxFzOniNvwbxGXjJWrqvErqVPv57cHyGE8U094win9cgcv9bA11OhpeX+4eCS28FNCakLdqfFiXt68D/1plaKUZHlG3hcIWf5vasxAhDVFnRSwWhr5F+Mayc8AZveehNA7Iky6gymkTtDSg8n4WKGSG6eE7hIIt/LFo3A0I3jQzcLrDNxV4nsVEdm/fcweDagNm7ljiZ6zhD8XzBG2HGwVl2LN8YVQaccdsfRNxzI2ArEwY=
+        skinName: '%ajlb_lb_griefprevention_accruedclaims_1_alltime_name%'
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcwMTI5MDc0MDE2OCwKICAicHJvZmlsZUlkIiA6ICJiMjIwNDA0N2NiZjg0MDM4OWQ0NjgwNWI0MGM0Y2FiNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMb2FkaW5nIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZTFhNmM2MmIyNzY4NTZjZmM2YzBkMjIzOWMyNDNkYTRlYzU3NzI2OGM1YzJmYmVjZWYwOWIyNzM3NDczZjYiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '35':
+    metadata:
+      ambient-sound: ''
+      death-sound: ''
+      hurt-sound: ''
+      nameplate-visible: 'false'
+      silent-sounds: true
+    name: PotionShop
+    uuid: 1a008b72-c390-42de-a851-d51905417793
+    traits:
+      profession: WEAPONSMITH
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      type: VILLAGER
+      villagertrait:
+        level: 5
+      location:
+        bodyYaw: 128.04329
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: profession,scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,villagertrait,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '36':
+    metadata:
+      cached-skin-uuid: 9bac5afc-d13f-4ca2-a332-6e5a8f66a997
+      cached-skin-uuid-name: llshyedah
+      nameplate-visible: 'false'
+    name: PvPArena
+    uuid: f3aa91ac-d5e3-4212-afc1-40144e2b4f94
+    traits:
+      skinlayers:
+        cape: false
+      location:
+        bodyYaw: -93.436264
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      type: PLAYER
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      skintrait:
+        signature: S40Q2DXzKfx0FYHLDQp2dkPFUWXQxd/GRPV51yzMSDuzFsLPaG+ae1MOOFIk+v7ARSM8lwSfIt3z9Ero+aMeJNrjadx/UR8ypjtOi20z4i+Oxk7aeI6Z4C2XF0mBpRHSmUOVVt8pMPNRkGtpWjUXzN4vpqoKSyRO549qdNOMjEqTLNkKU2tfYV9HUgHgp3J5amet1irHR1tJRVIuNWIuZ6DGEQ/xia9QsffqqOY8vQn+FNdDUsilNtXZ5IblNKq5tz7DcKiwddC9uVvbmDWvlCaG1cijxD9xlSny6uP8VuRi/VBCz+r9JWYcD3A4/WrgNzrsfxq0c0AFL8fk+JLYl0uYdoDcebE4ZX71WrvAViw2IWKgcwK+va7l1HJjZpjCtWVH0AKS6cz4HNi0WpSxqkZozcQzUukGjmtqo1pILK5gPi17SWKgmCIzGBmVZ383pVe0ljkdoULBF3yxVKKJCIFgHLeenMITspC0s/uTZ4hipLu5O8mLX+pTjjV8WkkiKpmgxbX9Nnna4y0GE+sR3rIQZxfWmONz+nDzof9AwcEt/IT2i5KRnglpQ/OrVykSzhLF+OdoiE/7yjUJ0HArZvOcRzkSue0hJYVrT37ImxHaY+rSaUELg8IKgO05HhwdAQ2WXDT6MR00gMtpAnpk8V85vKB4Or/C9Ap01zY0faw=
+        skinName: LLShyedah
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY5MjczOTEyNDY3MiwKICAicHJvZmlsZUlkIiA6ICI5YmFjNWFmY2QxM2Y0Y2EyYTMzMjZlNWE4ZjY2YTk5NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJMTFNoeWVkYWgiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdjZWEwMTU4MmI3YTA5N2MzNmFiY2YwOGZkZjVhMmY2MzBkNmMzZDIzZjFhOTQ0Yjg2NmU0YTVhMWQ3ZTI3NSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM0MGMwZTAzZGQyNGExMWIxNWE4YjMzYzJhN2U5ZTMyYWJiMjA1MWIyNDgxZDBiYTdkZWZkNjM1Y2E3YTkzMyIKICAgIH0KICB9Cn0=
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,skinlayers,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '39':
+    metadata:
+      flyable: true
+      nameplate-visible: 'false'
+    name: Soulshop
+    uuid: 5eae6b59-c525-470e-801d-58ac57849022
+    traits:
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      type: EVOKER
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: 0
+          cooldown: 0
+          command: soulshop
+          n: -1
+          hand: RIGHT
+          player: true
+      location:
+        bodyYaw: 125.55736
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,commandtrait,gravity,mounttrait,lookclose,location,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '40':
+    metadata:
+      cached-skin-uuid: 0287ee12-4bc3-4245-a0dc-47539b699384
+      cached-skin-uuid-name: petshop
+      nameplate-visible: 'false'
+    name: Petshop
+    uuid: b4cfcfe1-418b-4de3-81d4-66930fb12027
+    traits:
+      skintrait:
+        signature: C8yvktWYwAOkKt/VlPeFnCJaJWsXFIuj41rQe7zMJm5Gi88/9eWLypoEV61ATxtgmvd8GTaAJgS6+S02zlpjWf8Rh5hTE1/uwTWGogs0oP0X+8yk9XKou8H5cTbXcR+yEgDPHDRbZ7aKWdkqhQMxqIiZ4c2vp6yU1kmFbnhTdey+qIEd+LQelNB4OQS1OYffeb8Eg/4iHmvoSqFhBWJniq/GoVQya9xmRLu0AtNhN56tmN+WYlApoDWhOtRafJ8vc1X8N6bR2qXwX9QDEgbv0kdsuL3Mxtv9Hipap+K+IOgISO3G/Q4M7qKBjPnd6ySXJoRaiTj6aTiZKaFtqbbgQ2VPKRL5KSKOU+pTDyACsqL0a0k3LPRECyhJy3MrDhQYoxVVCx0MfisF8ZrcrkKfRnkhpA6drIfipccWxbhypyav1U/lDmW5slrtILfvB7mD0mOT09iik56TifJVeo4IUp3WqHYxEmhQoNtENn/pBDdbaGKD2u2YY2VCm2EsUCiCqTCnczVYPse0aWoGWDk9EKB5N4wd+Bo2+EYC+oYZJQcRvVDp34pYDdgcrocuTmiIL9I6l9H0CI6tBQ43/AmJ470/iuAh/KyMYdYJ6XdHryn/kdZUWuM1Hh8DrK8WL5dSVem4UnaBUmMd53uiP3AxKEJPwi4Fdc2LvncmStQ3hXg=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY5NjAxMDk5NDM2NiwKICAicHJvZmlsZUlkIiA6ICIwMjg3ZWUxMjRiYzM0MjQ1YTBkYzQ3NTM5YjY5OTM4NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJQZXRzaG9wIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IxZTc3OWNmY2VhZGMzNWU3MDQzZjZhZmViNmFhN2EzY2E5MGNlNzNmNjE4ZWYzNzNlZWZmMTQ3MGIyMGIwOTAiCiAgICB9CiAgfQp9
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      owner:
+        uuid: 0ea956ef-8df7-4ed1-bbaa-e4496278c809
+      type: WANDERING_TRADER
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: 0
+          cooldown: 0
+          command: petshop
+          n: -1
+          hand: RIGHT
+          player: true
+      location:
+        bodyYaw: -121.613434
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,commandtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '1':
+    metadata:
+      nameplate-visible: 'false'
+    name: Webstore
+    uuid: b21a74c6-8b33-403b-8971-b22337a94095
+    traits:
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      owner:
+        uuid: 3d5432ca-b1b9-43f1-bc31-67a521aba1aa
+      type: GOAT
+      location:
+        bodyYaw: -20.099487
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,mounttrait,lookclose,location,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '41':
+    metadata:
+      cached-skin-uuid: 997c2108-b046-4bbf-94ab-39a79b8ac0c0
+      cached-skin-uuid-name: 02fb1b4d-e4ac-472e-9be2-f83d3dfd38b3
+      nameplate-visible: 'false'
+    name: Skills
+    uuid: b87f8a21-06cd-4906-abc0-5791a93e3201
+    traits:
+      skintrait:
+        signature: Kimm9OxG4sYA47ypZBizO+6LSZn//xwYpsc/ZVPoS1PGH1CKn+KSsr3UixD0emCrnTw4nQf3+YMmPb5JBFzlr8zvUUXD5W4cXAN+FPEAd8a72sNqNkcYlcuY0UolBQLsJD1p0N/l+eS4j7WuGyQY3czWelTc+A4peO3GxwzjCeiQg0x8J+99Qq8kKKiNp/LLRgGrZCUgLCq6K3IK/RHQBl14buc7clCUDBSahtdRhQRKfB/M+hcqPwEb68rwlr1XU70x/vkVbwYKO7fLKTC5zJnFpuXAaPjTGTdM/SZ+/QVIrq1rmLAn2O+FVCdWW5QYkP/XzQs8dawNvBN/NY5DMfiZ5h5ttN4WRz+LXYkPweAaLjGtVbKCk7jFooFGqgZTjKWoy4n5DZ4L883YeGojWpux9SDf+Kvkcnb+dXrINm1fOLgt9+rWVCkTI6B13gs9czPF5yfmX4mF6Q07nhL8NEV/91t/PKeP7LRX089VLyQfqXTvNdGdoPIXfiXxCsE/6jGu0ysBTUFdABXbkZrPsVkDlWSo7lhXUo/4gJm80BT3OG/ex0lNzE771M8LP/ZwzclCj6KRQyTye7c3jK8yAfMe84sfBeVOwrRjFf0B/UthYPCUW5POqxtEn32nwyT9VXklwmGsEi4NlsQApNn9cbtnageITMSUs2PAP+UvIDs=
+        skinName: 02fb1b4d-e4ac-472e-9be2-f83d3dfd38b3
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY1MjA1NDE3ODM1NywKICAicHJvZmlsZUlkIiA6ICJhMWU4OThjNWEyNmY0MTYyOTQyYmNmNmM1MzRiMTE5ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJ0b21keGlpaSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kNmViN2MwMGE3NWEyNzExYmQ1MWU1ZjZhNWI2ZTA4OGM4OGNlODcwYWIwY2FhYTU5ODBmOGI5MjlkNjliZjJlIgogICAgfQogIH0KfQ==
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      owner:
+        uuid: 0ea956ef-8df7-4ed1-bbaa-e4496278c809
+      type: PLAYER
+      location:
+        bodyYaw: -139.4412
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      commandtrait:
+        commands:
+        - npc: false
+          experienceCost: -1
+          op: false
+          delay: 0
+          cost: -1.0
+          globalcooldown: 0
+          gn: 0
+          cooldown: 0
+          command: skills
+          n: -1
+          hand: RIGHT
+          player: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,commandtrait,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '42':
+    metadata:
+      cached-skin-uuid: 8ded35f5-e056-41cb-998b-efdb1535c79a
+      cached-skin-uuid-name: parrot1
+      flyable: true
+      nameplate-visible: 'false'
+    name: parrot1
+    uuid: 306af185-7b5f-4d99-8821-101725cf1929
+    traits:
+      type: PARROT
+      lookclose:
+        enabled: true
+        randomPitchRange:
+        - 0.0
+        - 0.0
+        randomYawRange:
+        - 0.0
+        - 360.0
+      owner:
+        uuid: 0ea956ef-8df7-4ed1-bbaa-e4496278c809
+      location:
+        bodyYaw: -97.21679
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: QxJBKcy30j/5ke2r75R4gYaFTIPwVkeW1srItc6cVX+7Mc5k4E5NdENWYl42mXs6JS1fpJNs4CVScez9Ulmm4XJ9rWOhvdC7LYgJTzFJk9hQc2z26dVIZHoU3s9OtTVgut3UD+DoFrCWtAvWaJ1i4zoneuVEMWTpldv81zJxstnVIlnZFCPOqukFMP+w1VYv2OocVMUWScEIelqXFLqRA29YXs+odJr48Hwdhj29wwmd7/ikiq+/X88LtUe6kulo4xCz5gRGtTodxfsHEowQIe1u/HRTwZF5T5v1GZHtncEmA7CSiu6A31g5b63izJaGAmMF8XfQXV+QNp/ezuknPwp8CRFMmumTfGn5+Ji5CTd7kxbDGxS6dscA35CdiJv83pyvbvC0yKhqAxJxQm1+90rVR5THpdT7Uh0Zl0wFoputLSWx/DrFWqfeGbAbvZLPB8mRT5UsVx/ziDFTaeZrvc56jAR6oUBgjjyOlmTPzTD1eIW/N+kYN8mwX2Qac3gDJkGM/HqSAIbNVxmDq81nalKiHdS8zo1x7S4xpH/PC2IpYtOWoeQjMH778JpRnLmM5krzHXPz1FC/517doOI5wittQpC41pMJKN5gBcwEbBYqkJtprLiLKBVj9KEzEtoq2ufK7lKbGx2DLqWiTxuEGXw4kvdxXoe3O9XzU2zHjJQ=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY5NjAxOTA5NjY4OCwKICAicHJvZmlsZUlkIiA6ICI4ZGVkMzVmNWUwNTY0MWNiOTk4YmVmZGIxNTM1Yzc5YSIsCiAgInByb2ZpbGVOYW1lIiA6ICJQYXJyb3QxIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVhZDIwZmRjNWE5YTFkNzRlNDE4NmYwMjNmZmI3YmZiMTkzZTgwMWZiN2U1MmI5NWVjODk0NWJmMmY3OGIzYzgiCiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIzNDBjMGUwM2RkMjRhMTFiMTVhOGIzM2MyYTdlOWUzMmFiYjIwNTFiMjQ4MWQwYmE3ZGVmZDYzNWNhN2E5MzMiCiAgICB9CiAgfQp9
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,rotationtrait,gravity,skintrait,mounttrait,lookclose,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '46':
+    metadata:
+      cached-skin-uuid: 401e9db1-8d04-4605-a77b-19c8c2d769e6
+      cached-skin-uuid-name: bee3
+      flyable: true
+      nameplate-visible: 'false'
+    name: bee3
+    uuid: 720bba5b-2a19-4877-98d6-19ea5811750e
+    traits:
+      type: BEE
+      owner:
+        uuid: 0ea956ef-8df7-4ed1-bbaa-e4496278c809
+      location:
+        bodyYaw: 118.883545
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: i0447iAIXC907O2YhqPl0yPNPGHZMTxhy10TcdlSt/48NShYY6QGddXNPCmet50aQaTCoW5wyUIqD96AOi6J46L9Liy5tq6pfvb6t26lmaFKx0n3T07PuQpmPPKFyfNjMHZWKFVsWJicCipELVvtdRVoMP9kxzt7HSXabIl+sQluLUkkrrt+8J/tsQUkkdGwo8dT8Le9S0Cwfj2Ho32B+tDtOhgAD/ky00LL/1fCkQAMnfLkv0/a/RxQW2pl3ZFM8eYoKVKCpTh4fVn357mqK6UIe/080Rd7sh8AqX85yY1JMvMDS2zbhs74hw8pNj2E9/9fzg+6KBYzg99jsrH7UR/T1p8Fza+RSCM6564DYxHkekvJxj7fQxjWoQJ8f9q9Kc7rhQIdC4DPRHCxEhFYUl7WBBuVb9OEubiqKQRn+gZn1hjKqJ303fKgQdnOCCFLqWXidBbMgANa2u1j5oH1sIWSQW2NHWPOQqu0Mu0Py6qI5cFXNGd7082tSMCH8Pg3X3Z7ed8qJHzIpT3G+Xnvof2OC/Vvcjx5IJ18xVioMRwVvXpwC2fRqcQcC+GK49j0pGyYfWkS8hECkw5W6vR6sK63TwUVvGNa1RSyXR50/He/Fyd/wlcfXJmVCWy2fTCpAHrne7wMDTJGxzSjGf8jY1wEB28dwYFt4cURWcR8+uI=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY5NjAyMDAyOTcyNywKICAicHJvZmlsZUlkIiA6ICI0MDFlOWRiMThkMDQ0NjA1YTc3YjE5YzhjMmQ3NjllNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJiZWUzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU5YmIyZmE3OTc3MDVkOWMyODUyMGY1NjBlZTI2MWIwNWQ3MTc5MTkyZGZkZjhiNjY0YTI0MWVmMjJhZmFjYmUiCiAgICB9CiAgfQp9
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,gravity,skintrait,mounttrait,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '45':
+    metadata:
+      cached-skin-uuid: b482b5cc-1fc3-46f3-a2b3-e3baee60b686
+      cached-skin-uuid-name: bee2
+      flyable: true
+      nameplate-visible: 'false'
+    name: bee2
+    uuid: 240bf542-33e6-42a6-bfa7-66efc5d8c5f5
+    traits:
+      type: BEE
+      owner:
+        uuid: 0ea956ef-8df7-4ed1-bbaa-e4496278c809
+      location:
+        bodyYaw: -124.54541
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: lkFUNs4Yp1dG8GT5NP1VX/shFqsmTEnsUqEA8yReLksSihPJypGNkcxei4u5djeQQrsuzdqsnYOY1xxpDVucSDKlzXk+yGvo0T4/XdHSyG9nErXMN6/EavumtIQSYDRXJxkngOBE2xeITY1baKqejLCIaWHP2LtdtuLDR/W+MRDi6axjtQwehT2xUPvazLxmEFRdhTuBC8QRGDLfkDk7IjHj9tLAxgwF2NtnQEk2lwMmdnALnU34qx3GDTj96+ptxLXc2Oy02nO1zKekfFfAxhXdoHER/xhOdFJqOYBbkIY2/FYW9VcULo2p9g4IRQyj5ZFIDUCs+BcAuiHCsBT881ZM0ZxEpfcoEyhJ2N6WBgLkucazj3h1h1SdAFB5Z3HJopj/ZDjDnPUKFVeZtfg4q5McuNsKyLwWAN+pd8nQmavj5vivX7fj9cFbMK65adO5mq0E7l9/+c6pzufexwzg0mBWFqeelPiEgd7K9fbgGdXjYYclSGTgSqfuNzPygA2Tz900ztRP1nZibWLu0SBZRyqoedmq+ijx4CgSQARd7bjVmcp67IFIjX76i41uLtd2/Efo1TuVat96Q3b07Qbr5CEmJSNXhALT35LMDIlNEb+F3l89/9E1hviq/gjpGH2eUC7hLgrFqxGgasw/1XV8LjfJ8nQJooicvBqt24ghUis=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY5NjAxOTk5Mjc1NiwKICAicHJvZmlsZUlkIiA6ICJiNDgyYjVjYzFmYzM0NmYzYTJiM2UzYmFlZTYwYjY4NiIsCiAgInByb2ZpbGVOYW1lIiA6ICJCZWUyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYyNTQzMjc2YWM1MTMzMzJjMTJkYjAzNTQ2OWQ4Zjc4ZTVkODQ1MDQzYzkyZDY0YzliYWEzY2VjNmI5NTc5NjEiCiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIzNDBjMGUwM2RkMjRhMTFiMTVhOGIzM2MyYTdlOWUzMmFiYjIwNTFiMjQ4MWQwYmE3ZGVmZDYzNWNhN2E5MzMiCiAgICB9CiAgfQp9
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,gravity,skintrait,mounttrait,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false
+  '44':
+    metadata:
+      cached-skin-uuid: e99e7482-c3c3-49d6-a944-c22a5ff3d084
+      cached-skin-uuid-name: bee1
+      flyable: true
+      nameplate-visible: 'false'
+    name: bee1
+    uuid: abd5c473-989c-41f5-935f-1f5a0da2e9e1
+    traits:
+      type: BEE
+      owner:
+        uuid: 0ea956ef-8df7-4ed1-bbaa-e4496278c809
+      location:
+        bodyYaw: -131.28638
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        yaw: 0.0
+        pitch: 0.0
+      skintrait:
+        signature: ECpaAuR+VxfToTd7ed+YfStbt3GU1oF23eaf+o1L5B9T0Zae4+t+C7RvaEDspgojkO/f1NW++Ng9IZUtIwRGAK0C0rFRE2hzDLjGhdhbn7o/GZoWU5CkI/thB9B+FwKKp+6dgmwcPjvUHiI+WM2lZ8THUYi7hvYNdbcWGV+sKuBGCaQ6DtSl6xFtxCk55Ojvtm/HlMVjgz+XeMG8AHqmvP0GdydTeBYXsWwQt+VZnj8sltKif4dFgvgxr4JXhCh3wOfR37p9bNZNw/QGhx8/Sal+oEpf8I6JdNBXhTjZogK5NaxD/TWojkzM7gsqzSx3SS3ya80RVBhFr0ie4udfiiJ4N/a6vbxE+kaSKXklP+NV2ODoRMvez+g+wPKNwB6AHUGki1J5ESe76EjVfvG6pLjU6qu+5rfVHmTvnkhHsIcOkFvgvFKMobN18QO8y0Kx0FN22bLmXWk+LVzMACv8nC93/x3C0B5SJxukSL/FxoH/LNGpsawlmrlb6tuaINvrHyF1pJOrZ8A4Pd6BHgAnQShZq0RyZph7SnmvaBxmiN5lf/+box43QY3Zj2Xj3O4wSJOm5ErOh7X8eyrtJURHALm1qb8CZO1K/nefri1JUQJpCJB5ae7Cblaow2IvB6MctzWNgB8TzMIgdkGGIScdjH5KBzDNS77xB1eqyAbJe1s=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY5NjAxOTkzNTY1NSwKICAicHJvZmlsZUlkIiA6ICJlOTllNzQ4MmMzYzM0OWQ2YTk0NGMyMmE1ZmYzZDA4NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJCRUUxIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U2ZjliMjJmYTNjMjU3OTM3MjQ3MWQ0ZmY4NGNmN2NkZWY1NzQ4M2YwZTE1Yjg0ZmM3ZWJhNmE3YzAzYThmMTAiCiAgICB9CiAgfQp9
+      gravity:
+        enabled: true
+      scoreboardtrait:
+        tags:
+        - CITIZENS_NPC
+    traitnames: scoreboardtrait,spawned,owner,gravity,skintrait,mounttrait,location,inventory,type,chunktickettrait
+    navigator:
+      speedmodifier: 1.0
+      avoidwater: false
+      usedefaultstuckaction: false

@@ -1,0 +1,262 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Coin Shop | Claim Blocks'
+open_command:
+  - buyclaimblocks
+open_commands: []
+size: 36
+# as always, only cool people can open this menu :)
+items: 
+
+  'c1_1':
+    material: grass_block
+    slot: 10
+    priority: 0
+    amount: 10
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 1400"
+    display_name: '&a10,000 Claim Blocks'
+    lore:
+      - '&8Claim Blocks'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more claim blocks for your land.'
+      - ''
+      - '&e◆ &fPrice: &e1,400 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 1400'
+      - '[message] &eCoins &8| &fYou purchased &e10,000 Claim Blocks&f!'
+      - '[console] adjustbonusclaimblocks %player_name% 10000'
+      - '[close]'
+  
+  'c1_2':
+    material: grass_block
+    slot: 10
+    priority: 1
+    amount: 10
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a10,000 Claim Blocks'
+    lore:
+      - '&8Claim Blocks'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more claim blocks for your land.'
+      - ''
+      - '&e◆ &fPrice: &e1,400 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+
+  
+  'c2_1':
+    material: grass_block
+    slot: 12
+    priority: 0
+    amount: 20
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 2300"
+    display_name: '&a20,000 Claim Blocks'
+    lore:
+      - '&8Claim Blocks'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more claim blocks for your land.'
+      - ''
+      - '&e◆ &fPrice: &e2,300 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 2300'
+      - '[message] &eCoins &8| &fYou purchased &e20,000 Claim Blocks&f!'
+      - '[console] adjustbonusclaimblocks %player_name% 20000'
+      - '[close]'
+  
+  'c2_2':
+    material: grass_block
+    slot: 12
+    priority: 1
+    amount: 20
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a20,000 Claim Blocks'
+    lore:
+      - '&8Claim Blocks'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more claim blocks for your land.'
+      - ''
+      - '&e◆ &fPrice: &e2,300 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'
+  
+  'c3_1':
+    material: grass_block
+    slot: 14
+    priority: 0
+    amount: 30
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 2800"
+    display_name: '&a30,000 Claim Blocks'
+    lore:
+      - '&8Claim Blocks'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more claim blocks for your land.'
+      - ''
+      - '&e◆ &fPrice: &e2,800 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 2800'
+      - '[message] &eCoins &8| &fYou purchased &e30,000 Claim Blocks&f!'
+      - '[console] adjustbonusclaimblocks %player_name% 30000'
+      - '[close]'
+  
+  'c3_2':
+    material: grass_block
+    slot: 14
+    priority: 1
+    amount: 30
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a30,000 Claim Blocks'
+    lore:
+      - '&8Claim Blocks'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more claim blocks for your land.'
+      - ''
+      - '&e◆ &fPrice: &e2,800 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'  
+  
+
+  'c4_1':
+    material: grass_block
+    slot: 16
+    priority: 0
+    amount: 40
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        checkbalance:
+          type: javascript
+          expression: "%coinsengine_balance_raw_coins% >= 3200"
+    display_name: '&a40,000 Claim Blocks'
+    lore:
+      - '&8Claim Blocks'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more claim blocks for your land.'
+      - ''
+      - '&e◆ &fPrice: &e3,200 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&2→ &aClick to purchase!'
+    left_click_commands:
+      - '[console] coins take %player_name% 3200'
+      - '[message] &eCoins &8| &fYou purchased &e40,000 Claim Blocks&f!'
+      - '[console] adjustbonusclaimblocks %player_name% 40000'
+      - '[close]'
+  
+  'c4_2':
+    material: grass_block
+    slot: 16
+    priority: 1
+    amount: 40
+    update: true
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a40,000 Claim Blocks'
+    lore:
+      - '&8Claim Blocks'
+      - '&r'
+      - '&bDescription:'
+      - '&fPurchase more claim blocks for your land.'
+      - ''
+      - '&e◆ &fPrice: &e3,200 Coins'
+      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Purchase coins from'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&4&l❌ &cYou do not have enough Coins!'
+    left_click_commands:
+      - '[message] &eCoins &8| &cYou do not have enough coins!'
+      - '[close]'  
+  
+
+  'back':
+    material: flower_banner_pattern
+    slot: 31
+    hide_effects: true
+    display_name: '&cGo Back'
+    lore:
+      - '&fClick to return to the main menu'
+    left_click_commands:
+      - '[openguimenu] coinshop'
+  
+  
+    
+  

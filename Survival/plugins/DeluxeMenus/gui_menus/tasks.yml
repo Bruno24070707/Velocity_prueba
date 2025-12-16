@@ -1,0 +1,50 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Tasks'
+open_command:
+  - tasks
+register_command: true
+open_commands: []
+size: 27
+# as always, only cool people can open this menu :)
+items:
+  'jobs':
+    material: IRON_HOE
+    slot: 11
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&e&lJobs'
+    lore:
+      - '&8Task'
+      - '&r'
+      - '&eDescription:'
+      - '&fEarn XP and money for performing'
+      - '&fvarious basic survival activities!'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[openguimenu] jobs'
+    
+  
+  'quests':
+    material: light_blue_dye
+    slot: 15
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&b&lQuests'
+    lore:
+      - '&8Task'
+      - '&r'
+      - '&bDescription:'
+      - '&fComplete challenging quests in order'
+      - '&fto earn money and other rewards!'
+      - '&r'
+      - '&e&l→ CLICK &eto Browse'
+    left_click_commands:
+      - '[player] quests'
+
+  
+  
+  

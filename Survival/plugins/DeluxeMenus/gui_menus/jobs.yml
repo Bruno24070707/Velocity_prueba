@@ -1,0 +1,308 @@
+menu_title: 'Jobs | Select a Job'
+open_command: jobs
+size: 45
+update_interval: 1
+items:
+  fishermanactive:
+    material: FISHING_ROD
+    slot: 22
+    priority: 2
+    update: true
+    enchantments:
+    - DURABILITY;1
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        fisherman_act:
+          type: string contains
+          input: "%jobsr_user_jobs%"
+          output: "Fisherman"
+    display_name: '&e&lFisherman Job&r &7(&aActive&7)'
+    lore:
+    - '&fIf you enjoy being by the sea, this is the'
+    - '&fperfect job for you! Fish up a variety of'
+    - '&ffish to earn money and level up your job!'
+    - '&r'
+    - '&e ✎ &fLevel: &e%jobsr_user_jlevel_Fisherman%'
+    - '&6 ❃ &fProgress: &6%jobsr_user_jexp_Fisherman%XP&7/&6%jobsr_user_jmaxexp_Fisherman%XP'
+    - '&c ✂ &fEmployees: &c%jobsr_totalplayers_Fisherman%'
+    - ''
+    - '&c&l←&r &c&lCLICK&r&c to leave the Fisherman Job'
+    left_click_commands:
+    - '[player] jobs leave Fisherman'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs leave Fisherman'
+    - '[close]'
+  fishermannotactive:
+    material: FISHING_ROD
+    slot: 22
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        fisherman_not:
+          type: "!string contains"
+          input: "%jobsr_user_jobs%"
+          output: "Fisherman"
+    display_name: '&e&lFisherman Job'
+    lore:
+    - '&fIf you enjoy being by the sea, this is the'
+    - '&fperfect job for you! Fish up a variety of'
+    - '&ffish to earn money and level up your job!'
+    - ''
+    - '&a&l→ CLICK&r&a to join the Fisherman Job'
+    left_click_commands:
+    - '[player] jobs join Fisherman'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs join Fisherman'
+    - '[close]'
+
+  mineractive:
+    material: DIAMOND_PICKAXE
+    slot: 20
+    priority: 2
+    update: true
+    enchantments:
+    - DURABILITY;1
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        miner_act:
+          type: string contains
+          input: "%jobsr_user_jobs%"
+          output: "Miner"
+    display_name: '&e&lMiner Job&r &7(&aActive&7)'
+    lore:
+    - '&fMining is crucial in gathering materials!'
+    - '&fSpend your time mining valuable ores and'
+    - '&fminerals to earn money and level up your job!'
+    - '&r'
+    - '&e ✎ &fLevel: &e%jobsr_user_jlevel_Miner%'
+    - '&6 ❃ &fProgress: &6%jobsr_user_jexp_Miner%XP&7/&6%jobsr_user_jmaxexp_Miner%XP'
+    - '&c ✂ &fEmployees: &c%jobsr_totalplayers_Miner%'
+    - ''
+    - '&c&l←&r &c&lCLICK&r&c to leave the Miner Job'
+    left_click_commands:
+    - '[player] jobs leave Miner'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs leave Miner'
+    - '[close]'
+  minernotactive:
+    material: DIAMOND_PICKAXE
+    slot: 20
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        miner_not:
+          type: "!string contains"
+          input: "%jobsr_user_jobs%"
+          output: "Miner"
+    display_name: '&e&lMiner Job'
+    lore:
+    - '&fMining is crucial in gathering materials!'
+    - '&fSpend your time mining valuable ores and'
+    - '&fminerals to earn money and level up your job!'
+    - ''
+    - '&a&l→ CLICK&r&a to join the Miner Job'
+    left_click_commands:
+    - '[player] jobs join Miner'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs join Miner'
+    - '[close]'
+
+  woodcutteractive:
+    material: IRON_AXE
+    slot: 21
+    priority: 2
+    update: true
+    enchantments:
+    - DURABILITY;1
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        woodcutter_act:
+          type: string contains
+          input: "%jobsr_user_jobs%"
+          output: "Woodcutter"
+    display_name: '&e&lWoodcutter Job&r &7(&aActive&7)'
+    lore:
+    - '&fWood is arguably one of the most versatile'
+    - '&fmaterials! Chop down trees and grow them in'
+    - '&forder to earn money and level up your job!'
+    - '&r'
+    - '&e ✎ &fLevel: &e%jobsr_user_jlevel_Woodcutter%'
+    - '&6 ❃ &fProgress: &6%jobsr_user_jexp_Woodcutter%XP&7/&6%jobsr_user_jmaxexp_Woodcutter%XP'
+    - '&c ✂ &fEmployees: &c%jobsr_totalplayers_Woodcutter%'
+    - ''
+    - '&c&l←&r &c&lCLICK&r&c to leave the Woodcutter Job'
+    left_click_commands:
+    - '[player] jobs leave Woodcutter'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs leave Woodcutter'
+    - '[close]'
+  woodcutternotactive:
+    material: IRON_AXE
+    slot: 21
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        woodcutter_not:
+          type: "!string contains"
+          input: "%jobsr_user_jobs%"
+          output: "Woodcutter"
+    display_name: '&e&lWoodcutter Job'
+    lore:
+    - '&fWood is arguably one of the most versatile'
+    - '&fmaterials! Chop down trees and grow them in'
+    - '&forder to earn money and level up your job!'
+    - '&r'
+    - '&a&l→ CLICK&r&a to join the Woodcutter Job'
+    left_click_commands:
+    - '[player] jobs join Woodcutter'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs join Woodcutter'
+    - '[close]'
+
+  farmeractive:
+    material: IRON_HOE
+    slot: 23
+    priority: 2
+    update: true
+    enchantments:
+    - DURABILITY;1
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        farmer_act:
+          type: string contains
+          input: "%jobsr_user_jobs%"
+          output: "Farmer"
+    display_name: '&e&lFarmer Job&r &7(&aActive&7)'
+    lore:
+    - '&fMake the most out of nature by growing crops!'
+    - '&fMaximise your efficiency and harvest crops in'
+    - '&forder to earn money and level up your job!'
+    - '&r'
+    - '&e ✎ &fLevel: &e%jobsr_user_jlevel_Farmer%'
+    - '&6 ❃ &fProgress: &6%jobsr_user_jexp_Farmer%XP&7/&6%jobsr_user_jmaxexp_Farmer%XP'
+    - '&c ✂ &fEmployees: &c%jobsr_totalplayers_Farmer%'
+    - ''
+    - '&c&l←&r &c&lCLICK&r&c to leave the Farmer Job'
+    left_click_commands:
+    - '[player] jobs leave Farmer'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs leave Farmer'
+    - '[close]'
+  farmernotactive:
+    material: IRON_HOE
+    slot: 23
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        farmer_not:
+          type: "!string contains"
+          input: "%jobsr_user_jobs%"
+          output: "Farmer"
+    display_name: '&e&lFarmer Job'
+    lore:
+    - '&fMake the most out of nature by growing crops!'
+    - '&fMaximise your efficiency and harvest crops in'
+    - '&forder to earn money and level up your job!'
+    - '&r'
+    - '&a&l→ CLICK&r&a to join the Farmer Job'
+    left_click_commands:
+    - '[player] jobs join Farmer'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs join Farmer'
+    - '[close]'
+
+
+  excavatoractive:
+    material: DIAMOND_SHOVEL
+    slot: 24
+    priority: 2
+    update: true
+    enchantments:
+    - DURABILITY;1
+    item_flags: [HIDE_ENCHANTS]
+    item_flags: [HIDE_ATTRIBUTES]
+    view_requirement:
+      requirements:
+        excavator_act:
+          type: string contains
+          input: "%jobsr_user_jobs%"
+          output: "Excavator"
+    display_name: '&e&lExcavator Job&r &7(&aActive&7)'
+    lore:
+    - '&fExcavation is a must to provide a suitable'
+    - '&fpatch of land to build on! Dig up the ground'
+    - '&fin order to earn money and level up your job!'
+    - '&r'
+    - '&e ✎ &fLevel: &e%jobsr_user_jlevel_Excavator%'
+    - '&6 ❃ &fProgress: &6%jobsr_user_jexp_Excavator%XP&7/&6%jobsr_user_jmaxexp_Excavator%XP'
+    - '&c ✂ &fEmployees: &c%jobsr_totalplayers_Excavator%'
+    - ''
+    - '&c&l←&r &c&lCLICK&r&c to leave the Excavator Job'
+    left_click_commands:
+    - '[player] jobs leave Excavator'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs leave Excavator'
+    - '[close]'
+  excavatornotactive:
+    material: DIAMOND_SHOVEL
+    slot: 24
+    priority: 1
+    update: true
+    view_requirement:
+      requirements:
+        farmer_not:
+          type: "!string contains"
+          input: "%jobsr_user_jobs%"
+          output: "Excavator"
+    display_name: '&e&lExcavator Job'
+    lore:
+    - '&fExcavation is a must to provide a suitable'
+    - '&fpatch of land to build on! Dig up the ground'
+    - '&fin order to earn money and level up your job!'
+    - '&r'
+    - '&a&l→ CLICK&r&a to join the Excavator Job'
+    left_click_commands:
+    - '[player] jobs join Excavator'
+    - '[close]'
+    right_click_commands:
+    - '[player] jobs join Excavator'
+    - '[close]'
+
+  information:
+    material: BOOK
+    slot: 40
+    priority: 1
+    update: true
+    display_name: '&e&lJob Information'
+    lore:
+    - '&fNeed some more information about each job?'
+    - '&fClick on this book to learn how much money'
+    - '&fand level XP each job gives you!'
+    - ''
+    - '&a&l→ &fClick to view Job Information'
+    left_click_commands:
+    - '[openguimenu] jobs-information'
+    right_click_commands:
+    - '[openguimenu] jobs-information'
+  

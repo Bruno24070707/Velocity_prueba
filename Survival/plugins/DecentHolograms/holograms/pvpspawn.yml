@@ -1,0 +1,29 @@
+location: Spawn:390.500:64.000:107.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#fb3f00⚔&#fb4300&l &#fb4700&lP&#fc4c00&lV&#fc5000&lP &#fc5400&lA&#fc5800&lR&#fc5c00&lE&#fc6000&lN&#fd6500&lA
+      &#fd6900⚔&#fd6d00&l'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&c&l&oDANGER &8- &7&o[KEEP INVENTORY: OFF]'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&f&oYou''re about to enter the &c&oPvP Arena&f&o!'
+    height: 0.3
+  - content: '&f&oMake sure you have &c&ostrong armor&f&o equipped.'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&f&oIf you die, you will &c&olose your items&f&o!'
+    height: 0.3
+  - content: '&f&oGood luck out there, &c&o%player_name%&f&o!'
+    height: 0.3
+  actions: {}

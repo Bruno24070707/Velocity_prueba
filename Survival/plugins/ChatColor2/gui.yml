@@ -1,0 +1,100 @@
+# GUI Config Format Guide
+#
+# NOTE: All materials must be 1.16 materials. They will be automatically
+#       converted into other versions materials.
+#
+#       See here for 1.16:
+#       https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+#
+# NOTE: COLOR items represent a color, MODIFIER items represent a modifier
+#       and INVENTORY items link to another inventory.
+#
+# NOTE: All inventory-related messages can be used as a placeholder, like
+#       %gui-available%.
+#
+# NOTE: color-unavailable, modifier-unavailable, modifier-inactive, modifier-active
+#       can all be left out if not needed.
+#
+# NOTE: Please carefully read the format, it includes everything you need for creating a GUI.
+#
+# <inventory name>:
+#   title: [inventory title (colors supported) titles MUST be unique]
+#   size: [must be a multiple of 9]
+#
+#   color-unavailable: <- The item that shows if the player doesn't have permission for a color.
+#     lore: [item lore]
+#     material: [item material]
+#
+#   modifier-unavailable: <- The item that shows if the player doesn't have permission for a modifier.
+#     lore: [item lore]
+#     material: [item material]
+#
+#   color-active: <- The lore that is applied to a color item if it's active.
+#     lore: [item lore]
+#
+#   color-inactive: <- The lore that is applied to a color item if it's inactive.
+#     lore: [item lore]
+#
+#   modifier-inactive: <- The item that shows if a modifier is not in use.
+#     lore: [item lore]
+#     material: [item material]
+#
+#   modifier-active: <- The item that shows if a modifier is in use.
+#     lore: [item lore]
+#     material: [item material]
+#
+#   items:
+#     <slot number>:
+#       type: [COLOR / MODIFIER / INVENTORY]
+#       data: [color char / modifier char / inventory name]
+#       name: [item name (colors supported)]
+#       material: [item material (MUST be 1.16 material!) ONLY FOR COLORS / INVENTORIES]
+#
+#     <slot number>: ...
+#
+# <inventory name>: ...
+#
+
+# There MUST be an inventory called main. This is the one the plugin will open first.
+main:
+  title: 'Chat Color'
+  size: 27
+
+  items:
+    11:
+      type: COLOR
+      data: '%orange'
+      name: "&#F9CD40Orange &7Chat Color"
+      material: ORANGE_DYE
+
+    12:
+      type: COLOR
+      data: '%blue'
+      name: "&#03fcdbBlue &7Chat Color"
+      material: LIGHT_BLUE_DYE
+
+    13:
+      type: COLOR
+      data: '%pink'
+      name: "&#ff57b0Pink &7Chat Color"
+      material: PINK_DYE
+
+    14:
+      type: COLOR
+      data: '%red'
+      name: "&#ff4545Red &7Chat Color"
+      material: RED_DYE
+
+    22:
+      type: COLOR
+      data: '%white'
+      name: "&fWhite &7Chat Color"
+      material: WHITE_DYE
+
+    15:
+      type: COLOR
+      data: '%green'
+      name: "&#45ff8cGreen &7Chat Color"
+      material: LIME_DYE
+
+   

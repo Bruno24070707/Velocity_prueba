@@ -1,0 +1,26 @@
+location: Spawn:-8.500:92.000:153.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON:END_CRYSTAL'
+    height: 0.6
+  - content: '&dTeleportation Portal'
+    height: 0.3
+  - content: '&7Explore the world!'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&fThis portal will open the /rtp GUI,'
+    height: 0.3
+  - content: '&fallowing you to teleport to all worlds!'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&bUse &n/spawn&b to come back!'
+    height: 0.3
+  actions: {}

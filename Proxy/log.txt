@@ -3,22 +3,17 @@ WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal
 WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
-2025-12-15T17:15:03.706001280Z main WARN Advanced terminal features are not available in this environment
-[17:15:04 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-8f65a814-b558)...
-[17:15:04 INFO]: Loading localizations...
-[17:15:05 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[17:15:05 INFO]: Loading plugins...
-[17:15:05 INFO]: Loaded 1 plugins
-[17:15:05 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
-[17:15:05 INFO]: Done (1.63s)!
-[17:16:19 INFO]: [connected player] Bruno240707 (/127.19.211.102:40973) has connected
-[17:16:19 INFO]: [server connection] Bruno240707 -> lobby has connected
-[17:16:27 INFO]: [server connection] Bruno240707 -> survival has connected
-[17:16:29 INFO]: [server connection] Bruno240707 -> lobby has disconnected
-[17:17:27 INFO]: [connected player] Bruno240707 (/127.19.211.102:40973): kicked from server survival: Server closed
-[17:17:27 INFO]: [server connection] Bruno240707 -> survival has disconnected
-[17:17:27 INFO]: [server connection] Bruno240707 -> lobby has connected
-[17:17:30 INFO]: Shutting down the proxy...
-[17:17:30 INFO]: Closing endpoint /0.0.0.0:25565
-[17:17:30 INFO]: [connected player] Bruno240707 (/127.19.211.102:40973) has disconnected: El proxy se ha apagado.
-[17:17:30 INFO]: [server connection] Bruno240707 -> lobby has disconnected
+2025-12-16T00:04:38.478024896Z main WARN Advanced terminal features are not available in this environment
+[00:04:39 INFO]: Booting up Velocity 3.4.0-SNAPSHOT (git-8f65a814-b558)...
+[00:04:39 INFO]: Loading localizations...
+[00:04:40 INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[00:04:40 INFO]: Loading plugins...
+[00:04:40 INFO]: Loaded 1 plugins
+[00:04:40 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[00:04:40 INFO]: Done (2.16s)!
+[00:06:58 INFO]: [connected player] Bruno240707 (/127.19.211.102:50893) has connected
+[00:06:58 INFO]: [server connection] Bruno240707 -> lobby has connected
+[00:08:47 INFO]: Shutting down the proxy...
+[00:08:47 INFO]: Closing endpoint /0.0.0.0:25565
+[00:08:47 INFO]: [connected player] Bruno240707 (/127.19.211.102:50893) has disconnected: El proxy se ha apagado.
+[00:08:47 INFO]: [server connection] Bruno240707 -> lobby has disconnected

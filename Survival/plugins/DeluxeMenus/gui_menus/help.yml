@@ -1,0 +1,187 @@
+#  A DeluxeMenus advanced configuration guide
+#=========================================================
+menu_title: 'Help Menu'
+open_command:
+  - help
+  - ehelp
+open_commands: []
+size: 36
+# as always, only cool people can open this menu :)
+items:
+  'jobs':
+    material: FISHING_ROD
+    slot: 12
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#e0b219&lJobs System'
+    lore:
+      - '&8Help Menu'
+      - '&f'
+      - '&#e0b219Description:'
+      - '&fEmploy yourself in one of the five jobs available'
+      - '&fto earn money for completing simple everyday tasks!'
+      - '&fLevel up your job to earn even more money and EXP!'
+      - '&f'
+      - '&e→ &e&lCLICK&e to view all Jobs!'
+    left_click_commands:
+      - '[close]'
+      - '[player] jobs'
+    right_click_commands:
+      - '[close]'
+      - '[player] jobs'
+
+  'chestshops':
+    material: CHEST
+    slot: 13
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#19e0a4&lChest Shops'
+    lore:
+      - '&8Help Menu'
+      - '&f'
+      - '&#19e0a4Description:'
+      - '&fSell or buy items yourself with Chest Shops!'
+      - '&fYOU determine the price of the goods you sell.'
+      - '&fGet started using the command provided below. '
+      - '&f'
+      - '&e→ &e&lTYPE&e /qs create [price] [item] [amount]'
+  
+  'ah':
+    material: SUNFLOWER
+    slot: 14
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#c9e019&lAuction House'
+    lore:
+      - '&8Help Menu'
+      - '&f'
+      - '&#cc00fbDescription:'
+      - '&fSell items across the entire server on the'
+      - '&fAuction House! Players can bid for items, or'
+      - '&fpurchase them for an agreed price!'
+      - ''
+      - '&e→ &e&lCLICK&e to view the Auction House!'
+    left_click_commands:
+      - '[player] ah'
+    right_click_commands:
+      - '[player] ah'
+
+  'pvp':
+    material: DIAMOND_SWORD
+    slot: 21
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#19e0cc&lPvP Mode'
+    lore:
+      - '&8Help Menu'
+      - '&f'
+      - '&#19e0ccDescription:'
+      - '&fPvPing on Survival is optional! By default, you'
+      - '&fare protected from PvP. This can be changed at any'
+      - '&ftime by using /pvp! Does not apply in safezones.'
+      - ''
+      - '&e→ &e&lCLICK&e to toggle PvP Mode!'
+    left_click_commands:
+      - '[close]'
+      - '[player] pvp'
+    right_click_commands:
+      - '[close]'
+      - '[player] pvp'
+
+  'randomtp':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5ZTU0Y2JlODc4NjdkMTRiMmZiZGYzZjE4NzA4OTQzNTIwNDhkZmVjZDk2Mjg0NmRlYTg5M2IyMTU0Yzg1In19fQ==
+    slot: 22
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&a&lRandom Teleportation'
+    lore:
+      - '&8Help Menu'
+      - '&f'
+      - '&aDescription:'
+      - '&fThe most effective way to travel a substantial'
+      - '&fdistance! Check out our Random Teleportation menu'
+      - '&fto teleport all around each of the dimensions!'
+      - ''
+      - '&e→ &e&lCLICK&e to view Random Teleportation!'
+    left_click_commands:
+      - '[openguimenu] randomtp'
+    right_click_commands:
+      - '[openguimenu] randomtp'
+
+
+
+  'claiming':
+    material: PINK_BED
+    slot: 23
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#ff00f2&lLand Claiming'
+    lore:
+      - '&8Help Menu'
+      - '&f'
+      - '&#ff00f2Description:'
+      - '&fProtect your land using our Land Claiming plugin!'
+      - '&fUse your Claim Blocks to mark your land and adjust'
+      - '&fall of your claims to your needs.'
+      - ''
+      - '&e→ &e&lCLICK&e to redeem the Claim kit!'
+    left_click_commands:
+      - '[close]'
+      - '[player] kit claiming'
+    right_click_commands:
+      - '[close]'
+      - '[player] kit claiming'
+  
+
+  'playerwarps':
+    material: ENDER_PEARL
+    slot: 15
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#339786&lPlayer Warps'
+    lore:
+      - '&8Help Menu'
+      - '&f'
+      - '&#339786Description:'
+      - '&fView all player-made warps in this menu!'
+      - '&fOr, create your own to welcome players to'
+      - '&fyour land! Make sure you claim first!'
+      - '&r'
+      - '&e→ &e&lCLICK&e to view Player Warps!'
+    left_click_commands:
+      - '[player] pwarp'
+    right_click_commands:
+      - '[player] pwarp'
+  
+  
+  'shops':
+    material: GRASS_BLOCK
+    slot: 11
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&#0ffc03&lServer Shop'
+    lore:
+      - '&8Help Menu'
+      - '&f'
+      - '&#0ffc03Description:'
+      - '&fFind all the items you need on your survival'
+      - '&fadventure in our server shop, or sell goods to'
+      - '&fearn money! The choice is yours.'
+      - '&f'
+      - '&e→ &e&lCLICK&e to view the Shop!'
+    left_click_commands:
+      - '[player] shop'
+    right_click_commands:
+      - '[player] shop'
+  
+
+    
+  
