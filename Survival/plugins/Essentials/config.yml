@@ -48,7 +48,7 @@ ignore-colors-in-max-nick-length: false
 hide-displayname-in-vanish: true
 
 # Disable this if you have any other plugin, that modifies the displayname of a user.
-change-displayname: true
+change-displayname: false
 
 # This option will cause Essentials to show players' displaynames instead of usernames when tab completing Essentials commands.
 change-tab-complete-name: false
@@ -61,7 +61,7 @@ change-tab-complete-name: false
 # This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
 # The value of change-displayname (above) has to be true.
 # Do not edit this setting unless you know what you are doing!
-#add-prefix-suffix: false
+add-prefix-suffix: false
 
 # When this option is enabled, player prefixes will be shown in the playerlist.
 # This feature only works for Minecraft version 1.8 and higher.

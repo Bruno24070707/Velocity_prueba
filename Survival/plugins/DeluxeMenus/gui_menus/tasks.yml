@@ -1,50 +1,45 @@
-#  A DeluxeMenus advanced configuration guide
-#=========================================================
-menu_title: 'Tasks'
-open_command:
-  - tasks
-register_command: true
-open_commands: []
-size: 27
-# as always, only cool people can open this menu :)
+menu_title: 'Default Menu'
+open_command: menu
+size: 9
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.admin
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
 items:
-  'jobs':
-    material: IRON_HOE
-    slot: 11
-    priority: 1
-    update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&e&lJobs'
+  'dirt':
+    material: DIRT
+    slot: 0
+  'grass':
+    material: GRASS_BLOCK
+    slot: 1
+  'gravel':
+    material: GRAVEL
+    slot: 2
+  'cobblestone':
+    material: COBBLESTONE
+    slot: 3
+  'stone':
+    material: STONE
+    slot: 4
+  'coal_ore':
+    material: COAL_ORE
+    slot: 5
+  'iron_ore':
+    material: IRON_ORE
+    slot: 6
+  'gold_ore':
+    material: GOLD_ORE
+    slot: 7
+  'diamond_ore':
+    material: DIAMOND_ORE
+    slot: 8
+    display_name: 'Exit'
     lore:
-      - '&8Task'
-      - '&r'
-      - '&eDescription:'
-      - '&fEarn XP and money for performing'
-      - '&fvarious basic survival activities!'
-      - '&r'
-      - '&e&l→ CLICK &eto Browse'
+      - 'click to exit'
     left_click_commands:
-      - '[openguimenu] jobs'
-    
-  
-  'quests':
-    material: light_blue_dye
-    slot: 15
-    priority: 1
-    update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&b&lQuests'
-    lore:
-      - '&8Task'
-      - '&r'
-      - '&bDescription:'
-      - '&fComplete challenging quests in order'
-      - '&fto earn money and other rewards!'
-      - '&r'
-      - '&e&l→ CLICK &eto Browse'
-    left_click_commands:
-      - '[player] quests'
-
-  
-  
-  
+      - '[close]'
+    right_click_commands:
+      - '[close]'

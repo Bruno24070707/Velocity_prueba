@@ -5,7 +5,7 @@ cmd:
   no_permission: '&cYou don''t have &7{0} &cto do that!'
   target_not_online: '&f{0} &cis not online!'
   no_tags_loaded: '&cThere are no tags loaded!'
-  no_tags_available: '&eTags &8| &fYou have no tags! Purchase them from &e&n/coinshop&f!'
+  no_tags_available: '&cYou don''t have any tags available!'
   no_tags_available_target: '&f{0} &cdon''t have any tags available!'
   tag_list_fail: '&cYou don''t have any tags loaded.'
   tag_list_fail_target: '&c{0} has no tags loaded.'
@@ -13,7 +13,7 @@ cmd:
   tags_list_all: '&f{0} &atotal tags loaded: &f{1}'
   tags_list_others: '&f{0} &ahas &f{1} &atotal tags loaded: &f{2}'
   tag_select_incorrect_usage: '&cIncorrect usage! &7/tags select <tagname>'
-  tag_select_success: '&eTags &8| &fYour tag was set to: &r{1}'
+  tag_select_success: '&7Your tag was set to: &r{1}'
   tag_select_invalid_name: '&f{0} &cis not a valid tag name!'
   tag_select_already_set: '&f{0} &cis already set as your current tag!'
   help_title: '&5&lDeluxeTags &f&oHelp'
@@ -67,12 +67,6 @@ gui:
     tag:
       available: '&aAvailable'
       unavailable: '&cUnavailable'
-  tag_selected: '&eTags &8| &fYour tag has been set to {1}'
-  tag_disabled: '&eTags &8| &fYour tag has been disabled!'
+  tag_selected: '&aYour tag has been set to &f{0} &7({1}&7)'
+  tag_disabled: '&7Your tag has been disabled!'
   page_error: '&cThere was a problem getting the previous page number!'
-
-# true
-# 90775
-# 164339
-# 35763
-# %%__FILEHASH__%%

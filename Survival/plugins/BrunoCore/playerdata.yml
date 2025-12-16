@@ -23,8 +23,8 @@ fb3917eb-9fe6-31ce-a729-d659b2ebdf67:
   ultimaUbicacion:
     ==: org.bukkit.Location
     world: mina
-    x: 166.69999998807907
-    y: 26.0
-    z: 168.30000001192093
-    pitch: 15.407847
-    yaw: -107.28915
+    x: 190.03566893556956
+    y: 27.0
+    z: 166.6200213105505
+    pitch: -0.5116061
+    yaw: -83.95459

@@ -31,46 +31,38 @@ format_chat:
   format: '{deluxetags_tag} <%1$s> %2$s'
 load_tag_on_join: true
 gui:
-  name: Tags | Select a Tag
+  name: '&6Available tags&f: &6%deluxetags_amount%'
   tag_select_item:
     material: NAME_TAG
     data: 0
-    displayname: '%deluxetags_tag%'
+    displayname: '&6Tag&f: &6%deluxetags_identifier%'
     lore:
-    - '&8Cosmetic Tag'
-    - '&r'
-    - '&fStatus: &aUnlocked'
-    - '&r'
-    - '&2→ &aClick to equip'
+    - '%deluxetags_tag%'
+    - '%deluxetags_description%'
   divider_item:
     material: BLACK_STAINED_GLASS_PANE
     data: 0
     displayname: ''
     lore: []
   has_tag_item:
-    material: BOOK
+    material: PLAYER_HEAD
     data: 0
-    displayname: '&eYour Tag'
+    displayname: '&eCurrent tag&f: &6%deluxetags_identifier%'
     lore:
-    - '&8Equipped Tag'
-    - '&r'
-    - '&e◆ &fCurrent tag: %deluxetags_tag%'
-    - '&r'
-    - '&4→ &cClick to unequip'
+    - '%deluxetags_tag%'
+    - Click to remove your current tag
   no_tag_item:
-    material: BOOK
+    material: PLAYER_HEAD
     data: 0
-    displayname: '&eYour Tag'
+    displayname: '&cYou don''t have a tag set!'
     lore:
-    - '&8Equipped Tag'
-    - '&r'
-    - '&e◆ &fCurrent tag: &cNone selected'
+    - '&7Click a tag above to select one!'
   exit_item:
-    material: RED_SHULKER_BOX
+    material: IRON_DOOR
     data: 0
-    displayname: '&fExit'
+    displayname: '&cClick to exit'
     lore:
-    - '&c→ Click to close this GUI'
+    - '&7Exit the tags menu'
   next_page:
     material: PAPER
     data: 0
@@ -86,7 +78,7 @@ gui:
 deluxetags:
   USA:
     order: 1
-    tag: '&7[&r#be0b31&lU&f&lS#002768&lA&r&7]&r '
+    tag: '&7&r#be0b31&lU&f&lS#002768&lA&r&7&r '
     permission: tags.usa
   
   Star:
@@ -173,9 +165,5 @@ deluxetags:
     order: 18
     tag: '#fffdc8&lB#fff896&lE#fef264&lA#feed32&lC#fde700&lH&r '
     permission: tags.seasonal_beach
-
-
-
-
 
 

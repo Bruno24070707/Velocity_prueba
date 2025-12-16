@@ -1,23 +1,23 @@
-2025-12-16 00:05:48 [INFO]: Loading Overrides...
-2025-12-16 00:05:48 [INFO]: Loading World Types...
-2025-12-16 00:05:48 [INFO]: - World Type for 'world' set to 'NORMAL'
-2025-12-16 00:05:48 [INFO]: - World Type for 'world_nether' set to 'NETHER'
-2025-12-16 00:05:48 [INFO]: - World Type for 'world_the_end' set to 'NORMAL'
-2025-12-16 00:05:48 [INFO]: Loading Defaults...
-2025-12-16 00:05:48 [INFO]: Loading Custom Worlds...
-2025-12-16 00:05:48 [INFO]: [WARN] - Custom World 'custom_world_1' was not registered because world does NOT exist
-2025-12-16 00:05:48 [INFO]: [WARN] - Custom World 'other_custom_world' was not registered because world does NOT exist
-2025-12-16 00:06:00 [INFO]: Database PLAYERS:Players configured and loaded!
-2025-12-16 00:06:00 [INFO]: Database QUEUE:Queue configured and loaded!
-2025-12-16 00:06:00 [INFO]: Database COOLDOWN:world configured and loaded!
-2025-12-16 00:06:00 [INFO]: Database COOLDOWN:world_nether configured and loaded!
-2025-12-16 00:06:00 [INFO]: Database COOLDOWN:world_the_end configured and loaded!
-2025-12-16 00:06:00 [INFO]: Database COOLDOWN:pvp configured and loaded!
-2025-12-16 00:06:00 [INFO]: Database COOLDOWN:mina configured and loaded!
-2025-12-16 00:06:00 [INFO]: Database COOLDOWN:Spawn configured and loaded!
-2025-12-16 00:06:00 [INFO]: Database CHUNK_DATA:ChunkData configured and loaded!
-2025-12-16 00:06:01 [INFO]: Attempting to queue up some more safe locations...
-2025-12-16 00:06:02 [WARNING]: Seems like the world `Spawn` does not have a `WorldType` declared. Please add/fix this in the config.yml file! This world will be treated as an overworld! If this world is a nether world, configure it to NETHER (example: `- Spawn: NETHER`
-2025-12-16 00:07:06 [INFO]: Max attempts to create a Queue reached for default_Spawn (amount: 0)
-2025-12-16 00:07:06 [INFO]: Queueing paused, max queue limit reached!
-2025-12-16 00:08:44 [INFO]: Disabling BetterRTP v3.6.13
+2025-12-16 03:06:15 [INFO]: Loading Overrides...
+2025-12-16 03:06:15 [INFO]: Loading World Types...
+2025-12-16 03:06:15 [INFO]: - World Type for 'world' set to 'NORMAL'
+2025-12-16 03:06:15 [INFO]: - World Type for 'world_nether' set to 'NETHER'
+2025-12-16 03:06:15 [INFO]: - World Type for 'world_the_end' set to 'NORMAL'
+2025-12-16 03:06:15 [INFO]: Loading Defaults...
+2025-12-16 03:06:15 [INFO]: Loading Custom Worlds...
+2025-12-16 03:06:15 [INFO]: [WARN] - Custom World 'custom_world_1' was not registered because world does NOT exist
+2025-12-16 03:06:15 [INFO]: [WARN] - Custom World 'other_custom_world' was not registered because world does NOT exist
+2025-12-16 03:06:27 [INFO]: Database PLAYERS:Players configured and loaded!
+2025-12-16 03:06:27 [INFO]: Database COOLDOWN:world configured and loaded!
+2025-12-16 03:06:27 [INFO]: Database QUEUE:Queue configured and loaded!
+2025-12-16 03:06:27 [INFO]: Database COOLDOWN:world_nether configured and loaded!
+2025-12-16 03:06:27 [INFO]: Database COOLDOWN:world_the_end configured and loaded!
+2025-12-16 03:06:27 [INFO]: Database COOLDOWN:pvp configured and loaded!
+2025-12-16 03:06:27 [INFO]: Database COOLDOWN:mina configured and loaded!
+2025-12-16 03:06:27 [INFO]: Database COOLDOWN:Spawn configured and loaded!
+2025-12-16 03:06:27 [INFO]: Database CHUNK_DATA:ChunkData configured and loaded!
+2025-12-16 03:06:29 [INFO]: Attempting to queue up some more safe locations...
+2025-12-16 03:06:30 [WARNING]: Seems like the world `Spawn` does not have a `WorldType` declared. Please add/fix this in the config.yml file! This world will be treated as an overworld! If this world is a nether world, configure it to NETHER (example: `- Spawn: NETHER`
+2025-12-16 03:07:28 [INFO]: Max attempts to create a Queue reached for default_Spawn (amount: 0)
+2025-12-16 03:07:28 [INFO]: Queueing paused, max queue limit reached!
+2025-12-16 03:48:45 [INFO]: Disabling BetterRTP v3.6.13

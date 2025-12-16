@@ -11,5 +11,6 @@ groups:
     - pvp
     - mina
     - Spawn
+    - spawn
     shares:
     - all

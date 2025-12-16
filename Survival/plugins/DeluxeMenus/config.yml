@@ -75,3 +75,5 @@ gui_menus:
   
   randomtp:
     file: randomtp.yml
+
+command-aliases: true

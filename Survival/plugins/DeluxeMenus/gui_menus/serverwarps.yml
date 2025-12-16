@@ -63,7 +63,7 @@ items:
       - ''
       - '&e→ &lCLICK &r&eto Teleport!'
     left_click_commands:
-      - '[player] warp crates'
+      - '[player] essentials:warp crates'
       - '[close]'
   
 
@@ -83,7 +83,7 @@ items:
       - ''
       - '&e→ &lCLICK &r&eto Teleport!'
     left_click_commands:
-      - '[player] warp leaderboard'
+      - '[player] essentials:warp leaderboard'
       - '[close]'
 
   'overworld':
@@ -121,12 +121,12 @@ items:
       - ''
       - '&e→ &lCLICK &r&eto Teleport!'
     left_click_commands:
-      - '[player] warp Enchant'
+      - '[player] essentials:warp Enchant'
       - '[close]'
   
   
   'pvp':
-    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlkYTEzYmY0MzU5OWRkNDJmNzViNmU2NTQ4ZWFkNDBjN2ZmNDg4YjIyZWYzZDkzMWU2YzAwNGRlMWZhOTc4YiJ9fX0=
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjlkYTEzYmY0MzU5OWRkNDJmNzViNmU2NTQ4ZWFkNDBjN2ZmNDg4YjIyZWYzZDkzMWU2YzAwNGRlMWZhOTc4aiJ9fX0=
     slot: 23
     priority: 1
     update: true
@@ -142,5 +142,25 @@ items:
       - ''
       - '&e→ &lCLICK &r&eto Teleport!'
     left_click_commands:
-      - '[player] warp PvP'
+      - '[player] essentials:warp PvP'
+      - '[close]'
+  
+  'mina':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg4ZTBlODEyZDRmZDk2YmQxOTQ1ZWMxYWNjNWFiNGRiMjAwOGI3MjBlZmNjYTlkMDdkZWVhYmEyN2M4ZGQ5ZiJ9fX0=
+    slot: 22
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES]
+    display_name: '&cMina'
+    lore:
+      - '&8Server Warp'
+      - '&r'
+      - '&bDescription:'
+      - '&fTeleport to the Mina'
+      - '&fto battle it out against'
+      - '&fother players!'   
+      - ''
+      - '&e→ &lCLICK &r&eto Teleport!'
+    left_click_commands:
+      - '[player] essentials:warp mina'
       - '[close]'
