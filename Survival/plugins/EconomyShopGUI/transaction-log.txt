@@ -93,3 +93,9 @@
 [2023-09-29 18:54:20] - Sloterr bought 1 x Default Waystone(Waystones.2) for $1 with the buy screen.
 [2023-09-29 18:54:20] - Sloterr bought 1 x Default Waystone(Waystones.2) for $1 with the buy screen.
 [2023-09-29 18:54:20] - Sloterr bought 1 x Default Waystone(Waystones.2) for $1 with the buy screen.
+[2025-12-16 16:13:20] - Bruno240707 sold 448x Diamond<white>(Ores.page1.items.9)</white><white> for $94,080.00<white> with the sell all command.
+[2025-12-16 18:19:03] - Bruno240707 bought 1 x <red>[</red><aqua>Skeleton Spawner</aqua><red>]</red><white>(Spawners.page1.items.28) for $125,000.00<white> with the buy screen.
+[2025-12-16 18:19:18] - Bruno240707 bought 17 x <red>[</red><aqua>Blaze Spawner</aqua><red>]</red><white>(Spawners.page1.items.4) for $2,125,000.00<white> with the buy screen.
+[2025-12-16 18:23:50] - Bruno240707 bought 1 x <red>[</red><aqua>Allay Spawner</aqua><red>]</red><white>(Spawners.page1.items.1) for $225,000.00<white> with the buy screen.
+[2025-12-16 18:25:00] - Bruno240707 bought 1 x <red>[</red><aqua>Allay Spawner</aqua><red>]</red><white>(Spawners.page1.items.1) for $225,000.00<white> with the buy screen.
+[2025-12-16 18:35:49] - Bruno240707 bought 1 x <red>[</red><aqua>Squid Spawner</aqua><red>]</red><white>(Spawners.page1.items.32) for $100,000.00<white> with the buy screen.

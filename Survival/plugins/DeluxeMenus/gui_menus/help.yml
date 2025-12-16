@@ -1,187 +1,188 @@
-#  A DeluxeMenus advanced configuration guide
+# Guía de configuración avanzada de DeluxeMenus
 #=========================================================
-menu_title: 'Help Menu'
+menu_title: 'Menú de Ayuda'
 open_command:
+  - ayuda
+  - aayuda
   - help
-  - ehelp
 open_commands: []
 size: 36
-# as always, only cool people can open this menu :)
+# Como siempre, solo la gente genial puede abrir este menú :)
 items:
+  # Sistema de Trabajos (Jobs)
   'jobs':
-    material: FISHING_ROD
+    material: FISHING_ROD # Caña de pescar
     slot: 12
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#e0b219&lJobs System'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#e0b219&lSistema de Trabajos'
     lore:
-      - '&8Help Menu'
+      - '&8Menú de Ayuda'
       - '&f'
-      - '&#e0b219Description:'
-      - '&fEmploy yourself in one of the five jobs available'
-      - '&fto earn money for completing simple everyday tasks!'
-      - '&fLevel up your job to earn even more money and EXP!'
+      - '&#e0b219Descripción:'
+      - '&fEmpléate en uno de los cinco trabajos disponibles'
+      - '&fpara ganar dinero completando tareas sencillas diarias!'
+      - '&f¡Sube de nivel tu trabajo para ganar aún más dinero y EXP!'
       - '&f'
-      - '&e→ &e&lCLICK&e to view all Jobs!'
+      - '&e→ &e&lCLIC&e para ver todos los Trabajos!'
     left_click_commands:
       - '[close]'
-      - '[player] jobs'
+      - '[player] jobs' # Comando para abrir el menú Jobs
     right_click_commands:
       - '[close]'
       - '[player] jobs'
 
+  # Tiendas de Cofres (Chest Shops)
   'chestshops':
-    material: CHEST
+    material: CHEST # Cofre
     slot: 13
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#19e0a4&lChest Shops'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#19e0a4&lTiendas de Cofres'
     lore:
-      - '&8Help Menu'
+      - '&8Menú de Ayuda'
       - '&f'
-      - '&#19e0a4Description:'
-      - '&fSell or buy items yourself with Chest Shops!'
-      - '&fYOU determine the price of the goods you sell.'
-      - '&fGet started using the command provided below. '
+      - '&#19e0a4Descripción:'
+      - '&f¡Vende o compra ítems tú mismo con las Tiendas de Cofres!'
+      - '&fTÚ determinas el precio de los bienes que vendes.'
+      - '&fEmpieza a usar el comando provisto abajo.'
       - '&f'
-      - '&e→ &e&lTYPE&e /qs create [price] [item] [amount]'
-  
+      - '&e→ &e&lESCRIBE&e /qs create [precio] [ítem] [cantidad]' # Comando de QuickShop
+      
+  # Casa de Subastas (Auction House)
   'ah':
-    material: SUNFLOWER
+    material: SUNFLOWER # Girasol
     slot: 14
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#c9e019&lAuction House'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#c9e019&lCasa de Subastas'
     lore:
-      - '&8Help Menu'
+      - '&8Menú de Ayuda'
       - '&f'
-      - '&#cc00fbDescription:'
-      - '&fSell items across the entire server on the'
-      - '&fAuction House! Players can bid for items, or'
-      - '&fpurchase them for an agreed price!'
+      - '&#cc00fbDescripción:'
+      - '&f¡Vende ítems en todo el servidor en la'
+      - '&fCasa de Subastas! Los jugadores pueden pujar por ítems, o'
+      - '&fcomprarlos por un precio acordado.'
       - ''
-      - '&e→ &e&lCLICK&e to view the Auction House!'
+      - '&e→ &e&lCLIC&e para ver la Casa de Subastas!'
     left_click_commands:
-      - '[player] ah'
+      - '[player] ah' # Comando para abrir la Casa de Subastas
     right_click_commands:
       - '[player] ah'
 
+  # Modo PvP (PvP Mode)
   'pvp':
-    material: DIAMOND_SWORD
+    material: DIAMOND_SWORD # Espada de diamante
     slot: 21
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#19e0cc&lPvP Mode'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#19e0cc&lModo PvP'
     lore:
-      - '&8Help Menu'
+      - '&8Menú de Ayuda'
       - '&f'
-      - '&#19e0ccDescription:'
-      - '&fPvPing on Survival is optional! By default, you'
-      - '&fare protected from PvP. This can be changed at any'
-      - '&ftime by using /pvp! Does not apply in safezones.'
+      - '&#19e0ccDescripción:'
+      - '&f¡El PvP en Survival es opcional! Por defecto, estás'
+      - '&fprotegido del PvP. Esto se puede cambiar en cualquier'
+      - '&f momento usando /pvp. No aplica en zonas seguras.'
       - ''
-      - '&e→ &e&lCLICK&e to toggle PvP Mode!'
+      - '&e→ &e&lCLIC&e para alternar el Modo PvP!'
     left_click_commands:
       - '[close]'
-      - '[player] pvp'
+      - '[player] pvp' # Comando para alternar el PvP
     right_click_commands:
       - '[close]'
       - '[player] pvp'
 
+  # Teletransportación Aleatoria (Random Teleportation)
   'randomtp':
-    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5ZTU0Y2JlODc4NjdkMTRiMmZiZGYzZjE4NzA4OTQzNTIwNDhkZmVjZDk2Mjg0NmRlYTg5M2IyMTU0Yzg1In19fQ==
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODc5ZTU0Y2JlODc4NjdkMTRiMmZiZGYzZjE4NzA4OTQzNTIwNDhkZmVjZDk2Mjg0NmRlYTg5M2IyMTU0Yzg1In19fQ== # Cabeza de jugador personalizada
     slot: 22
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&a&lRandom Teleportation'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&a&lRTP'
     lore:
-      - '&8Help Menu'
+      - '&8Menú de Ayuda'
       - '&f'
-      - '&aDescription:'
-      - '&fThe most effective way to travel a substantial'
-      - '&fdistance! Check out our Random Teleportation menu'
-      - '&fto teleport all around each of the dimensions!'
+      - '&aDescripción:'
+      - '&f¡La manera más efectiva de viajar una distancia'
+      - '&fconsiderable! Revisa nuestro menú de Teletransportación Aleatoria'
+      - '&fpara teletransportarte por todas las dimensiones.'
       - ''
-      - '&e→ &e&lCLICK&e to view Random Teleportation!'
+      - '&e→ &e&lCLIC&e para ver la Teletransportación Aleatoria!'
     left_click_commands:
-      - '[openguimenu] randomtp'
+      - '[openguimenu] randomtp' # Abre el menú de teletransporte
     right_click_commands:
       - '[openguimenu] randomtp'
 
-
-
+  # Reclamo de Terreno (Land Claiming)
   'claiming':
-    material: PINK_BED
+    material: PINK_BED # Cama rosa
     slot: 23
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#ff00f2&lLand Claiming'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#ff00f2&lReclamo de Terreno'
     lore:
-      - '&8Help Menu'
+      - '&8Menú de Ayuda'
       - '&f'
-      - '&#ff00f2Description:'
-      - '&fProtect your land using our Land Claiming plugin!'
-      - '&fUse your Claim Blocks to mark your land and adjust'
-      - '&fall of your claims to your needs.'
+      - '&#ff00f2Descripción:'
+      - '&f¡Protege tu terreno usando nuestro plugin de Reclamo de Terreno!'
+      - '&fUsa tus Bloques de Reclamo para marcar tu tierra y ajusta'
+      - '&ftodos tus reclamos según tus necesidades.'
       - ''
-      - '&e→ &e&lCLICK&e to redeem the Claim kit!'
+      - '&e→ &e&lCLIC&e para canjear el kit de Reclamo!'
     left_click_commands:
       - '[close]'
-      - '[player] kit claiming'
+      - '[player] kit claiming' # Comando para dar el kit de reclamo
     right_click_commands:
       - '[close]'
       - '[player] kit claiming'
-  
 
+  # Warps de Jugadores (Player Warps)
   'playerwarps':
-    material: ENDER_PEARL
+    material: ENDER_PEARL # Perla de Ender
     slot: 15
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#339786&lPlayer Warps'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#339786&lWarps de Jugadores'
     lore:
-      - '&8Help Menu'
+      - '&8Menú de Ayuda'
       - '&f'
-      - '&#339786Description:'
-      - '&fView all player-made warps in this menu!'
-      - '&fOr, create your own to welcome players to'
-      - '&fyour land! Make sure you claim first!'
+      - '&#339786Descripción:'
+      - '&f¡Mira todos los warps hechos por jugadores en este menú!'
+      - '&fO, crea el tuyo para dar la bienvenida a jugadores a'
+      - '&ftu terreno. ¡Asegúrate de reclamar primero!'
       - '&r'
-      - '&e→ &e&lCLICK&e to view Player Warps!'
+      - '&e→ &e&lCLIC&e para ver los Warps de Jugadores!'
     left_click_commands:
-      - '[player] pwarp'
+      - '[player] pwarp' # Comando para abrir el menú de Player Warps
     right_click_commands:
       - '[player] pwarp'
-  
-  
+
+  # Tienda del Servidor (Server Shop)
   'shops':
-    material: GRASS_BLOCK
+    material: GRASS_BLOCK # Bloque de pasto
     slot: 11
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#0ffc03&lServer Shop'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#0ffc03&lTienda del Servidor'
     lore:
-      - '&8Help Menu'
+      - '&8Menú de Ayuda'
       - '&f'
-      - '&#0ffc03Description:'
-      - '&fFind all the items you need on your survival'
-      - '&fadventure in our server shop, or sell goods to'
-      - '&fearn money! The choice is yours.'
+      - '&#0ffc03Descripción:'
+      - '&f¡Encuentra todos los ítems que necesitas en tu aventura'
+      - '&fde supervivencia en nuestra tienda del servidor, o vende bienes para'
+      - '&fganar dinero! La elección es tuya.'
       - '&f'
-      - '&e→ &e&lCLICK&e to view the Shop!'
+      - '&e→ &e&lCLIC&e para ver la Tienda!'
     left_click_commands:
-      - '[player] shop'
+      - '[player] shop' # Comando para abrir la tienda
     right_click_commands:
       - '[player] shop'
-  
-
-    
-  

@@ -1,208 +1,156 @@
-#  A DeluxeMenus advanced configuration guide
+# Guía de configuración avanzada de DeluxeMenus
 #=========================================================
-menu_title: 'Coin Shop'
+menu_title: 'Menú'
 open_command:
-  - coinshop
-  - cs
-  - cshop
+  - menu
+  - mainmenu
+  - mainshop
 open_commands: []
 size: 45
-# as always, only cool people can open this menu :)
+# Como siempre, solo la gente genial puede abrir este menú :)
 items:
+  # Cristal de información central
   'info':
     material: END_CRYSTAL
     slot: 4
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#F9CD40&lCoin Shop'
-    lore:
-      - '&8Helpful Information'
-      - '&r'
-      - '&bDescription:'
-      - '&fCoins are a virtual currency used'
-      - '&fto purchase store items like &bkeys&f,'
-      - '&bchat colors&f, and &bexclusive &fitems!'
-      - ''
-      - '&e◆ &fCoin Balance: &e%coinsengine_balance_coins%'
-      - ''
-      - '&#ff69e3Purchase coins from'
-      - '&#e332c2&lSTORE.YOURSERVER.COM'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#F9CD40&lMenú Principal'
 
-  'cratekeys':
-    material: TRIPWIRE_HOOK
-    slot: 21
-    priority: 1
-    update: true
-    enchantments:
-      - 'DAMAGE_ALL;1'
-    item_flags: [HIDE_ENCHANTS]
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&b&lCrate Keys'
-    lore:
-      - '&8Category'
-      - '&r'
-      - '&bDescription:'
-      - '&fUse your keys to open crates'
-      - '&ffor some awesome in-game rewards!'
-      - ''
-      - '&e◆ &fStarting from: &e400 Coins'
-      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
-      - ''
-      - '&#ff69e3Purchase coins from'
-      - '&#e332c2&lSTORE.YOURSERVER.COM'
-      - '&r'
-      - '&e&l→ CLICK &eto Browse'
-    left_click_commands:
-      - '[openguimenu] cratemerchant'
-    
-  
-  'chat_colors':
-    material: orange_dye
+  # Vuelo (Flight Time)
+  'flight_time':
+    material: FEATHER # Pluma
     slot: 22
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#F9CD40&lChat Colors'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&f&lTiempo de Vuelo'
     lore:
-      - '&8Category'
+      - '&8Categoría'
       - '&r'
-      - '&bDescription:'
-      - '&fStand out in chat with your own'
-      - '&fchat color, purchase colors here!'
+      - '&bDescripción:'
+      - '&fCompra más tiempo de vuelo en grandes cantidades aquí'
+      - '&fpara ayudarte a mejorar tu experiencia de juego!'
       - ''
-      - '&e◆ &fStarting from: &e500 Coins'
-      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&e◆ &fDesde: &e400 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
       - ''
-      - '&#ff69e3Purchase coins from'
+      - '&#ff69e3Compra monedas en'
       - '&#e332c2&lSTORE.YOURSERVER.COM'
       - '&r'
-      - '&e&l→ CLICK &eto Browse'
+      - '&e&l→ CLIC &epara Navegar'
     left_click_commands:
-      - '[openguimenu] chatcolorbuy'
-  
-  'seasonal_crates':
-    material: ENDER_CHEST
+      - '[openguimenu] flight_time' # Abre el menú 'flight_time'
+
+  # Bloques de Reclamo (Claim Blocks)
+  'claim_blocks':
+    material: GRASS_BLOCK # Bloque de pasto
+    slot: 21
+    priority: 1
+    update: true
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#45ff8c&lBloques de Reclamo'
+    lore:
+      - '&8Categoría'
+      - '&r'
+      - '&bDescripción:'
+      - '&f¿Necesitas bloques de reclamo extra?'
+      - '&f¡Compra más bloques de reclamo aquí!'
+      - ''
+      - '&e◆ &fDesde: &e1,400 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
+      - ''
+      - '&#ff69e3Compra monedas en'
+      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&r'
+      - '&e&l→ CLIC &epara Navegar'
+    left_click_commands:
+      - '[openguimenu] claimblocks' # Abre el menú 'claimblocks'
+
+  # Etiquetas de Chat (Chat Tags)
+  'chat_tags':
+    material: NAME_TAG # Etiqueta de nombre
     slot: 23
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&5&lSeasonal Crates'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&#03fcdb&lTags'
     lore:
-      - '&8Category'
+      - '&8Categoría'
       - '&r'
-      - '&bDescription:'
-      - '&fPurchase Seasonal Crates to win exclusive'
-      - '&fin-game items and cosmetics!'
+      - '&bDescripción:'
+      - '&f¿Quieres una etiqueta genial al lado de tu nombre?'
+      - '&f¡Compra algunas etiquetas geniales aquí!'
       - ''
-      - '&e◆ &fStarting from: &e4,000 Coins'
-      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&e◆ &fDesde: &e1,000 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
       - ''
-      - '&#ff69e3Purchase coins from'
+      - '&#ff69e3Compra monedas en'
       - '&#e332c2&lSTORE.YOURSERVER.COM'
       - '&r'
-      - '&e&l→ CLICK &eto Browse'
+      - '&e&l→ CLIC &epara Navegar'
     left_click_commands:
-      - '[openguimenu] seasonal'
-  
+      - '[openguimenu] tags' # Abre el menú 'tags'
 
-  'perks':
-    material: ENCHANTED_BOOK
-    slot: 24
+  # Tienda de Almas (Souls Shop)
+  'souls_shop':
+    material: ENDER_PEARL # Perla de Ender
+    slot: 31
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&d&lPerks'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&a&lTienda de Almas'
     lore:
-      - '&8Category'
+      - '&8Categoría'
       - '&r'
-      - '&bDescription:'
-      - '&fPurchase various perks & permissions'
-      - '&fto help aid your gameplay experience!'
+      - '&bDescripción:'
+      - '&f¡Usa tus almas'
+      - '&fpara comprar cosas increíbles!'
       - ''
-      - '&e◆ &fStarting from: &e1,200 Coins'
-      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
+      - '&e◆ &fDesde: &e400 Monedas'
+      - '&e◆ &fTu Saldo de Monedas: &e%coinsengine_balance_coins%'
       - ''
-      - '&#ff69e3Purchase coins from'
+      - '&#ff69e3Compra monedas en'
       - '&#e332c2&lSTORE.YOURSERVER.COM'
       - '&r'
-      - '&e&l→ CLICK &eto Browse'
+      - '&e&l→ CLIC &epara Navegar'
     left_click_commands:
-      - '[openguimenu] perks'
-  
-  'flight_time':
-    material: FEATHER
+      - '[openguimenu] souls_shop' # Abre el menú 'souls_shop'
+
+  # Votar (Vote)
+  'vote':
+    material: TRIPWIRE_HOOK # Gancho de cuerda
     slot: 30
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&f&lFlight Time'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&b&lVotar'
     lore:
-      - '&8Category'
+      - '&8Categoría'
       - '&r'
-      - '&bDescription:'
-      - '&fPurchase more flight time in bulk here'
-      - '&fto help aid your gameplay experience!'
-      - ''
-      - '&e◆ &fStarting from: &e400 Coins'
-      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
-      - ''
-      - '&#ff69e3Purchase coins from'
-      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&bDescripción:'
+      - '&f¡Vota todos los días para'
+      - '&fconseguir recompensas!'
       - '&r'
-      - '&e&l→ CLICK &eto Browse'
+      - '&e&l→ CLIC &epara Navegar'
     left_click_commands:
-      - '[openguimenu] flight_time'
-  
-  'claim_blocks':
-    material: GRASS_BLOCK
-    slot: 20
-    priority: 1
-    update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#45ff8c&lClaim Blocks'
-    lore:
-      - '&8Category'
-      - '&r'
-      - '&bDescription:'
-      - '&fNeed some extra claim blocks?'
-      - '&fPurchase more claim blocks here!'
-      - ''
-      - '&e◆ &fStarting from: &e1,400 Coins'
-      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
-      - ''
-      - '&#ff69e3Purchase coins from'
-      - '&#e332c2&lSTORE.YOURSERVER.COM'
-      - '&r'
-      - '&e&l→ CLICK &eto Browse'
-    left_click_commands:
-      - '[openguimenu] claimblocks'
-  
-  'chat_tags':
-    material: NAME_TAG
+      - '[openguimenu] vote' # Abre el menú 'vote'
+
+  # Rangos (Ranks)
+  'ranks':
+    material: DIAMOND_SWORD # Espada de diamante
     slot: 32
     priority: 1
     update: true
-    item_flags: [HIDE_ATTRIBUTES]
-    display_name: '&#03fcdb&lTags'
+    item_flags: [HIDE_ATTRIBUTES] # Ocultar atributos
+    display_name: '&c&lRangos'
     lore:
-      - '&8Category'
+      - '&8Categoría'
       - '&r'
-      - '&bDescription:'
-      - '&fWant a cool tag beside your name?'
-      - '&fPurchase some cool tags here!'
-      - ''
-      - '&e◆ &fStarting from: &e1,000 Coins'
-      - '&e◆ &fYour Coin Balance: &e%coinsengine_balance_coins%'
-      - ''
-      - '&#ff69e3Purchase coins from'
-      - '&#e332c2&lSTORE.YOURSERVER.COM'
+      - '&bDescripción:'
+      - '&fRangos del servidor'
       - '&r'
-      - '&e&l→ CLICK &eto Browse'
+      - '&e&l→ CLIC &epara Navegar'
     left_click_commands:
-      - '[openguimenu] tags'
-  
-
-  
-  
-  
+      - '[openguimenu] levels' # Abre el menú 'levels'

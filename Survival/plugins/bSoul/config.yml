@@ -1,0 +1,54 @@
+SETTINGS:
+  BLACKLIST_SLOTS:
+  - 9
+  - 10
+  - 11
+  - 12
+  EARN_BLACKLIST_WORLD:
+  - example_world
+  DEFAULT_SOUL: 5
+  DEFAULT_SOUL_MAX: 10
+  DEBUG: false
+REHIBILITATE:
+  ENABLE: true
+  TIME: 300
+  SOUL: 2
+DEATH:
+  SOUL_LOST: 1
+  SKIP_DEATH_SCREEN: true
+  LOSE_ITEM_WHEN_DEATH: true
+  LOSE_ALL_ITEM: false
+  MIN_SOUL_TO_LOSE: 3
+  DROP_ITEM: true
+  PREVENT_MAIN_HAND: true
+  DROP:
+    INCLUDE_ARMOR: true
+    INCLUDE_OFFHAND: true
+    # Lose all item must be false
+    # With SOUL_<AMOUNT OF SOUL> will lose number of items (instead of 1)
+    MORE_DROP:
+      ENABLE: true
+      SOUL_3: 3
+      SOUL_2: 5
+      SOUL_1: 7
+PVP:
+  ENABLE: true
+  KILL_SOUL: 1
+  CHANCE: 54.9
+ITEM:
+  SOUL:
+    ENABLE: true
+    MATERIAL: EMERALD
+    SLOT: 8
+    DATA: 0
+    NAME: '&9%soul% Soul'
+    UNBREAK: true
+    GLOW: true
+    HIDE_FLAG: true
+    LORE:
+    - '&7You have %soul% Soul'
+MOBS:
+  ENABLE: true # Kill mob to get soul
+  ANIMAL: false # true -> Enable kill animal can get soul
+  MONSTER: true
+

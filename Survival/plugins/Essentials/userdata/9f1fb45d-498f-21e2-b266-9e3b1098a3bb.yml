@@ -1,0 +1,30 @@
+npc: true
+last-account-name: WoodShop
+money: '0'
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: ''
+afk: false
+socialspy: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1765907068850
+  login: 0
+logoutlocation:
+  world: 0c52527c-f895-4989-828f-80caa9f6e8b5
+  world-name: Spawn
+  x: -5.511037154620709
+  y: 87.0
+  z: 75.4165895309801
+  yaw: 179.67306518554688
+  pitch: -24.171350479125977

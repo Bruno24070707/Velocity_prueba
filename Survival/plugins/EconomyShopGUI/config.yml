@@ -206,7 +206,7 @@ currency-formats:
 # SPAWNERMETA = An external spawner provider that can stack & upgrade spawners
 # SPAWNERLEGACY = The premium version of SpawnerMeta with more features/customize-ability
 # SMART_SPAWNER = A spawner provider which supports stacking spawners
-spawner-provider: DISABLED
+spawner-provider: SILKSPAWNERS
 # NOTE: When there is no spawner provider set, the default will be used
 
 

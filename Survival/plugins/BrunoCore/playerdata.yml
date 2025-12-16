@@ -22,9 +22,9 @@ fb3917eb-9fe6-31ce-a729-d659b2ebdf67:
   visitoSurvival: true
   ultimaUbicacion:
     ==: org.bukkit.Location
-    world: mina
-    x: 190.03566893556956
-    y: 27.0
-    z: 166.6200213105505
-    pitch: -0.5116061
-    yaw: -83.95459
+    world: world
+    x: 2176.3324402660046
+    y: 98.19757193003734
+    z: -2617.1758209141494
+    pitch: 5.894166
+    yaw: 51.48938

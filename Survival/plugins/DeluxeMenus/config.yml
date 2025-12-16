@@ -15,17 +15,11 @@ gui_menus:
   help:
     file: help.yml
   
-  cratemerchant:
-    file: cratemerchant.yml
-  
   coinshop:
     file: coinshop.yml
   
   souls_shop:
     file: souls_shop.yml
-  
-  pets:
-    file: pets.yml
   
   mobs_list:
     file: mobs_list.yml
@@ -36,23 +30,14 @@ gui_menus:
   vote:
     file: vote.yml
   
-  seasonal:
-    file: seasonal.yml
-  
   flight_time:
     file: flight_time.yml
   
   claimblocks:
     file: claimblocks.yml
   
-  perks:
-    file: perks.yml
-  
   tags:
     file: tags.yml
-  
-  chatcolorbuy:
-    file: chatcolorbuy.yml
   
   jobs:
     file: jobs.yml
@@ -65,10 +50,6 @@ gui_menus:
   
   ranks:
     file: ranks.yml
-  
-  
-  tasks:
-    file: tasks.yml
   
   kits:
     file: kits.yml

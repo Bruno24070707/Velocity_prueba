@@ -1,0 +1,9 @@
+VANILLA:
+  DEFAULT:
+    MAX: 2
+    MIN: 1
+    CHANCE: 18.9
+  COW:
+    MAX: 2
+    MIN: 1
+    CHANCE: 0.1
