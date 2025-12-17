@@ -2,6 +2,25 @@
 # http://dev.bukkit.org/bukkit-plugins/playervaults/
 # Made with love :3
 
+storageType: flat
+host: host
+port: 3306
+database: playervaults
+user: user
+pass: pass
+prefix: '&1[&bPlayerVaults&1] '
+noVaults: '&c&lSorry! it seems that you dont have access to that'
+vaultLimitReached: '&c&lYou are limited to &f&l%vault_limit% &c&lvaults!'
+inUse: '&c&lPlease wait the playervault is currently in use by an administrator.'
+menuName: '&f&lPlayer vault &c&l(&f&l%vault_number%&c&l)'
+backButtonName: '&fBack to previous page'
+backButtonDescription:
+- '&bClick me to get back'
+- '&bto the previous page'
+nextButtonName: '&fNext page'
+nextButtonDescription:
+- '&bClick me to get'
+- '&bto the next page'
 # Whether or not you want to check for updates. 
 # Will not download an update by default, that is your job :)
 # We do not break between minecraft versions so auto updating should not be an issue.
@@ -24,7 +43,7 @@ signs-enabled: false
 economy:
   enabled: false
   
-# Cost to create a vault. You can give players playervaults.free to bypass this.
+  # Cost to create a vault. You can give players playervaults.free to bypass this.
   cost-to-create: 100
   cost-to-open: 10
   refund-on-delete: 50
@@ -40,8 +59,8 @@ blockitems: false
 
 # Only effective if the above option is true.
 blocked-items:
-  - PUMPKIN
-  - DIAMOND_BLOCK
+- PUMPKIN
+- DIAMOND_BLOCK
 
 
 # Cleanup
@@ -52,7 +71,7 @@ blocked-items:
 # This will not touch the backups folder. You will have to delete those yourself.
 cleanup:
   enable: false
-
+  
   # If a file hasn't been edited for this long, we'll clean it up.
   # Time is in days.
   lastEdit: 30

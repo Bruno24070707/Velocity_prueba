@@ -23,8 +23,8 @@ fb3917eb-9fe6-31ce-a729-d659b2ebdf67:
   ultimaUbicacion:
     ==: org.bukkit.Location
     world: world
-    x: 936.8446121653297
-    y: 94.0
-    z: 2261.644612954623
-    pitch: 15.905857
-    yaw: -39.443817
+    x: 927.3191625301248
+    y: 14.0
+    z: 2249.699999988079
+    pitch: 17.13074
+    yaw: -36.33305

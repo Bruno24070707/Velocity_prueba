@@ -39,9 +39,6 @@ gui_menus:
   tags:
     file: tags.yml
   
-  jobs:
-    file: jobs.yml
-  
   jobs-information:
     file: jobs-information.yml
   
@@ -56,5 +53,8 @@ gui_menus:
   
   randomtp:
     file: randomtp.yml
+
+
+
 
 command-aliases: true

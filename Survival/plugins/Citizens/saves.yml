@@ -64,7 +64,7 @@ npc:
         x: 11.5045
         y: 89.0
         z: 65.5118
-        yaw: 153.2655
+        yaw: 143.2655
         pitch: -1.3546
         worldid: 0c52527c-f895-4989-828f-80caa9f6e8b5
       type: WANDERING_TRADER
